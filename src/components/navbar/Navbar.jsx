@@ -1,6 +1,15 @@
 import React from "react";
 import { Sling as Hamburger } from "hamburger-react";
 import { ClickAwayListener } from "@material-ui/core";
+import {
+  Header,
+  NavContainer,
+  Logo,
+  LinkContainer,
+  LinkLists,
+  Link,
+  MenuIcon,
+} from "./navbarStyle";
 
 const Navbar = () => {
   const [navbar, setNavbar] = React.useState(false);
@@ -18,12 +27,12 @@ const Navbar = () => {
 
   return (
     <ClickAwayListener onClickAway={handleClickAway}>
-      <Header className={navbar ? "navbar active" : "navbar"}>
+      <Header navbar={navbar}>
         <NavContainer>
           <Logo>
-            <LogoLink href="#landing-page">EO</LogoLink>
+            <a href="#landing-page">EO</a>
           </Logo>
-          <LinkContainer className={isMenuOpen ? "smallScreen" : "bigScreen"}>
+          <LinkContainer isMenuOpen={isMenuOpen}>
             <LinkLists onClick={closeMenuLink}>
               <Link href="#landing-page">Home</Link>
             </LinkLists>
@@ -43,7 +52,7 @@ const Navbar = () => {
           <MenuIcon onClick={handleMenuIcon}>
             <Hamburger
               rounded
-              color=""
+              color="#fff"
               size={25}
               toggled={isMenuOpen}
               toggle={setIsMenuOpen}
