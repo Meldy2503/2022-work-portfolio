@@ -3,11 +3,33 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Button } from "../reuseableComponents/buttonStyle";
-
-// import bg2 from "../../assests/bgimg2.jpeg";
-import { Container, DisplayContents, Col1, Col2 } from "./landingPageStyle";
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import {
+  Container,
+  DisplayContents,
+  Col1,
+  Col2,
+  RightArrow,
+  LeftArrow,
+} from "./landingPageStyle";
 
 const LandingPage = () => {
+  const NextArrow = ({ onClick }) => {
+    return (
+      <RightArrow onClick={onClick}>
+        <FaAngleRight />
+      </RightArrow>
+    );
+  };
+
+  const PrevArrow = ({ onClick }) => {
+    return (
+      <LeftArrow onClick={onClick}>
+        <FaAngleLeft />
+      </LeftArrow>
+    );
+  };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -18,8 +40,10 @@ const LandingPage = () => {
     centerMode: true,
     centerPadding: 0,
     initialSlide: 0,
-    arrows: false,
+    arrows: true,
     autoplay: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 960,
