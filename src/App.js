@@ -1,5 +1,12 @@
+import { Fragment } from "react";
+import Layout from "./components/Layout";
+
 function App() {
-  return <div>MY 2022 PORTFOLIO</div>;
+  return (
+    <Fragment>
+      <Layout />
+    </Fragment>
+  );
 }
 
 export default App;
