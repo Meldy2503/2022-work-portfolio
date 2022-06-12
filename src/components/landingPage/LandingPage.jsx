@@ -2,8 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import bg1 from "../../assests/bgimg1.jpeg";
-import bg2 from "../../assests/bgimg2.jpeg";
+import { Button } from "../reuseableComponents/buttonStyle";
+
+// import bg2 from "../../assests/bgimg2.jpeg";
 import { Container, DisplayContents, Col1, Col2 } from "./landingPageStyle";
 
 const LandingPage = () => {
@@ -34,12 +35,18 @@ const LandingPage = () => {
       <DisplayContents>
         <Slider {...settings}>
           <Col1>
-            <img src={bg1} alt="bg-1" />
-            {/* <h1>hi</h1> */}
+            <div>
+              <p>Hi, I'm</p>
+              <h1>Emelder Okafor</h1>
+              <p>A Frontend Developer</p>
+              <Button>Get in Touch</Button>
+            </div>
           </Col1>
           <Col2>
-            <img src={bg2} alt="bg-2" />
-            {/* <h1>hello</h1> */}
+            <div>
+              <h2>I Love What I do</h2>
+              <Button>View Projects</Button>
+            </div>
           </Col2>
         </Slider>
       </DisplayContents>
