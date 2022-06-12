@@ -11,9 +11,12 @@ export const Header = styled.header`
   background: #080808;
   margin-bottom: 500rem;
   color: #fff;
+  box-shadow: 0.1rem 0.2rem 0.2rem #000;
 
   ${(props) => props.navbar} {
     background-color: transparent;
+    border-bottom: 0.1rem solid rgba(241, 241, 241, 0.2);
+    box-shadow: 0.1rem 0.2rem 0.2rem #000;
   }
 `;
 
@@ -31,16 +34,16 @@ export const NavContainer = styled.nav`
 `;
 export const Logo = styled.div`
   height: 4rem;
-  width: 5rem;
-  border: 0.2rem solid #fff;
+  width: 4.2rem;
+  border: 0.1rem solid #eee;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  box-shadow: 0.8rem 0.5rem 0 #670619;
+  box-shadow: 0.5rem 0.5rem 0 #eee;
 
   a {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #fff;
     font-weight: 700;
   }
