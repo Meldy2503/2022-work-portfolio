@@ -8,14 +8,15 @@ export const Header = styled.header`
   left: 0;
   z-index: 5000;
   height: 7rem;
-  background: #080808;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0.7;
   margin-bottom: 500rem;
   color: #fff;
   box-shadow: 0.1rem 0.2rem 0.2rem #000;
 
   ${(props) => props.navbar} {
     background-color: transparent;
-    border-bottom: 0.1rem solid rgba(241, 241, 241, 0.2);
+    border-bottom: 0.1rem solid rgba(241, 241, 241, 0.3);
     box-shadow: 0.1rem 0.2rem 0.2rem #000;
   }
 `;
