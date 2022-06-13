@@ -42,7 +42,6 @@ export const Col1 = styled.div`
       font-weight: 700;
       letter-spacing: 0.2rem;
       z-index: -1;
-      /* font-family: "Ubuntu", sans-serif; */
     }
 
     p {

@@ -1,4 +1,4 @@
-import css3 from "../../assests/css3";
+import css3 from "../../assests/css3.svg";
 import git from "../../assests/git.svg";
 import github from "../../assests/github.svg";
 import gitlab from "../../assests/gitlab.svg";
