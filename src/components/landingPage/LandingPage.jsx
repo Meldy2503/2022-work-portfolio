@@ -34,7 +34,7 @@ const LandingPage = () => {
     dots: true,
     infinite: true,
     lazyLoad: true,
-    speed: 300,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,

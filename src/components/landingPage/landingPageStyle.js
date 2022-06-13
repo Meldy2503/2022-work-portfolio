@@ -30,11 +30,12 @@ export const Col1 = styled.div`
     transform: translate(-50%, -50%);
     text-align: center;
     color: #eee;
+    width: 85%;
 
     h1,
     h2 {
       color: #fff;
-      font-size: 4rem;
+      font-size: 4.5rem;
       line-height: 1.07;
       margin: 1rem 0;
       font-family: "Noto Sans", sans-serif;
@@ -59,7 +60,7 @@ export const RightArrow = styled.div`
   top: 50%;
   right: 3rem;
   z-index: 700;
-  color: #eee;
+  color: #c4c4c4;
   background-color: transparent;
   cursor: pointer;
   font-size: 3rem;

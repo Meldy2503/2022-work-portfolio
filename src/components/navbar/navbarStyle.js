@@ -53,7 +53,7 @@ export const LinkContainer = styled.ul`
   display: none;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    background-color: #080000;
+    background-color: #353247;
     width: 100%;
     position: absolute;
     left: 0;
