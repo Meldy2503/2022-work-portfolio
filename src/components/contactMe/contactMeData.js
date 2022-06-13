@@ -1,6 +1,3 @@
-import React from "react";
-import { AiOutlineMail, AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
-
 export const FormInputs = [
   {
     id: 1,
@@ -35,24 +32,3 @@ export const FormInputs = [
     value: "subject",
   },
 ];
-
-// export const MediaData = [
-//   {
-//     id: 1,
-//     icon: <AiOutlineMail />,
-//     ref: "mailto:emelder.charles25@gmail.com",
-//     connect: "emelder.charles25@gmail.com",
-//   },
-//   {
-//     id: 2,
-//     ref: "https://github.com/meldy2503/",
-//     icon: <AiOutlineGithub />,
-//     connect: "meldy2503",
-//   },
-//   {
-//     id: 3,
-//     ref: "https://www.linkedin.com/in/emelder-okafor-67b22122b",
-//     icon: <AiFillLinkedin />,
-//     connect: "emelder-okafor",
-//   },
-// ];
