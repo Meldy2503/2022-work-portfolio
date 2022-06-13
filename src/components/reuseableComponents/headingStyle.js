@@ -10,11 +10,15 @@ export const SubHeading = styled.h2`
   font-family: "Noto Sans", sans-serif;
   /* font-family: "Ubuntu", sans-serif; */
 
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    font-size: 2.5rem;
+  }
+
   &::before {
     content: "";
     height: 0.5rem;
-    width: 60%;
-    background-color: #a02f2f;
+    width: ${({ width }) => width || "60%"};
+    background-color: #e64e4e;
     position: absolute;
     bottom: 0;
     border-radius: 0.5rem;

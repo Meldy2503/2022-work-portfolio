@@ -7,7 +7,7 @@ export const Button = styled.a`
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  background-color: #a02f2f;
+  background-color: #e64e4e;
   cursor: pointer;
   margin-top: 4rem;
   font-family: "Montserrat", sans-serif;
@@ -20,8 +20,10 @@ export const ButtonB = styled.button`
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  background-color: #a02f2f;
+  background-color: #e64e4e;
   cursor: pointer;
   margin-top: 4rem;
+  border: none;
   font-family: "Montserrat", sans-serif;
+  width: 100%;
 `;

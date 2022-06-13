@@ -13,6 +13,7 @@ export const Container = styled.section`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 `;
 export const Contents = styled.div`
   width: 90%;
