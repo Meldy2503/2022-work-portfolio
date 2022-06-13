@@ -21,7 +21,7 @@ export const SkillData = [
     id: 6,
     src: styledComponent,
     alt: "styledComponentIcon",
-    caption: "Styled-Components",
+    caption: "Styled-components",
   },
   {
     id: 7,

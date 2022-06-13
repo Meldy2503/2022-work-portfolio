@@ -21,7 +21,7 @@ const TechStack = () => {
         <Row>
           <Col1>
             <Skills>
-              <h3>Languages and Frameworks</h3>
+              {/* <h3>Languages and Frameworks</h3> */}
               <IconsContainer>
                 {SkillData.map((skills) => (
                   <figure key={skills.id}>

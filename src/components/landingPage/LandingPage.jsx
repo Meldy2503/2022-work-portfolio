@@ -63,13 +63,13 @@ const LandingPage = () => {
               <p>Hi, I'm</p>
               <h1>Emelder Okafor</h1>
               <p>A Frontend Developer</p>
-              <Button>Get in Touch</Button>
+              <Button href="#contact">Get in Touch</Button>
             </div>
           </Col1>
           <Col2>
             <div>
               <h2>I Love What I do</h2>
-              <Button>View Projects</Button>
+              <Button href="#projects">View Projects</Button>
             </div>
           </Col2>
         </Slider>

@@ -5,17 +5,18 @@ export const SubHeading = styled.h2`
   position: relative;
   display: inline-block;
   margin-bottom: 1.5rem;
-  padding-bottom: 0.6rem;
+  padding-bottom: 1.3rem;
   color: ${({ color }) => color || "#fff"};
   font-family: "Noto Sans", sans-serif;
   /* font-family: "Ubuntu", sans-serif; */
 
   &::before {
     content: "";
-    height: 0.3rem;
+    height: 0.5rem;
     width: 60%;
     background-color: #a02f2f;
     position: absolute;
     bottom: 0;
+    border-radius: 0.5rem;
   }
 `;
