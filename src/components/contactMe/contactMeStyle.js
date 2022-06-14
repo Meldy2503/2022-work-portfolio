@@ -103,7 +103,7 @@ export const Form = styled.form`
     margin-bottom: 2rem;
     padding: 1.6rem;
     font-size: 1.6rem;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.95);
     color: #00102e;
     outline: none;
     user-select: none;
@@ -114,8 +114,8 @@ export const Form = styled.form`
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus,
     &:-webkit-autofill:active {
-      box-shadow: 0 0 0 30px #fff inset !important;
-      -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+      box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.95) inset !important;
+      -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.95) inset !important;
       -webkit-text-fill-color: #00102e !important;
     }
 

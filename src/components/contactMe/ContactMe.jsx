@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { SubHeading } from "../reuseableComponents/headingStyle";
 import { ButtonB } from "../reuseableComponents/buttonStyle";
 import { AiOutlineMail, AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
-import PopUp from "../Pop-up/PopUp";
+import PopUp from "../popUp/PopUp";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FormInputs } from "./contactMeData";
 import {
@@ -135,7 +135,7 @@ const ContactMe = () => {
         </Row>
       </Contents>
 
-      {/* {popup && <PopUp />} */}
+      {popup && <PopUp />}
     </Container>
   );
 };
