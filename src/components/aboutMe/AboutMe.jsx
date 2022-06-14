@@ -1,7 +1,9 @@
 import React from "react";
 
 const AboutMe = () => {
-  return <div style={{ marginTop: "100rem" }}>AboutMe</div>;
+  return (
+    <div style={{ height: "50vh" }}>AboutMe </div>
+  );
 };
 
 export default AboutMe;

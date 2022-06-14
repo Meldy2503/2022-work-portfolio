@@ -1,13 +1,13 @@
 p {
   background-color: rgba(0, 0, 0, 0.863);
   background-color: rgba(9, 1, 40, 0.902);
+  background-color: #e0e0e0;
   background: rgba(6, 1, 26, 0.8);
   &::before {
     content: "";
     position: absolute;
     display: block;
     height: 0.2rem;
-    background-color: #fff;
     width: 100%;
     bottom: -0.8rem;
     border-radius: 2rem;

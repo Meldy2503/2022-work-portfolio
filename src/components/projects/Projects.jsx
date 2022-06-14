@@ -1,9 +1,7 @@
 import React from "react";
 
 const Projects = () => {
-  return (
-    <div style={{ height: "100vh", backgroundColor: "#eee" }}>Projects</div>
-  );
+  return <div style={{ height: "50vh" }}>Projects</div>;
 };
 
 export default Projects;
