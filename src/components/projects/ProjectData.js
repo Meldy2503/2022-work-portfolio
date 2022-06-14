@@ -1,7 +1,7 @@
 import nailBoutique from "../../img/nail-boutique.JPG";
 import windec from "../../img/windec.JPG";
 
-export const ProjectDataFront = [
+export const ProjectData = [
   {
     id: 1,
     img: nailBoutique,
