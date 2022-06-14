@@ -28,7 +28,6 @@ export const Contents = styled.div`
 export const Row = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     flex-direction: column;

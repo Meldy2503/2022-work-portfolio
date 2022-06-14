@@ -40,8 +40,8 @@ const LandingPage = () => {
     centerMode: true,
     centerPadding: 0,
     initialSlide: 0,
-    arrows: true,
-    autoplay: true,
+    arrows: false,
+    autoplay: false,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -60,9 +60,13 @@ const LandingPage = () => {
         <Slider {...settings}>
           <Col1>
             <div>
-              <p>Hi, I'm</p>
-              <h1>Emelder Okafor</h1>
-              <p>A Frontend Developer</p>
+              <h5>&#128075; HELLO THERE, MY NAME IS EMELDER</h5>
+
+              <h1>A Frontend Developer</h1>
+              <p>
+                I'm a lifelong learner who loves creating scalable, maintainable
+                and responsive web designs with great user experience
+              </p>
               <Button href="#contact">Get in Touch</Button>
             </div>
           </Col1>
