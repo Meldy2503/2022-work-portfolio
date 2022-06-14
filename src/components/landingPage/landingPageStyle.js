@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import bg1 from "../../assests/bgimg1.jpeg";
 import bg2 from "../../assests/bgimg2.jpeg";
+
 export const Container = styled.section`
   width: 100vw;
-  height: 100vh
+  height: 100vh;
   overflow: hidden;
   position: relative;
 `;
@@ -58,12 +59,11 @@ export const Col1 = styled.div`
     }
 
     h5 {
-      font-weight: 400;
-      font-size: 1.9rem;
-      display: flex;
+      font-weight: 500;
+      font-size: 1.8rem;
       color: rgba(255, 255, 255, 0.6);
 
-      b {
+      span {
         color: #fff;
       }
     }

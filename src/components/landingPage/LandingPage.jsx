@@ -60,20 +60,26 @@ const LandingPage = () => {
         <Slider {...settings}>
           <Col1>
             <div>
-              <h5>&#128075; HELLO THERE, MY NAME IS EMELDER</h5>
+              <h5>
+                &#128075; HELLO THERE, MY NAME IS&nbsp;<span>EMELDER</span>
+              </h5>
 
               <h1>A Frontend Developer</h1>
               <p>
                 I'm a lifelong learner who loves creating scalable, maintainable
                 and responsive web designs with great user experience
               </p>
-              <Button href="#contact">Get in Touch</Button>
+              <Button href="#contact" bgc="#07011fcc">
+                Get in Touch
+              </Button>
             </div>
           </Col1>
           <Col2>
             <div>
               <h2>I Love What I do</h2>
-              <Button href="#projects">View Projects</Button>
+              <Button href="#projects" bgc="#07011fcc">
+                View Projects
+              </Button>
             </div>
           </Col2>
         </Slider>
