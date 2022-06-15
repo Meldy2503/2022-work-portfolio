@@ -26,10 +26,15 @@ export const NavContainer = styled.nav`
   justify-content: space-between;
   padding: 1.5rem 0;
   width: 90%;
+  max-width: 120rem;
   margin: 0 auto;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     align-items: flex-start;
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    width: 95%;
   }
 `;
 export const Logo = styled.div`

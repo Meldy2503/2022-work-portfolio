@@ -7,7 +7,7 @@ export const Button = styled.a`
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  background-color: ${({ bgc }) => bgc || "#e64e4e"};
+  background-color: ${({ bgc }) => bgc || "#47425d"};
   cursor: pointer;
   margin-top: ${({ mgt }) => mgt || "4rem"};
   width: ${({ width }) => width || "fit-content"};
@@ -16,8 +16,8 @@ export const Button = styled.a`
   border: 0.2rem solid #eee;
 
   &:hover {
-    box-shadow: -28rem 0 0 0 #e64e4e inset;
-    border: 0.2rem solid #e64e4e;
+    box-shadow: ${({ bxs }) => bxs || "-28rem 0 0 0 #e64e4e inset"};
+    border: ${({ bor }) => bor || "0.2rem solid #e64e4e"};
   }
 `;
 

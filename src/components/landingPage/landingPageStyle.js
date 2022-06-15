@@ -5,10 +5,9 @@ import bg2 from "../../assests/bgimg2.jpeg";
 export const Container = styled.section`
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
   position: relative;
 `;
-export const DisplayContents = styled.div`
+export const SlidingContents = styled.div`
   display: block;
 
   .slick-dots li button:before {
@@ -37,10 +36,12 @@ export const Col1 = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     color: #eee;
-    width: 85%;
+    width: 90%;
+    max-width: 120rem;
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
-      width: 90%;
+      width: 95%;
+      margin: 0 auto;
     }
 
     h1,

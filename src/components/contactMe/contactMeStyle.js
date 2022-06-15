@@ -19,6 +19,7 @@ export const Container = styled.section`
 
 export const Contents = styled.div`
   width: 90%;
+  max-width: 120rem;
   margin: 10rem auto;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {

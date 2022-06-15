@@ -1,24 +1,26 @@
 import React from "react";
-import { ProjectData } from "./ProjectData";
-import { SubHeading } from "../ReuseableComponents/headingStyle";
-// import {
-//   ProjectContainer,
-//   Contents,
-//   Row,
-//   Column,
-//   Card,
-//   FrontText,
-//   BackText,
-// } from "./ProjectStyle";
+import { ProjectData } from "./projectData";
+import { SubHeading } from "../reuseableComponents/headingStyle";
+import { Button } from "../reuseableComponents/buttonStyle";
+import {
+  Container,
+  Contents,
+  Row,
+  Column,
+  Card,
+  FrontText,
+  BackText,
+  BackTextHeading,
+} from "./projectStyle";
 
 const Projects = () => {
   return (
     <Container id="projects">
       <Contents>
-        <SubHeading>Projects</SubHeading>
+        <SubHeading color="#00102e">Projects</SubHeading>
         <Row>
           <Column>
-            {ProjectDataFront.map((project) => (
+            {ProjectData.map((project) => (
               <Card key={project.id}>
                 <div className="card_side card_side--front">
                   <FrontText>
@@ -32,15 +34,30 @@ const Projects = () => {
                 </div>
                 <div className="card_side card_side--back">
                   <BackText>
-                    <h3>Project Purpose and Goal</h3>
+                    <BackTextHeading
+                      bg={project.id % 2 === 0 ? "#e64e4e" : "#47425d"}
+                    >
+                      Project Purpose and Goal
+                    </BackTextHeading>
                     <p>{project.comment}</p>
                     <div>
-                      <a href={project.web} target="_blank" rel="noreferrer">
+                      <Button
+                        href={project.web}
+                        target="_blank"
+                        rel="noreferrer"
+                        bgc="#e64e4e"
+                        bxs="-28rem 0 0 0 #47425d inset"
+                        bor="0.2rem solid #47425d"
+                      >
                         website
-                      </a>
-                      <a href={project.git} target="_blank" rel="noreferrer">
+                      </Button>
+                      <Button
+                        href={project.git}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         github
-                      </a>
+                      </Button>
                     </div>
                   </BackText>
                 </div>

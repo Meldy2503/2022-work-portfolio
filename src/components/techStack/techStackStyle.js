@@ -16,6 +16,7 @@ export const Container = styled.section`
   background-attachment: fixed;
 `;
 export const Contents = styled.div`
+  max-width: 120rem;
   width: 90%;
   margin: 10rem auto;
 

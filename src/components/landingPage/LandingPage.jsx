@@ -6,7 +6,7 @@ import { Button } from "../reuseableComponents/buttonStyle";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import {
   Container,
-  DisplayContents,
+  SlidingContents,
   Col1,
   Col2,
   RightArrow,
@@ -56,7 +56,7 @@ const LandingPage = () => {
 
   return (
     <Container id="landing-page">
-      <DisplayContents>
+      <SlidingContents>
         <Slider {...settings}>
           <Col1>
             <div>
@@ -83,7 +83,7 @@ const LandingPage = () => {
             </div>
           </Col2>
         </Slider>
-      </DisplayContents>
+      </SlidingContents>
     </Container>
   );
 };
