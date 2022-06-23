@@ -1,17 +1,16 @@
 import styled from "styled-components";
-import bg2 from "../../assests/bgbody.jpeg";
-
+import bg1 from "../../assests/computer5.jpg";
 export const Container = styled.section`
-  width: 100%;
   overflow: hidden;
   position: relative;
-  background-image: linear-gradient(
+  width: 100%;
+  background: linear-gradient(
       to right,
-      rgba(9, 4, 32, 0.9),
-      rgba(9, 4, 32, 0.9)
+      rgba(30, 67, 86, 0.85),
+      rgba(30, 67, 86, 0.9)
     ),
-    url(${bg2});
-  background-position: center;
+    url(${bg1});
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -23,6 +22,7 @@ export const Contents = styled.div`
   margin: 10rem auto;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
+    width: 95%;
     margin: 6rem auto;
   }
 `;
@@ -38,40 +38,46 @@ export const Col1 = styled.div`
   width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     margin: 2rem 0 5rem 0;
     width: 100%;
   }
-
-  div {
-    margin-top: 3rem;
-  }
 `;
 
+export const MediaContents = styled.div`
+  margin-top: 6rem;
+`;
 export const Media = styled.div`
   display: flex;
   margin-bottom: 2rem;
-  color: #c4c4c4;
-  border-radius: 0.5rem;
-  border-bottom: 0.6rem solid #e64e4e;
+  color: #fff;
 
   p,
   a {
+    border-radius: 0.4rem;
     font-size: 1.8rem;
+    border-bottom: 0.6rem solid #68a4c4;
     font-weight: 400;
     line-height: 1.4;
-    color: #c4c4c4;
+    color: #fff;
     letter-spacing: 0.1rem;
-    width: 80%;
+    width: 85%;
     padding-bottom: 0.6rem;
+
+    @media (max-width: ${({ theme }) => theme.media.tablet}) {
+      width: 60%;
+    }
+
+    @media (max-width: ${({ theme }) => theme.media.mobile}) {
+      width: 90%;
+    }
   }
 
   .icons {
     font-size: 2.3rem;
     margin-right: 1rem;
-    color: #e64e4e;
+    color: #fff;
   }
 `;
 
@@ -83,14 +89,13 @@ export const Col2 = styled.div`
   }
 `;
 export const Form = styled.form`
-  border: 0.2rem solid #c4c4c4;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   user-select: none;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255);
   padding: 5rem 2rem;
 
   div {
@@ -101,30 +106,31 @@ export const Form = styled.form`
   textarea {
     width: 100%;
     margin-bottom: 2rem;
-    padding: 1.6rem;
+    padding: 1.5rem;
     font-size: 1.6rem;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255);
+    border: 0.2rem solid #e7e4e4;
     color: #00102e;
     outline: none;
     user-select: none;
-    border: none;
-    box-shadow: 0.2rem 0.2rem 0.1rem 0.3rem #c4c4c4;
+    box-shadow: 0.3rem 0.5rem 1rem #b8b4b4;
+    border-radius: 1.5rem;
 
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus,
     &:-webkit-autofill:active {
-      box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.95) inset !important;
-      -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.95) inset !important;
+      box-shadow: 0 0 0 30px rgba(255, 255, 255) inset !important;
+      -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255) inset !important;
       -webkit-text-fill-color: #00102e !important;
     }
 
     &::placeholder {
-      color: #47425d;
+      color: #444444;
     }
 
     &:focus {
-      border-bottom: 0.2rem solid #47425d;
+      border-bottom: 0.2rem solid rgba(30, 67, 86, 0.8);
     }
   }
 `;

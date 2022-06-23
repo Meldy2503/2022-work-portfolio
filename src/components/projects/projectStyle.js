@@ -2,7 +2,8 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #f3f3f3;
+  position: relative;
 `;
 
 export const Contents = styled.div`
@@ -29,23 +30,23 @@ export const Card = styled.div`
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 45rem;
-  width: 32%;
+  height: 43rem;
+  width: 31.5%;
   margin: 0 auto 2.5rem auto;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    width: 48%;
+    width: 47%;
   }
 
   @media (max-width: 650px) {
-    width: 75%;
+    width: 70%;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 420px) {
     width: 95%;
   }
 
   .card_side {
-    height: 45rem;
+    height: 43rem;
     width: 100%;
     transition: all 0.8s ease;
     position: absolute;
@@ -54,13 +55,13 @@ export const Card = styled.div`
     backface-visibility: hidden;
     border-radius: 0.5rem;
     overflow: hidden;
-    box-shadow: 0rem 0.1rem 0.3rem #999;
+    /* box-shadow: 0rem 0.1rem 0.3rem #999; */
 
     &--front {
-      background-color: #f7f7f7;
+      background-color: #fff;
     }
     &--back {
-      background-color: #f7f7f7;
+      background-color: #fff;
       transform: rotateY(180deg);
       position: relative;
     }
@@ -75,41 +76,66 @@ export const Card = styled.div`
   }
 `;
 
+// export const Img = styled.img`
+//   background: linear-gradient(
+//       359.8deg,
+//       #47425d 0.12%,
+//       rgba(52, 168, 83, 0) 99.77%
+//     ),
+//     url(${project.img});
+// `;
+
 export const FrontText = styled.div`
   margin: 0 auto;
   text-align: center;
 
-  div {
-    box-shadow: 0rem 0.3rem 0.3rem #000;
-    height: 30rem;
+  figure {
+    display: block;
+    height: 43rem;
+    position: relative;
+  }
 
-    img {
-      width: 100%;
-      height: 100%;
-    }
+  img {
+    /* filter: brightness(70%) contrast(100%); */
+    width: 100%;
+    height: 100%;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.3) 100.12%,
+      rgba(52, 168, 83, 0) 0.77%
+    );
+    /* background: linear-gradient(
+      to top,
+      rgba(30, 67, 86, 0.7) 65.12%,
+      rgba(52, 168, 83, 0) 95.77%
+    ); */
+    /* background-image: linear-gradient(
+      348.37deg,
+      #5239fa 17.97%,
+      rgba(255, 255, 255, 0) 79.2%
+    ); */
+
+    height: 100%;
+    width: 100%;
   }
 
   h3 {
     font-size: 2.5rem;
-    margin: 2rem 0 1rem 0;
+    margin: 3rem 0 0 0;
     font-weight: 700;
-    color: #47425d;
-  }
-
-  p {
-    margin: 0 auto;
-    padding: 0 2rem 2rem 2rem;
-    word-spacing: 0.5rem;
-    font-size: 1.7rem;
+    color: #fff;
+    z-index: 100;
   }
 `;
 export const BackText = styled.div`
-  color: #00102e;
-
-  p,
-  div {
-    padding: 0 2rem;
-  }
+  color: #444;
+  padding: 3rem 1.5rem;
 
   p {
     line-height: 1.5;
@@ -121,14 +147,29 @@ export const BackText = styled.div`
   }
 `;
 
-export const BackTextHeading = styled.h3`
-  width: 100%;
-  font-size: 2.3rem;
-  background-color: ${({ bg }) => bg || "#47425d"};
-  height: 10rem;
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #eee;
+export const ButtonW = styled.a`
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  background-color: #f3f3f3;
+  color: rgba(30, 67, 86);
+  transition: all 0.7s;
+
+  &:hover {
+    box-shadow: 13rem 0 0 0 rgba(30, 67, 86) inset;
+    color: #fff;
+  }
+`;
+export const ButtonG = styled(ButtonW)`
+  background-color: rgba(30, 67, 86);
+  color: #fff;
+
+  &:hover {
+    box-shadow: 13rem 0 0 0 #f3f3f3 inset;
+    color: rgba(30, 67, 86);
+  }
 `;

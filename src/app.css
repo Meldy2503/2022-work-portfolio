@@ -1,8 +1,17 @@
 p {
   background-color: rgba(0, 0, 0, 0.863);
-  background-color: rgba(9, 1, 40, 0.603);
-  background-color: #f1eeee;
-  background: rgba(6, 1, 26, 0.8);
+  background-color: rgba(114, 27, 214, 0.603);
+  background-color: #f3f3f3;
+  background: #001845;
+  background: rgb(1, 22, 56);
+  background: rgb(0, 8, 20);
+  background: rgb(30, 67, 86, 0.8);
+  background: #446679cc;
+  background: rgb(0, 29, 61);
+  color: #f3f8fa;
+  background-color: #446679cc;
+  background-color: #48758d;
+
   &::before {
     content: "";
     position: absolute;

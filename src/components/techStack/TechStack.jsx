@@ -1,51 +1,55 @@
 import React from "react";
-import { SkillData, ToolData } from "./techStackData";
+import { FrameworkData, ToolData, LanguageData } from "./techStackData";
 import { SubHeading } from "../reuseableComponents/headingStyle";
-import computerImg from "../../assests/IMG1.png";
 import {
   Container,
   Contents,
   Row,
-  Col1,
-  Skills,
+  Languages,
   Tools,
   IconsContainer,
-  Col2,
+  Frameworks,
 } from "./techStackStyle";
 
 const TechStack = () => {
   return (
     <Container id="skills">
       <Contents>
-        <SubHeading>Tech Stack</SubHeading>
+        <SubHeading color="#fff">Tech Stack</SubHeading>
         <Row>
-          <Col1>
-            <Skills>
-              {/* <h3>Languages and Frameworks</h3> */}
-              <IconsContainer>
-                {SkillData.map((skills) => (
-                  <figure key={skills.id}>
-                    <img src={skills.src} alt={skills.alt} />
-                    <figcaption>{skills.caption}</figcaption>
-                  </figure>
-                ))}
-              </IconsContainer>
-            </Skills>
-            <Tools>
-              <h3>Tools</h3>
-              <IconsContainer>
-                {ToolData.map((tools) => (
-                  <figure key={tools.id}>
-                    <img src={tools.src} alt={tools.alt} />
-                    <figcaption>{tools.caption}</figcaption>
-                  </figure>
-                ))}
-              </IconsContainer>
-            </Tools>
-          </Col1>
-          <Col2>
-            <img src={computerImg} alt="computer img" />
-          </Col2>
+          <Languages>
+            <h3>Languages</h3>
+            <IconsContainer>
+              {LanguageData.map((lang) => (
+                <figure key={lang.id}>
+                  <img src={lang.src} alt={lang.alt} />
+                  <figcaption>{lang.caption}</figcaption>
+                </figure>
+              ))}
+            </IconsContainer>
+          </Languages>
+          <Tools>
+            <h3>Tools</h3>
+            <IconsContainer>
+              {ToolData.map((tools) => (
+                <figure key={tools.id}>
+                  <img src={tools.src} alt={tools.alt} />
+                  <figcaption>{tools.caption}</figcaption>
+                </figure>
+              ))}
+            </IconsContainer>
+          </Tools>
+          <Frameworks>
+            <h3>Libraries and Frameworks</h3>
+            <IconsContainer>
+              {FrameworkData.map((frameworks) => (
+                <figure key={frameworks.id}>
+                  <img src={frameworks.src} alt={frameworks.alt} />
+                  <figcaption>{frameworks.caption}</figcaption>
+                </figure>
+              ))}
+            </IconsContainer>
+          </Frameworks>
         </Row>
       </Contents>
     </Container>

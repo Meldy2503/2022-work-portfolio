@@ -1,68 +1,63 @@
 import styled from "styled-components";
-import bg1 from "../../assests/bgimg1.jpeg";
-import bg2 from "../../assests/bgimg2.jpeg";
+import bg1 from "../../assests/computer5.jpg";
 
 export const Container = styled.section`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
 `;
-export const SlidingContents = styled.div`
-  display: block;
 
-  .slick-dots li button:before {
-    font-size: 1.4rem;
-    color: #fff;
-    margin-top: -5rem;
-  }
-`;
-export const Col1 = styled.div`
-  height: 100vh;
-  background-image: linear-gradient(
+export const Contents = styled.div`
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
       to right,
-      rgba(9, 4, 32, 0.7),
-      rgba(9, 4, 32, 0.7)
+      rgba(30, 67, 86, 0.85),
+      rgba(30, 67, 86, 0.75)
     ),
     url(${bg1});
+  background-position: top;
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  filter: contrast(100%) brightness(130%);
+`;
+
+export const Col = styled.div`
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  max-width: 120rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    width: 95%;
+  }
 
   div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #eee;
-    width: 90%;
-    max-width: 120rem;
+    color: #fff;
 
-    @media (max-width: ${({ theme }) => theme.media.mobile}) {
-      width: 95%;
-      margin: 0 auto;
-    }
-
-    h1,
-    h2 {
-      color: #fff;
-      font-size: 6rem;
+    h1 {
+      font-size: 6.5rem;
       line-height: 1.07;
-      margin: 2.5rem 0 0 0;
+      margin: 2rem 0 0 0;
       font-family: "Noto Sans", sans-serif;
       font-weight: 700;
-      letter-spacing: 0.3rem;
+      letter-spacing: 0.2rem;
 
-      @media (max-width: ${({ theme }) => theme.media.mobile}) {
-        font-size: 4.5rem;
+      @media (max-width: ${({ theme }) => theme.media.tablet}) {
+        font-size: 5rem;
+      }
+      @media (max-width: 500px) {
+        font-size: 4rem;
       }
     }
 
     h5 {
       font-weight: 500;
       font-size: 1.8rem;
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.8);
 
       span {
         color: #fff;
@@ -70,44 +65,66 @@ export const Col1 = styled.div`
     }
 
     p {
-      font-size: 1.9rem;
+      font-size: 1.8rem;
       font-family: "Raleway", sans-serif;
-      width: 70%;
-      color: rgba(255, 255, 255, 0.67);
-      margin-top: 3.5rem;
+      width: 60%;
+      color: rgba(255, 255, 255);
+      margin-top: 2rem;
       line-height: 1.45;
       letter-spacing: 0.1rem;
+      font-weight: 500;
 
       @media (max-width: ${({ theme }) => theme.media.mobile}) {
+        width: 70%;
+        font-size: 1.6rem;
+      }
+      @media (max-width: 500px) {
         width: 90%;
       }
     }
   }
 `;
-export const Col2 = styled(Col1)`
-  background-image: linear-gradient(
-      to right,
-      rgba(9, 4, 32, 0.8),
-      rgba(9, 4, 32, 0.8)
-    ),
-    url(${bg2});
 
-  div {
-    text-align: center;
+export const Btn = styled.span`
+  display: flex;
+
+  @media (max-width: 450px) {
+    flex-direction: column;
   }
 `;
-
-export const RightArrow = styled.div`
+export const ScrollDown = styled.div`
   position: absolute;
-  top: 50%;
-  right: 3rem;
-  z-index: 700;
-  color: #c4c4c4;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: 3rem;
-`;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: move 3s ease-in-out infinite;
+  overflow: hidden;
 
-export const LeftArrow = styled(RightArrow)`
-  left: 3rem;
+  @keyframes move {
+    0% {
+      opacity: 0.1;
+      transform: translateY(-50px);
+    }
+
+    33% {
+      opacity: 0.7;
+      transform: translateY(-20px);
+    }
+    66% {
+      opacity: 0.1;
+      transform: translateY(-50px);
+    }
+
+    100% {
+      opacity: 0.7;
+      transform: translateY(-20px);
+    }
+  }
+
+  span {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+  }
 `;

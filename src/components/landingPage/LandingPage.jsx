@@ -1,89 +1,50 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Button } from "../reuseableComponents/buttonStyle";
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
-import {
-  Container,
-  SlidingContents,
-  Col1,
-  Col2,
-  RightArrow,
-  LeftArrow,
-} from "./landingPageStyle";
+import { FaHandPointDown } from "react-icons/fa";
+import { Container, Contents, Col, Btn, ScrollDown } from "./landingPageStyle";
 
 const LandingPage = () => {
-  const NextArrow = ({ onClick }) => {
-    return (
-      <RightArrow onClick={onClick}>
-        <FaAngleRight />
-      </RightArrow>
-    );
-  };
-
-  const PrevArrow = ({ onClick }) => {
-    return (
-      <LeftArrow onClick={onClick}>
-        <FaAngleLeft />
-      </LeftArrow>
-    );
-  };
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    lazyLoad: true,
-    speed: 700,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: 0,
-    initialSlide: 0,
-    arrows: false,
-    autoplay: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    responsive: [
-      {
-        breakpoint: 960,
-        settings: {
-          arrows: false,
-        },
-      },
-    ],
-  };
-
   return (
     <Container id="landing-page">
-      <SlidingContents>
-        <Slider {...settings}>
-          <Col1>
-            <div>
-              <h5>
-                &#128075; HELLO THERE, MY NAME IS&nbsp;<span>EMELDER</span>
-              </h5>
+      <Contents>
+        <Col>
+          <div>
+            <h5>
+              &#128075; HELLO THERE, MY NAME IS&nbsp;<span>EMELDER</span>
+            </h5>
 
-              <h1>A Frontend Developer</h1>
-              <p>
-                I'm a lifelong learner who loves creating scalable, maintainable
-                and responsive web designs with great user experience
-              </p>
-              <Button href="#contact" bgc="#07011fcc">
+            <h1>A Frontend Developer</h1>
+            <p>
+              I'm a creative developer who designs scalable, user friendly,
+              interactive and responsive frontend applications.
+            </p>
+            <Btn>
+              <Button
+                href="#contact"
+                mgr="2rem"
+                mgsr="0"
+                mgst="4rem"
+                bgc="rgba(30, 67, 86)"
+              >
                 Get in Touch
               </Button>
-            </div>
-          </Col1>
-          <Col2>
-            <div>
-              <h2>I Love What I do</h2>
-              <Button href="#projects" bgc="#07011fcc">
+              <Button
+                href="#projects"
+                bxs="0 8rem 0 0 #48758d inset, 0 -8rem 0 0 #48758d inset"
+                coh="#fff"
+                co="#444"
+              >
                 View Projects
               </Button>
-            </div>
-          </Col2>
-        </Slider>
-      </SlidingContents>
+            </Btn>
+          </div>
+        </Col>
+        <ScrollDown>
+          <span>
+            <FaHandPointDown />
+          </span>
+        </ScrollDown>
+      </Contents>
     </Container>
   );
 };

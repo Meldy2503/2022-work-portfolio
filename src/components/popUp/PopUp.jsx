@@ -13,7 +13,15 @@ const PopUp = () => {
             Thanks for reaching out ! <br /> I will get back to you as soon as
             possible
           </p>
-          <Button href="/" width="80%" mgt="3rem" bgc="#090420e6">
+          <Button
+            href="/"
+            width="80%"
+            mgt="3rem"
+            bgc="#68a4c4"
+            bor="none"
+            bxs="inset 30rem 0 0 0 rgba(30, 67, 86, 0.9)"
+            coh="#fff"
+          >
             OK
           </Button>
         </div>

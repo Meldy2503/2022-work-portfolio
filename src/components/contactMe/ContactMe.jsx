@@ -5,6 +5,7 @@ import { AiOutlineMail, AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 import PopUp from "../popUp/PopUp";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FormInputs } from "./contactMeData";
+import { send } from "emailjs-com";
 import {
   Container,
   Contents,
@@ -12,6 +13,7 @@ import {
   Col1,
   Col2,
   Form,
+  MediaContents,
   Media,
 } from "./contactMeStyle";
 
@@ -49,6 +51,19 @@ const ContactMe = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    send(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      formData,
+      process.env.REACT_APP_PUBLIC_ID
+    )
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+    console.log(formData);
   };
 
   return (
@@ -56,8 +71,10 @@ const ContactMe = () => {
       <Contents>
         <Row>
           <Col1>
-            <SubHeading width="25%">Get in Touch With Me</SubHeading>
-            <div>
+            <SubHeading width="25%" color="#fff">
+              Get in Touch With Me
+            </SubHeading>
+            <MediaContents>
               <Media>
                 <FaPhoneAlt className="icons" />
                 <p>+2348037588098</p>
@@ -71,7 +88,7 @@ const ContactMe = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  emelder.charles25@gmail.com
+                  emelder.charles25gmail.com
                 </a>
               </Media>
               <Media>
@@ -95,10 +112,10 @@ const ContactMe = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  linkedin.com/in/ emelder-okafor-67b22122b
+                  linkedin.com/in/emelder-okafor-67b22122b
                 </a>
               </Media>
-            </div>
+            </MediaContents>
           </Col1>
           <Col2>
             <Form onSubmit={onSubmit}>

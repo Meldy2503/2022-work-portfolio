@@ -19,7 +19,7 @@ export const PopMessage = styled.div`
   width: 28rem;
   height: 28rem;
   border-radius: 2rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255);
   border: 0.1rem solid #47425d;
   box-shadow: 0.1rem 0.1rem 0.5rem 0.4rem #000;
   text-align: center;
@@ -46,8 +46,8 @@ export const PopMessage = styled.div`
       width: 48%;
       position: absolute;
       top: -5rem;
-      filter: drop-shadow(3px 4px 4px black) brightness(80%) contrast(180%)
-        saturate(0);
+      filter: drop-shadow(0.1rem 0.1rem 0.25rem #444) brightness(90%)
+        contrast(85%) saturate(1);
 
       @media (max-width: ${({ theme }) => theme.media.mobile}) {
         width: 48%;
@@ -58,7 +58,7 @@ export const PopMessage = styled.div`
       margin-top: 5rem;
       font-weight: 700;
       line-height: 1.5;
-      color: #00102e;
+      color: #444;
       text-transform: uppercase;
     }
   }

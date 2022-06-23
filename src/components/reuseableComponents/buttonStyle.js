@@ -2,33 +2,42 @@ import styled from "styled-components";
 
 export const Button = styled.a`
   padding: 1.7rem 4rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 700;
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
-  background-color: ${({ bgc }) => bgc || "#47425d"};
+  border: none;
   cursor: pointer;
-  margin-top: ${({ mgt }) => mgt || "4rem"};
-  width: ${({ width }) => width || "fit-content"};
+  margin-top: 4rem;
   font-family: "Montserrat", sans-serif;
-  transition: all 0.8s;
-  border: 0.2rem solid #eee;
+  transition: all 0.7s;
+  width: inherit;
+  color: ${({ co }) => co || "#fff"};
+  background-color: ${({ bgc }) => bgc || "#fff"};
+  margin-right: ${({ mgr }) => mgr || "0"};
+
+  @media (max-width: 450px) {
+    margin-right: ${({ mgsr }) => mgsr || "0"};
+    margin-top: ${({ mgst }) => mgst || "2rem"};
+  }
 
   &:hover {
-    box-shadow: ${({ bxs }) => bxs || "-28rem 0 0 0 #e64e4e inset"};
-    border: ${({ bor }) => bor || "0.2rem solid #e64e4e"};
+    box-shadow: ${({ bxs }) =>
+      bxs || "0 8rem 0 0 #fff inset, 0 -8rem 0 0 #fff inset"};
+    color: ${({ coh }) => coh || "#444"};
   }
 `;
 
 export const ButtonB = styled.button`
   padding: 1.5rem 4rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 700;
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  background-color: #e64e4e;
+  background-color: #48758d;
   cursor: pointer;
   margin-top: 4rem;
   border: none;
@@ -37,6 +46,7 @@ export const ButtonB = styled.button`
   transition: ease-out 0.8s;
 
   &:hover {
-    box-shadow: 0 8rem 0 0 #47425d inset, 0 -8rem 0 0 #47425d inset;
+    box-shadow: 0 8rem 0 0 rgba(30, 67, 86, 0.8) inset,
+      0 -8rem 0 0 rgba(30, 67, 86, 0.8) inset;
   }
 `;
