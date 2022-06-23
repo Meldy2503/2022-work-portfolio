@@ -50,28 +50,19 @@ export const MediaContents = styled.div`
 `;
 export const Media = styled.div`
   display: flex;
-  margin-bottom: 2rem;
-  color: #fff;
+  margin-bottom: 2.5rem;
+  color: #000;
+  width: inherit;
+  border-bottom: 0.5rem solid #68a4c4;
 
   p,
   a {
-    border-radius: 0.4rem;
     font-size: 1.8rem;
-    border-bottom: 0.6rem solid #68a4c4;
     font-weight: 400;
     line-height: 1.4;
     color: #fff;
     letter-spacing: 0.1rem;
-    width: 85%;
-    padding-bottom: 0.6rem;
-
-    @media (max-width: ${({ theme }) => theme.media.tablet}) {
-      width: 60%;
-    }
-
-    @media (max-width: ${({ theme }) => theme.media.mobile}) {
-      width: 90%;
-    }
+    padding-bottom: 0.7rem;
   }
 
   .icons {

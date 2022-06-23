@@ -1,19 +1,19 @@
-import nailBoutique from "../../assests/nail-boutique.JPG";
-import windec from "../../assests/windec.PNG";
+// import nailBoutique from "../../assests/nail-B.png";
+// import windec from "../../assests/windec.PNG";
 
 export const ProjectData = [
   {
     id: 1,
-    img: nailBoutique,
+    img: require("../../assests/nail-B.png"),
     name: "The Nail Boutique",
     comment:
-      "Nail Boutique is a beauty brand which offers nail, hair and skin care services to the public. It was designed using HTML, JavaScript, React/Context API, Styled-Components and Material-UI. The website was built to solve low profit and booking challenges which increased productivity and helped implement effective market strategies.",
+      "Nail Boutique is a beauty brand which offers nail, hair and skin care services to the public. It was designed using HTML, JavaScript, React/Context API, Styled-Components and Material-UI to solve booking challenges which increased productivity and helped implement effective market strategies.",
     web: "https://nail-boutique.netlify.app/",
     git: "https://github.com/Meldy2503/nail-boutique",
   },
   {
     id: 2,
-    img: windec,
+    img: require("../../assests/windec.png"),
     name: "Windec",
     comment:
       "Windec is an advertising company which provides digital services to small and large scale businesses. The website was built with HTML, React, Styled-Components, Material-UI and JavaScript to effectively improve online services",
@@ -31,10 +31,10 @@ export const ProjectData = [
   },
   {
     id: 4,
-    img: "img",
+    img: require("../../assests/quiz-B.png"),
     name: "A Quiz App",
     comment:
-      "An in-house web application designed using HTML, CSS, JavaScript and React/Rest API for intensive learning purposes",
+      "An in-house web application designed using HTML, CSS, JavaScript and React/Rest API for learning purposes",
     web: "https://meldy2503.github.io/quiz-app/",
     git: "https://github.com/Meldy2503/quiz-app",
   },

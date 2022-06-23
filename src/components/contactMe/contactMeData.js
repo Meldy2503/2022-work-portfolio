@@ -15,20 +15,4 @@ export const FormInputs = [
     placeholder: "Email",
     value: "email",
   },
-  {
-    id: 3,
-    type: "tel",
-    name: "phone",
-    idty: "phone",
-    placeholder: "Phone number",
-    value: "phone",
-  },
-  {
-    id: 4,
-    type: "text",
-    name: "subject",
-    idty: "subject",
-    placeholder: "Subject",
-    value: "subject",
-  },
 ];

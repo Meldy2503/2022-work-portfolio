@@ -30,23 +30,23 @@ export const Card = styled.div`
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 43rem;
-  width: 31.5%;
-  margin: 0 auto 2.5rem auto;
+  height: 35rem;
+  width: 32.5%;
+  margin: 0 auto 1.3rem auto;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    width: 47%;
+    width: 49%;
   }
 
   @media (max-width: 650px) {
     width: 70%;
   }
-  @media (max-width: 420px) {
+  @media (max-width: 450px) {
     width: 95%;
   }
 
   .card_side {
-    height: 43rem;
+    height: 35rem;
     width: 100%;
     transition: all 0.8s ease;
     position: absolute;
@@ -55,7 +55,6 @@ export const Card = styled.div`
     backface-visibility: hidden;
     border-radius: 0.5rem;
     overflow: hidden;
-    /* box-shadow: 0rem 0.1rem 0.3rem #999; */
 
     &--front {
       background-color: #fff;
@@ -76,29 +75,21 @@ export const Card = styled.div`
   }
 `;
 
-// export const Img = styled.img`
-//   background: linear-gradient(
-//       359.8deg,
-//       #47425d 0.12%,
-//       rgba(52, 168, 83, 0) 99.77%
-//     ),
-//     url(${project.img});
-// `;
-
 export const FrontText = styled.div`
   margin: 0 auto;
   text-align: center;
 
   figure {
     display: block;
-    height: 43rem;
+    height: 35rem;
     position: relative;
   }
 
   img {
-    /* filter: brightness(70%) contrast(100%); */
+    filter: brightness(120%) contrast(105%);
     width: 100%;
-    height: 100%;
+    height: 75%;
+    box-shadow: 0 1.2rem 1.9rem #000;
   }
 
   figcaption {
@@ -107,27 +98,16 @@ export const FrontText = styled.div`
     left: 0;
     background: linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.3) 100.12%,
+      rgba(0, 0, 0, 0.3) 83.12%,
       rgba(52, 168, 83, 0) 0.77%
     );
-    /* background: linear-gradient(
-      to top,
-      rgba(30, 67, 86, 0.7) 65.12%,
-      rgba(52, 168, 83, 0) 95.77%
-    ); */
-    /* background-image: linear-gradient(
-      348.37deg,
-      #5239fa 17.97%,
-      rgba(255, 255, 255, 0) 79.2%
-    ); */
-
-    height: 100%;
+    height: 30%;
     width: 100%;
   }
 
   h3 {
     font-size: 2.5rem;
-    margin: 3rem 0 0 0;
+    margin: 4rem 0 0 0;
     font-weight: 700;
     color: #fff;
     z-index: 100;
@@ -136,6 +116,11 @@ export const FrontText = styled.div`
 export const BackText = styled.div`
   color: #444;
   padding: 3rem 1.5rem;
+  font-size: 1.5rem;
+
+  @media (max-width: 300px) {
+    padding: 1.5rem 1.5rem;
+  }
 
   p {
     line-height: 1.5;
@@ -158,6 +143,11 @@ export const ButtonW = styled.a`
   background-color: #f3f3f3;
   color: rgba(30, 67, 86);
   transition: all 0.7s;
+
+  @media (max-width: 300px) {
+    margin-top: 2rem;
+    padding: 1.5rem 2.5rem;
+  }
 
   &:hover {
     box-shadow: 13rem 0 0 0 rgba(30, 67, 86) inset;
