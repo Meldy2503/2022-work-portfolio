@@ -10,6 +10,9 @@ import styledComponent from "../../assests/styled-components.svg";
 import tailwindCss from "../../assests/tailwindcss.svg";
 import materialUi from "../../assests/material-ui.svg";
 import netlify from "../../assests/netlify.svg";
+import codepen from "../../assests/codepen.svg";
+import aws from "../../assests/aws.svg";
+import figma from "../../assests/figma.svg";
 
 export const FrameworkData = [
   { id: 1, src: reactIcon, alt: "reactIcon", caption: "React" },
@@ -39,6 +42,9 @@ export const ToolData = [
   { id: 2, src: github, alt: "githubIcon", caption: "Github" },
   { id: 3, src: gitlab, alt: "gitlabIcon", caption: "Gitlab" },
   { id: 4, src: netlify, alt: "netlifyIcon", caption: "Netlify" },
+  { id: 5, src: aws, alt: "awsIcon", caption: "AWS" },
+  { id: 6, src: codepen, alt: "codepenIcon", caption: "Codepen" },
+  { id: 7, src: figma, alt: "figmaIcon", caption: "Figma" },
 ];
 
 export const LanguageData = [

@@ -28,17 +28,6 @@ const TechStack = () => {
               ))}
             </IconsContainer>
           </Languages>
-          <Tools>
-            <h3>Tools</h3>
-            <IconsContainer>
-              {ToolData.map((tools) => (
-                <figure key={tools.id}>
-                  <img src={tools.src} alt={tools.alt} />
-                  <figcaption>{tools.caption}</figcaption>
-                </figure>
-              ))}
-            </IconsContainer>
-          </Tools>
           <Frameworks>
             <h3>Libraries and Frameworks</h3>
             <IconsContainer>
@@ -50,6 +39,17 @@ const TechStack = () => {
               ))}
             </IconsContainer>
           </Frameworks>
+          <Tools>
+            <h3>Tools</h3>
+            <IconsContainer>
+              {ToolData.map((tools) => (
+                <figure key={tools.id}>
+                  <img src={tools.src} alt={tools.alt} />
+                  <figcaption>{tools.caption}</figcaption>
+                </figure>
+              ))}
+            </IconsContainer>
+          </Tools>
         </Row>
       </Contents>
     </Container>

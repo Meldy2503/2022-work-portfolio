@@ -60,7 +60,7 @@ export const Col = styled.div`
       color: rgba(255, 255, 255, 0.8);
 
       span {
-        color: #fff;
+        color: rgba(253, 192, 80, 0.99);
       }
     }
 

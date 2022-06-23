@@ -32,10 +32,7 @@ export const Row = styled.div`
   margin-top: 4rem;
   align-items: center;
   flex-wrap: wrap;
-
-  @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    flex-direction: column;
-  }
+  flex-direction: column;
 `;
 
 export const Tools = styled.div`
@@ -43,12 +40,7 @@ export const Tools = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
   margin-bottom: 5rem;
-
-  @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    width: 100%;
-  }
 
   h3 {
     color: #eee;
@@ -74,9 +66,7 @@ export const Tools = styled.div`
     }
   }
 `;
-export const Languages = styled(Tools)`
-  margin-bottom: 5rem;
-`;
+export const Languages = styled(Tools)``;
 export const Frameworks = styled(Tools)``;
 
 export const IconsContainer = styled.div`
@@ -110,7 +100,7 @@ export const IconsContainer = styled.div`
   }
 
   figcaption {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     color: #fff;
   }
 `;
