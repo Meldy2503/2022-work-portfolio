@@ -57,7 +57,7 @@ export const ImageContainer = styled.section`
     width: 34rem;
     height: 34rem;
     margin: 0 auto;
-    background-color: #48758d;
+    background-color: #5688a3;
 
     @media (max-width: 500px) {
       height: 28rem;

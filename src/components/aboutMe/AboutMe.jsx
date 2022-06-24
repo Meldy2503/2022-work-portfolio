@@ -60,7 +60,7 @@ const AboutMe = () => {
             <Cv>
               <Button
                 href={myCv}
-                bgc="#48758d"
+                bgc="#5688a3"
                 bor="none"
                 bxs="inset 30rem 0 0 0 rgba(30,67,87,0.8)"
                 coh="#fff"

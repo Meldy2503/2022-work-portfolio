@@ -21,7 +21,7 @@ export const Contents = styled.div`
   max-width: 120rem;
   margin: 10rem auto;
 
-  @media (max-width: ${({ theme }) => theme.media.tablet}) {
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
     width: 95%;
     margin: 6rem auto;
   }
@@ -29,31 +29,71 @@ export const Contents = styled.div`
 export const Row = styled.div`
   display: flex;
   justify-content: space-between;
+  margin: 3rem 0 0 10rem;
+  width: 90%;
+  background-color: rgba(255, 255, 255);
+  position: relative;
+  padding: 2rem;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
+    margin: 3rem 0 0 8rem;
+  }
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
     flex-direction: column;
+    margin: 13rem auto 0 auto;
+    padding: 0 0 2rem 0;
+    width: 95%;
   }
 `;
 export const Col1 = styled.div`
-  width: 40%;
+  width: 41%;
   display: flex;
   flex-direction: column;
+  margin-left: -11rem;
+  justify-content: center;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    margin: 2rem 0 5rem 0;
-    width: 100%;
+    width: 43%;
+    margin-left: -9rem;
+  }
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    margin: -9rem auto 5rem auto;
+    width: 90%;
+  }
+  @media (max-width: 400px) {
+    width: 95%;
   }
 `;
 
 export const MediaContents = styled.div`
-  margin-top: 6rem;
+  height: 93%;
+  background-color: #5688a3;
+  padding: 2.5rem 0 0 0;
+  box-shadow: 0.3rem 0.3rem 0.4rem #333;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
 `;
 export const Media = styled.div`
-  display: flex;
-  margin-bottom: 2.5rem;
-  color: #000;
-  width: inherit;
-  border-bottom: 0.5rem solid #68a4c4;
+  margin-bottom: 8rem;
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    margin-bottom: 3rem;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    margin-bottom: 2rem;
+  }
 
   p,
   a {
@@ -63,20 +103,39 @@ export const Media = styled.div`
     color: #fff;
     letter-spacing: 0.1rem;
     padding-bottom: 0.7rem;
+    text-align: center;
   }
 
   .icons {
-    font-size: 2.3rem;
-    margin-right: 1rem;
+    font-size: 3rem;
     color: #fff;
   }
 `;
 
-export const Col2 = styled.div`
-  width: 56%;
+export const Connect = styled(Media)`
+  text-align: center;
 
-  @media (max-width: ${({ theme }) => theme.media.tablet}) {
+  .icons {
+    margin-right: 1.6rem;
+  }
+
+  .last {
+    margin-right: 0;
+  }
+`;
+
+export const Col2 = styled.div`
+  width: 67%;
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
     width: 100%;
+  }
+
+  h3 {
+    margin-top: 4rem;
+    padding: 0 2rem;
+    font-size: 2.5rem;
+    color: #5688a3;
   }
 `;
 export const Form = styled.form`
@@ -86,8 +145,7 @@ export const Form = styled.form`
   justify-content: center;
   align-items: center;
   user-select: none;
-  background-color: rgba(255, 255, 255);
-  padding: 5rem 2rem;
+  padding: 2rem;
 
   div {
     width: 100%;
@@ -99,21 +157,19 @@ export const Form = styled.form`
     margin-bottom: 2rem;
     padding: 1.5rem;
     font-size: 1.6rem;
-    background-color: rgba(255, 255, 255);
-    border: 0.2rem solid #e7e4e4;
+    background-color: #f3f3f3;
+    border: none;
     color: #00102e;
     outline: none;
     user-select: none;
-    box-shadow: 0.3rem 0.5rem 1rem #b8b4b4;
-    border-radius: 1.5rem;
 
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus,
     &:-webkit-autofill:active {
-      box-shadow: 0 0 0 30px rgba(255, 255, 255) inset !important;
-      -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255) inset !important;
-      -webkit-text-fill-color: #00102e !important;
+      box-shadow: 0 0 0 30px #f3f3f3 inset !important;
+      -webkit-box-shadow: 0 0 0 30px #f3f3f3 inset !important;
+      -webkit-text-fill-color: #444 !important;
     }
 
     &::placeholder {
@@ -121,7 +177,7 @@ export const Form = styled.form`
     }
 
     &:focus {
-      border-bottom: 0.2rem solid rgba(30, 67, 86, 0.8);
+      box-shadow: 0.1rem 0.3rem 0.7rem #b8b4b4;
     }
   }
 `;

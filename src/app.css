@@ -12,6 +12,7 @@ p {
   color: #f3f8fa;
   background-color: #446679cc;
   background-color: #48758d;
+  background-color: #5688a3;
 
   &::before {
     content: "";

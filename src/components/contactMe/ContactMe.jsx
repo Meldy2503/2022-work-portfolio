@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { SubHeading } from "../reuseableComponents/headingStyle";
 import { ButtonB } from "../reuseableComponents/buttonStyle";
 import { AiOutlineMail, AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
-import PopUp from "../popUp/PopUp";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaFacebook, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 import { FormInputs } from "./contactMeData";
+import PopUp from "../popUp/PopUp";
 import { send } from "emailjs-com";
 import {
   Container,
@@ -15,6 +15,7 @@ import {
   Form,
   MediaContents,
   Media,
+  Connect,
 } from "./contactMeStyle";
 
 const ContactMe = () => {
@@ -22,8 +23,6 @@ const ContactMe = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
-    subject: "",
     message: "",
   });
 
@@ -31,10 +30,6 @@ const ContactMe = () => {
     formData.name === ""
       ? setPopup(false)
       : formData.email === ""
-      ? setPopup(false)
-      : formData.phone === ""
-      ? setPopup(false)
-      : formData.subject === ""
       ? setPopup(false)
       : formData.message === ""
       ? setPopup(false)
@@ -69,55 +64,78 @@ const ContactMe = () => {
   return (
     <Container id="contact">
       <Contents>
+        <SubHeading width="25%" color="#fff">
+          Get in Touch With Me
+        </SubHeading>
         <Row>
           <Col1>
-            <SubHeading width="25%" color="#fff">
-              Get in Touch With Me
-            </SubHeading>
             <MediaContents>
+              <h3>Contact Info</h3>
               <Media>
-                <FaPhoneAlt className="icons" />
-                <p>+2348037588098</p>
+                <div>
+                  <span className="icons">
+                    <FaPhoneAlt />
+                  </span>
+                  <p>+2348037588098</p>
+                </div>
+                <div>
+                  <span className="icons">
+                    <AiOutlineMail />
+                  </span>
+                  <a
+                    href="mailto:emelder.charles25@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    emelder.charles25
+                    <br />
+                    @gmail.com
+                  </a>
+                </div>
               </Media>
-              <Media>
-                <span className="icons">
-                  <AiOutlineMail />
-                </span>
-                <a
-                  href="mailto:emelder.charles25@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  emelder.charles25gmail.com
-                </a>
-              </Media>
-              <Media>
-                <span className="icons">
-                  <AiOutlineGithub />
-                </span>
+              <Connect>
                 <a
                   href="https://github.com/meldy2503/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  github.com/meldy2503/
+                  <span className="icons">
+                    <AiOutlineGithub />
+                  </span>
                 </a>
-              </Media>
-              <Media>
-                <span className="icons">
-                  <AiFillLinkedin />
-                </span>
+
                 <a
                   href="https://www.linkedin.com/in/emelder-okafor-67b22122b"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  linkedin.com/in/emelder-okafor-67b22122b
+                  <span className="icons">
+                    <AiFillLinkedin />
+                  </span>
                 </a>
-              </Media>
+                <a
+                  href="https://www.facebook.com/emelder-charles"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="icons">
+                    <FaFacebook />
+                  </span>
+                </a>
+                <a
+                  href="https://www.twitter.com/EmelderOkafor"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="icons last">
+                    <FaTwitter />
+                  </span>
+                </a>
+              </Connect>
             </MediaContents>
           </Col1>
           <Col2>
+            <h3>Send a Message</h3>
             <Form onSubmit={onSubmit}>
               {FormInputs.map((inputs) => (
                 <div key={inputs.id}>
@@ -139,7 +157,7 @@ const ContactMe = () => {
                 cols="30"
                 value={formData.value}
                 onChange={handleFormData}
-                rows="4"
+                rows="10"
                 placeholder="Message"
                 required
               ></textarea>

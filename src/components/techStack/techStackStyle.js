@@ -46,7 +46,7 @@ export const Tools = styled.div`
     color: #eee;
     font-size: 2.5rem;
     font-weight: 500;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.9rem;
     position: relative;
     margin-bottom: 2rem;
 
@@ -57,12 +57,12 @@ export const Tools = styled.div`
     &::before {
       content: "";
       height: 0.3rem;
-      width: 50%;
+      width: 100%;
       background-color: #eee;
       position: absolute;
       bottom: 0;
-      right: 0;
       border-radius: 0.5rem;
+      transform: scaleX(0.4);
     }
   }
 `;

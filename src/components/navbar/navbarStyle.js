@@ -99,7 +99,7 @@ export const Link = styled.a`
     top: -0.5rem;
     right: 0;
     height: 0.29rem;
-    background-color: #68a4c4;
+    background-color: #5688a3;
     width: 70%;
     border-radius: 3rem;
     transform-origin: right;

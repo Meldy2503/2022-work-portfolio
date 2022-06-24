@@ -30,7 +30,7 @@ const LandingPage = () => {
               </Button>
               <Button
                 href="#projects"
-                bxs="0 8rem 0 0 #68a4c4 inset, 0 -8rem 0 0 #68a4c4 inset"
+                bxs="0 8rem 0 0 #5688a3 inset, 0 -8rem 0 0 #5688a3 inset"
                 co="#444"
                 coh="#fff"
               >

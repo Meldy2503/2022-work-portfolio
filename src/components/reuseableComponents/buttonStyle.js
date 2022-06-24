@@ -37,9 +37,9 @@ export const ButtonB = styled.button`
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  background-color: #48758d;
+  background-color: #5688a3;
   cursor: pointer;
-  margin-top: 4rem;
+  margin-top: 2rem;
   border: none;
   font-family: "Montserrat", sans-serif;
   width: 100%;
