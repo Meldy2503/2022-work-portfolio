@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.a`
-  padding: 1.7rem 4rem;
+  padding: 1.8rem 4rem;
   font-size: 1.5rem;
   font-weight: 700;
   display: inline-block;
@@ -12,7 +12,7 @@ export const Button = styled.a`
   margin-top: 4rem;
   font-family: "Montserrat", sans-serif;
   transition: all 0.7s;
-  width: inherit;
+  width: ${({ width }) => width || "fit-content"};
   color: ${({ co }) => co || "#fff"};
   background-color: ${({ bgc }) => bgc || "#fff"};
   margin-right: ${({ mgr }) => mgr || "0"};

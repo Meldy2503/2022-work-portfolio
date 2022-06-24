@@ -1,7 +1,15 @@
 import React from "react";
 import { Button } from "../reuseableComponents/buttonStyle";
 import { FaHandPointDown } from "react-icons/fa";
-import { Container, Contents, Col, Btn, ScrollDown } from "./landingPageStyle";
+import TypewriterComponent from "typewriter-effect";
+import {
+  Container,
+  Contents,
+  Col,
+  Btn,
+  ScrollDown,
+  TypedText,
+} from "./landingPageStyle";
 
 const LandingPage = () => {
   return (
@@ -12,12 +20,34 @@ const LandingPage = () => {
             <h5>
               &#128075; HELLO THERE, MY NAME IS&nbsp;<span>EMELDER</span>
             </h5>
-
-            <h1>A Frontend Developer</h1>
+            <h1>Frontend Developer</h1>
             <p>
-              I'm a creative developer who designs scalable, user friendly,
-              interactive and responsive frontend applications.
+              A creative developer devoted to crafting beautiful, user friendly
+              and interactive frontend applications focused on simplicity and
+              purpose.
             </p>
+            <TypedText>
+              <p>
+                I'm proficient in&nbsp;<span>{"<"}&nbsp;</span>
+                <TypewriterComponent
+                  options={{
+                    cursor: " />",
+                    strings: [
+                      "HTML",
+                      "CSS",
+                      "jS",
+                      "React",
+                      "SC",
+                      "Tailwind",
+                      "MUI",
+                      "SASS",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                ></TypewriterComponent>
+              </p>
+            </TypedText>
             <Btn>
               <Button
                 href="#contact"

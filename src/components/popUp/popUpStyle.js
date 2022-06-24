@@ -17,7 +17,7 @@ export const Container = styled.div`
 
 export const PopMessage = styled.div`
   width: 28rem;
-  height: 28rem;
+  height: 29rem;
   border-radius: 2rem;
   background-color: rgba(255, 255, 255);
   border: 0.1rem solid #47425d;
@@ -28,11 +28,11 @@ export const PopMessage = styled.div`
   justify-content: center;
   flex-direction: column;
   position: relative;
-  padding: 1rem;
+  padding: 1rem 1rem 3rem 1rem;
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
-    width: 26rem;
-    height: 26rem;
+    width: 27rem;
+    height: 28rem;
   }
 
   & > div {
@@ -46,16 +46,12 @@ export const PopMessage = styled.div`
       width: 48%;
       position: absolute;
       top: -5rem;
-      filter: drop-shadow(0.1rem 0.1rem 0.25rem #444) brightness(90%)
-        contrast(85%) saturate(1);
-
-      @media (max-width: ${({ theme }) => theme.media.mobile}) {
-        width: 48%;
-      }
+      filter: drop-shadow(0.1rem 0.1rem 0.25rem #444) brightness(115%)
+        contrast(90%) saturate(1);
     }
 
     p {
-      margin-top: 5rem;
+      margin-top: 9rem;
       font-weight: 700;
       line-height: 1.5;
       color: #444;

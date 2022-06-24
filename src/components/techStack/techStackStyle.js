@@ -29,7 +29,7 @@ export const Contents = styled.div`
 export const Row = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;

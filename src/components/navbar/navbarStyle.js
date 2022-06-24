@@ -13,7 +13,7 @@ export const Header = styled.header`
 
   ${(props) => props.navbar} {
     background-color: transparent;
-    /* border-bottom: 0.1rem solid rgba(241, 241, 241, 0.2); */
+    border-bottom: 0.2rem solid rgba(241, 241, 241, 0.2);
   }
 `;
 
@@ -104,7 +104,7 @@ export const Link = styled.a`
     border-radius: 3rem;
     transform-origin: right;
     transform: scale(0, 1);
-    transition: transform ease-in 250ms;
+    transition: transform ease-in 290ms;
   }
   &:hover::before {
     transform: scale(1, 1);
@@ -120,7 +120,7 @@ export const Link = styled.a`
     width: 70%;
     border-radius: 3rem;
     transform: scale(0, 1);
-    transition: transform ease-out 250ms;
+    transition: transform ease-out 290ms;
     transform-origin: left;
   }
   &:hover::after {

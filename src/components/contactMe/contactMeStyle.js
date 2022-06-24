@@ -29,14 +29,14 @@ export const Contents = styled.div`
 export const Row = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 3rem 0 0 10rem;
+  margin: 6rem 0 0 10rem;
   width: 90%;
   background-color: rgba(255, 255, 255);
   position: relative;
   padding: 2rem;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    margin: 3rem 0 0 8rem;
+    margin: 6rem 0 0 8rem;
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     flex-direction: column;

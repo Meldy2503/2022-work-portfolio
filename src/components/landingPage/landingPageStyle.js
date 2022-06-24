@@ -12,8 +12,8 @@ export const Contents = styled.div`
   width: 100%;
   background: linear-gradient(
       to right,
-      rgba(30, 67, 86, 0.85),
-      rgba(30, 67, 86, 0.75)
+      rgba(30, 67, 86, 0.9),
+      rgba(30, 67, 86, 0.8)
     ),
     url(${bg1});
   background-position: top;
@@ -37,51 +37,58 @@ export const Col = styled.div`
 
   div {
     color: #fff;
+  }
 
-    h1 {
-      font-size: 6.5rem;
-      line-height: 1.07;
-      margin: 2rem 0 0 0;
-      font-family: "Noto Sans", sans-serif;
-      font-weight: 700;
-      letter-spacing: 0.2rem;
+  span {
+    color: rgba(253, 192, 80, 0.99);
+    font-weight: bold;
+  }
 
-      @media (max-width: ${({ theme }) => theme.media.tablet}) {
-        font-size: 5rem;
-      }
-      @media (max-width: 500px) {
-        font-size: 4rem;
-      }
+  h5 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  h1 {
+    font-size: 6.5rem;
+    line-height: 1.07;
+    margin: 2rem 0 0 0;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+
+    @media (max-width: ${({ theme }) => theme.media.tablet}) {
+      font-size: 5rem;
     }
-
-    h5 {
-      font-weight: 500;
-      font-size: 1.8rem;
-      color: rgba(255, 255, 255, 0.8);
-
-      span {
-        color: rgba(253, 192, 80, 0.99);
-      }
+    @media (max-width: 500px) {
+      font-size: 4rem;
     }
+  }
 
-    p {
-      font-size: 1.8rem;
-      font-family: "Raleway", sans-serif;
-      width: 60%;
-      color: rgba(255, 255, 255);
-      margin-top: 2rem;
-      line-height: 1.45;
-      letter-spacing: 0.1rem;
-      font-weight: 500;
+  p {
+    font-size: 1.8rem;
+    font-family: "Raleway", sans-serif;
+    width: 65%;
+    color: rgba(255, 255, 255);
+    margin-top: 2rem;
+    line-height: 1.45;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
 
-      @media (max-width: ${({ theme }) => theme.media.mobile}) {
-        width: 70%;
-        font-size: 1.6rem;
-      }
-      @media (max-width: 500px) {
-        width: 90%;
-      }
+    @media (max-width: ${({ theme }) => theme.media.mobile}) {
+      width: 70%;
+      font-size: 1.6rem;
     }
+    @media (max-width: 500px) {
+      width: 90%;
+    }
+  }
+`;
+
+export const TypedText = styled.span`
+  p {
+    display: flex;
   }
 `;
 
