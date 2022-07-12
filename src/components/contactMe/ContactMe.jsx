@@ -64,11 +64,11 @@ const ContactMe = () => {
   return (
     <Container id="contact">
       <Contents>
-        <SubHeading width="25%" color="#fff">
+        <SubHeading width="25%" color="#fff" data-aos="fade-up">
           Get in Touch With Me
         </SubHeading>
         <Row>
-          <Col1>
+          <Col1 data-aos="fade-right">
             <MediaContents>
               <h3>Contact Info</h3>
               <Media>
@@ -134,7 +134,7 @@ const ContactMe = () => {
               </Connect>
             </MediaContents>
           </Col1>
-          <Col2>
+          <Col2 data-aos="fade-left">
             <h3>Send a Message</h3>
             <Form onSubmit={onSubmit}>
               {FormInputs.map((inputs) => (

@@ -18,11 +18,11 @@ const Projects = () => {
   return (
     <Container id="projects">
       <Contents>
-        <SubHeading>Projects</SubHeading>
+        <SubHeading data-aos="fade-up">Projects</SubHeading>
         <Row>
           <Column>
             {ProjectData.map((project) => (
-              <Card key={project.id}>
+              <Card key={project.id} data-aos="flip-right">
                 <div className="card_side card_side--front">
                   <FrontText>
                     <figure>

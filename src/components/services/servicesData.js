@@ -23,7 +23,7 @@ export const ServicesData = [
   {
     id: 3,
     icon: <MdOutlinePhonelink />,
-    heading: "Fully Responsive",
+    heading: "Responsive Layouts",
     text: "I provide highly professional and responsive web designs using up-to-date frameworks",
   },
   {

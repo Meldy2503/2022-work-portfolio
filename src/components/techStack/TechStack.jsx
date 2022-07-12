@@ -15,13 +15,15 @@ const TechStack = () => {
   return (
     <Container id="skills">
       <Contents>
-        <SubHeading color="#fff">Tech Stack</SubHeading>
+        <SubHeading color="#fff" data-aos="fade-up">
+          Tech Stack
+        </SubHeading>
         <Row>
           <Languages>
-            <h3>Languages</h3>
+            <h3 data-aos="zoom-in">Languages</h3>
             <IconsContainer>
               {LanguageData.map((lang) => (
-                <figure key={lang.id}>
+                <figure key={lang.id} data-aos="zoom-in">
                   <img src={lang.src} alt={lang.alt} />
                   <figcaption>{lang.caption}</figcaption>
                 </figure>
@@ -29,10 +31,10 @@ const TechStack = () => {
             </IconsContainer>
           </Languages>
           <Frameworks>
-            <h3>Libraries and Frameworks</h3>
+            <h3 data-aos="zoom-in">Libraries and Frameworks</h3>
             <IconsContainer>
               {FrameworkData.map((frameworks) => (
-                <figure key={frameworks.id}>
+                <figure key={frameworks.id} data-aos="zoom-in">
                   <img src={frameworks.src} alt={frameworks.alt} />
                   <figcaption>{frameworks.caption}</figcaption>
                 </figure>
@@ -40,10 +42,10 @@ const TechStack = () => {
             </IconsContainer>
           </Frameworks>
           <Tools>
-            <h3>Tools</h3>
+            <h3 data-aos="zoom-in">Tools</h3>
             <IconsContainer>
               {ToolData.map((tools) => (
-                <figure key={tools.id}>
+                <figure key={tools.id} data-aos="zoom-in">
                   <img src={tools.src} alt={tools.alt} />
                   <figcaption>{tools.caption}</figcaption>
                 </figure>

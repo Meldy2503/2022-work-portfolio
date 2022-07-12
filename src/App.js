@@ -1,7 +1,9 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Layout from "./components/Layout";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const theme = {
@@ -12,6 +14,12 @@ function App() {
       desktop: "1440px",
     },
   };
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+    });
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>

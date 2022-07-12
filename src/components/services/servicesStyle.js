@@ -30,6 +30,7 @@ export const Card = styled.div`
     text-align: center;
     font-size: 2rem;
     margin: 0 auto 2rem auto;
+    transition: all 0.5s;
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
       width: 45%;
@@ -42,7 +43,7 @@ export const Card = styled.div`
       font-size: 5rem;
       background-color: #f3f3f3;
       border-radius: 50%;
-      padding: 1rem 1rem 0 1rem;
+      padding: 1rem 1.5rem 0 1.5rem;
       color: #48758d;
     }
 

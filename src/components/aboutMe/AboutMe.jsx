@@ -22,15 +22,15 @@ const AboutMe = () => {
   return (
     <Container id="about-me">
       <Contents>
-        <SubHeading>About Me</SubHeading>
-        <Row>
+        <SubHeading data-aos="fade-up">About Me</SubHeading>
+        <Row data-aos="fade-up">
           <ImageContainer>
-            <div>
+            <div data-aos="flip-right">
               <img src={avatar} alt="avatar" />
             </div>
           </ImageContainer>
-          <TextContainer>
-            <p>
+          <TextContainer data-aos="flip-left">
+            <p data-aos="fade-up">
               I'm a success driven and determined frontend developer who loves
               creating maintainable, scalable and responsive web designs using
               HTML, CSS, Js, React and other technologies for developing user
@@ -38,14 +38,14 @@ const AboutMe = () => {
               have excellent communication skills in English.
             </p>
             <Interests>
-              <Col1>
+              <Col1 data-aos="fade-up">
                 <h3>EDUCATION</h3>
                 <p>
                   I'm a graduate of Electrical Engineering (B.Eng) from Nnamdi
                   Azikiwe University, Awka, Anambra State, Nigeria.
                 </p>
               </Col1>
-              <Col2>
+              <Col2 data-aos="fade-up">
                 <h3>INTERESTS</h3>
                 <div>
                   {AboutData.map((list) => (
@@ -57,7 +57,7 @@ const AboutMe = () => {
                 </div>
               </Col2>
             </Interests>
-            <Cv>
+            <Cv data-aos="fade-up">
               <Button
                 href={myCv}
                 bgc="#5688a3"

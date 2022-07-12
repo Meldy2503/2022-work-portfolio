@@ -5,7 +5,7 @@ import thumbsUp from "../../assests/thumbs-up.png";
 
 const PopUp = () => {
   return (
-    <Container>
+    <Container data-aos="zoom-in">
       <PopMessage>
         <div>
           <img src={thumbsUp} alt="emoji" />

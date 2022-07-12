@@ -16,7 +16,7 @@ const LandingPage = () => {
     <Container id="landing-page">
       <Contents>
         <Col>
-          <div>
+          <div data-aos="zoom-in">
             <h5>
               &#128075; HELLO THERE, MY NAME IS&nbsp;<span>EMELDER</span>
             </h5>

@@ -7,13 +7,15 @@ const Services = () => {
   return (
     <Container>
       <Contents>
-        <SubHeading>Services</SubHeading>
+        <SubHeading data-aos="fade-up">Services</SubHeading>
         <Card>
           {ServicesData.map((cards) => (
-            <div key={cards.id}>
-              <span>{cards.icon}</span>
-              <h4>{cards.heading}</h4>
-              <p>{cards.text}</p>
+            <div key={cards.id} data-aos="fade-up">
+              <div>
+                <span>{cards.icon}</span>
+                <h4>{cards.heading}</h4>
+                <p>{cards.text}</p>
+              </div>
             </div>
           ))}
         </Card>
