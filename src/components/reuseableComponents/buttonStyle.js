@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.a`
-  padding: 1.8rem 4rem;
+  padding: ${({ pad }) => pad || "1.8rem 4rem"};
   font-size: 1.5rem;
   font-weight: 700;
   display: inline-block;
@@ -9,11 +9,11 @@ export const Button = styled.a`
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-  margin-top: 4rem;
+  margin-top: ${({ mgt }) => mgt || "4rem"};
   font-family: "Montserrat", sans-serif;
   transition: all 0.7s;
   width: ${({ width }) => width || "fit-content"};
-  color: ${({ co }) => co || "#fff"};
+  color: ${({ co }) => co || "#eaeaea"};
   background-color: ${({ bgc }) => bgc || "transparent"};
   margin-right: ${({ mgr }) => mgr || "0"};
   border: ${({ bor }) => bor || "none"};
@@ -25,7 +25,7 @@ export const Button = styled.a`
 
   &:hover {
     box-shadow: ${({ bxs }) =>
-      bxs || "0 8rem 0 0 #fff inset, 0 -8rem 0 0 #fff inset"};
+      bxs || "0 8rem 0 0 #eaeaea inset, 0 -8rem 0 0 #eaeaea inset"};
     color: ${({ coh }) => coh || "#444"};
     border: ${({ borh }) => borh || "none"};
   }

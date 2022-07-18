@@ -52,8 +52,8 @@ const Navbar = () => {
           <MenuIcon onClick={handleMenuIcon}>
             <Hamburger
               rounded
-              color="#fff"
-              size={25}
+              color="#ad974f"
+              size={30}
               toggled={isMenuOpen}
               toggle={setIsMenuOpen}
             />

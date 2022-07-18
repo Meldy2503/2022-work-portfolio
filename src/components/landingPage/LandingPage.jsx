@@ -50,23 +50,20 @@ const LandingPage = () => {
             </TypedText>
             <Btn>
               <Button
-                href="#contact"
+                href="#projects"
+                bxs="0 8rem 0 0 #8e793e inset, 0 -8rem 0 0 #8e793e inset"
+                co="#eaeaea"
+                coh="fff"
+                bor=".2rem solid #eaeaea"
+                borh=".2rem solid #8e793e "
                 mgr="2rem"
                 mgsr="0"
                 mgst="4rem"
-                bgc="#8e793e"
-              >
-                Get in Touch
-              </Button>
-              <Button
-                href="#projects"
-                bxs="0 8rem 0 0 #8e793e inset, 0 -8rem 0 0 #8e793e inset"
-                co="#fff"
-                coh="fff"
-                bor=".2rem solid #fff"
-                borh=".2rem solid #8e793e "
               >
                 View Projects
+              </Button>
+              <Button href="#contact" pad="1.8rem 5rem" bgc="#8e793e">
+                Get in Touch
               </Button>
             </Btn>
           </div>

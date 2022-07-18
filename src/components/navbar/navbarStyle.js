@@ -8,9 +8,8 @@ export const Header = styled.header`
   left: 0;
   z-index: 5000;
   height: 7rem;
-  /* background: rgba(6, 11, 35); */
-  box-shadow: 0.1rem 0.2rem 0.5rem #090909;
 
+  box-shadow: 0.1rem 0.2rem 0.5rem #090909;
   background-color: #fff;
 
   ${(props) => props.navbar} {
@@ -39,13 +38,12 @@ export const NavContainer = styled.nav`
 `;
 export const Logo = styled.div`
   height: 4rem;
-  width: 4.2rem;
+  width: 5rem;
   border: 0.1rem solid #ad974f;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 1rem;
-  box-shadow: 0.5rem 0.5rem 0 #ad974f;
+  box-shadow: 0.6rem 0.6rem 0 #8e793e;
 
   a {
     font-size: 2.5rem;
@@ -58,7 +56,7 @@ export const LinkContainer = styled.ul`
   display: none;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    background-color: #48758d;
+    background-color: #1c1c1c;
     width: 100%;
     position: absolute;
     left: 0;
@@ -82,7 +80,6 @@ export const LinkContainer = styled.ul`
   }
 `;
 export const LinkLists = styled.li`
-  color: black;
   padding-left: 4rem;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
@@ -132,9 +129,9 @@ export const Link = styled.a`
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     padding: 2rem 0rem 1rem 0rem;
-    border-bottom: 0.1rem solid rgba(241, 241, 241, 0.3);
+    border-bottom: 0.1rem solid rgba(241, 241, 241, 0.2);
     text-align: center;
-    color: #fff;
+    color: #ad974f;
 
     &::after {
       height: 0;
@@ -146,14 +143,18 @@ export const Link = styled.a`
     }
 
     &:hover {
-      color: rgba(30, 67, 86);
+      color: #eaeaea;
     }
   }
 `;
 export const MenuIcon = styled.div`
   display: none;
+  /* padding: 0;
+  height: 2rem; */
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     display: block;
+    /* background-color: #ad974f; */
+    /* border: 0.2rem dotted #ad974f; */
   }
 `;

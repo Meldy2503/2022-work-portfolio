@@ -10,20 +10,12 @@ export const Container = styled.section`
 export const Contents = styled.div`
   height: 100%;
   width: 100%;
-
   background: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.96),
       rgba(0, 0, 0, 0.75)
     ),
     url(${bg1});
-  // background: linear-gradient(
-  //     to right,
-  //     rgba(6, 11, 35, 0.96),
-  //     rgba(6, 11, 35, 0.75)
-  //   ),
-  //   url(${bg1});
-
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -55,7 +47,7 @@ export const Col = styled.div`
   h5 {
     font-weight: 500;
     font-size: 1.8rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
   }
 
   h1 {
@@ -78,7 +70,7 @@ export const Col = styled.div`
     font-size: 1.8rem;
     font-family: "Raleway", sans-serif;
     width: 65%;
-    color: rgba(255, 255, 255);
+    color: rgba(255, 255, 255, 0.8);
     margin-top: 2rem;
     line-height: 1.45;
     letter-spacing: 0.1rem;
@@ -137,7 +129,7 @@ export const ScrollDown = styled.div`
   }
 
   span {
-    color: #fff;
+    color: #eaeaea;
     font-size: 3rem;
     text-align: center;
     display: block;

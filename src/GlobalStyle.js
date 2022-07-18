@@ -11,10 +11,11 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
     font-size: 1.6rem;
-    color: #00102e;
+   
+    color: #d0d0d0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; 
     }
-    background-color: #090909;
+    
     
     
  html {
