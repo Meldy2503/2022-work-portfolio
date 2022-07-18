@@ -1,9 +1,12 @@
 import styled from "styled-components";
+// import bg1 from "../../assests/img002.jpg";
 
 export const Container = styled.section`
   width: 100%;
   overflow: hidden;
-  background-color: #f3f3f3;
+  background-color: #090909;
+
+  /* background-color: rgb(5, 9, 29); */
   color: #444;
 `;
 export const Contents = styled.div`
@@ -17,34 +20,36 @@ export const Contents = styled.div`
   }
 `;
 
-export const Card = styled.div`
+export const CardContainer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 5rem;
+`;
 
-  div {
-    width: 31%;
-    background-color: #fff;
-    padding: 4rem 3rem;
+export const Card = styled.div`
+  width: 31%;
+  background-color: #fff;
+  padding: 5rem 3.5rem;
+  margin: 0 auto 2rem auto;
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    width: 45%;
+  }
+  @media (max-width: 500px) {
+    width: 90%;
+  }
+
+  & > div {
     text-align: center;
     font-size: 2rem;
-    margin: 0 auto 2rem auto;
-    transition: all 0.5s;
-
-    @media (max-width: ${({ theme }) => theme.media.mobile}) {
-      width: 45%;
-    }
-    @media (max-width: 500px) {
-      width: 90%;
-    }
 
     span {
       font-size: 5rem;
       background-color: #f3f3f3;
       border-radius: 50%;
       padding: 1rem 1.5rem 0 1.5rem;
-      color: #48758d;
+      color: rgb(6, 11, 35, 9);
     }
 
     h4 {

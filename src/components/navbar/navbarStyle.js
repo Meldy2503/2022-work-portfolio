@@ -8,12 +8,15 @@ export const Header = styled.header`
   left: 0;
   z-index: 5000;
   height: 7rem;
-  background: rgba(30, 67, 86, 0.95);
-  color: #fff;
+  /* background: rgba(6, 11, 35); */
+  box-shadow: 0.1rem 0.2rem 0.5rem #090909;
+
+  background-color: #fff;
 
   ${(props) => props.navbar} {
     background-color: transparent;
     border-bottom: 0.2rem solid rgba(241, 241, 241, 0.2);
+    color: #fff;
   }
 `;
 
@@ -37,16 +40,16 @@ export const NavContainer = styled.nav`
 export const Logo = styled.div`
   height: 4rem;
   width: 4.2rem;
-  border: 0.1rem solid #eee;
+  border: 0.1rem solid #ad974f;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  box-shadow: 0.5rem 0.5rem 0 #eee;
+  box-shadow: 0.5rem 0.5rem 0 #ad974f;
 
   a {
     font-size: 2.5rem;
-    color: #fff;
+    color: #ad974f;
     font-weight: 700;
   }
 `;
@@ -87,7 +90,7 @@ export const LinkLists = styled.li`
   }
 `;
 export const Link = styled.a`
-  color: #fff;
+  color: #ad974f;
   position: relative;
   display: block;
   text-transform: uppercase;
@@ -99,7 +102,7 @@ export const Link = styled.a`
     top: -0.5rem;
     right: 0;
     height: 0.29rem;
-    background-color: #5688a3;
+    background-color: #8e793e;
     width: 70%;
     border-radius: 3rem;
     transform-origin: right;
@@ -115,8 +118,8 @@ export const Link = styled.a`
     position: absolute;
     bottom: -0.7rem;
     display: block;
-    height: 0.2rem;
-    background-color: #fff;
+    height: 0.29rem;
+    background-color: #8e793e;
     width: 70%;
     border-radius: 3rem;
     transform: scale(0, 1);

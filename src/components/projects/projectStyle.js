@@ -2,7 +2,8 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
   overflow: hidden;
-  background-color: #f3f3f3;
+  /* background-color: rgb(6, 11, 35); */
+  background-color: #1c1c1c;
   position: relative;
 `;
 

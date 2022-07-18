@@ -54,15 +54,17 @@ const LandingPage = () => {
                 mgr="2rem"
                 mgsr="0"
                 mgst="4rem"
-                bgc="rgba(30, 67, 86)"
+                bgc="#8e793e"
               >
                 Get in Touch
               </Button>
               <Button
                 href="#projects"
-                bxs="0 8rem 0 0 #5688a3 inset, 0 -8rem 0 0 #5688a3 inset"
-                co="#444"
-                coh="#fff"
+                bxs="0 8rem 0 0 #8e793e inset, 0 -8rem 0 0 #8e793e inset"
+                co="#fff"
+                coh="fff"
+                bor=".2rem solid #fff"
+                borh=".2rem solid #8e793e "
               >
                 View Projects
               </Button>

@@ -14,8 +14,9 @@ export const Button = styled.a`
   transition: all 0.7s;
   width: ${({ width }) => width || "fit-content"};
   color: ${({ co }) => co || "#fff"};
-  background-color: ${({ bgc }) => bgc || "#fff"};
+  background-color: ${({ bgc }) => bgc || "transparent"};
   margin-right: ${({ mgr }) => mgr || "0"};
+  border: ${({ bor }) => bor || "none"};
 
   @media (max-width: 450px) {
     margin-right: ${({ mgsr }) => mgsr || "0"};
@@ -26,6 +27,7 @@ export const Button = styled.a`
     box-shadow: ${({ bxs }) =>
       bxs || "0 8rem 0 0 #fff inset, 0 -8rem 0 0 #fff inset"};
     color: ${({ coh }) => coh || "#444"};
+    border: ${({ borh }) => borh || "none"};
   }
 `;
 
@@ -37,7 +39,7 @@ export const ButtonB = styled.button`
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  background-color: #5688a3;
+  background-color: #8e793e;
   cursor: pointer;
   margin-top: 2rem;
   border: none;

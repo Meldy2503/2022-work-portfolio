@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bg1 from "../../assests/computer5.jpg";
+import bg1 from "../../assests/img002.jpg";
 
 export const Container = styled.section`
   width: 100%;
@@ -10,13 +10,21 @@ export const Container = styled.section`
 export const Contents = styled.div`
   height: 100%;
   width: 100%;
+
   background: linear-gradient(
       to right,
-      rgba(30, 67, 86, 0.9),
-      rgba(30, 67, 86, 0.8)
+      rgba(0, 0, 0, 0.96),
+      rgba(0, 0, 0, 0.75)
     ),
     url(${bg1});
-  background-position: top;
+  // background: linear-gradient(
+  //     to right,
+  //     rgba(6, 11, 35, 0.96),
+  //     rgba(6, 11, 35, 0.75)
+  //   ),
+  //   url(${bg1});
+
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -40,7 +48,7 @@ export const Col = styled.div`
   }
 
   span {
-    color: rgba(253, 192, 80, 0.99);
+    color: #ad974f;
     font-weight: bold;
   }
 

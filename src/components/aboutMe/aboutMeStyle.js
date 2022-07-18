@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
   overflow: hidden;
-  background-color: #fff;
+  /* background-color: rgb(6, 11, 35); */
+  background-color: #1c1c1c;
   color: black;
 `;
 export const Contents = styled.div`
@@ -17,6 +18,7 @@ export const Contents = styled.div`
   }
 `;
 export const Row = styled.section`
+  background-color: #090909;
   box-shadow: 0 0.2rem 0.9rem 0.6rem rgba(0, 0, 0, 0.05);
   display: flex;
   margin: 5rem auto;
@@ -25,7 +27,7 @@ export const Row = styled.section`
   color: #444;
   padding: 4rem;
   align-items: center;
-  background-color: rgba(30, 67, 86, 0.95);
+  /* background-color: rgba(30, 67, 86, 0.95); */
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     flex-direction: column;
@@ -84,7 +86,6 @@ export const ImageContainer = styled.section`
 
 export const TextContainer = styled.div`
   width: 55%;
-  background-color: #fff;
   padding: 3rem;
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     width: 100%;
@@ -96,7 +97,7 @@ export const TextContainer = styled.div`
   p {
     line-height: 1.4;
     font-size: 1.8rem;
-    color: #444;
+    color: #fff;
   }
 `;
 

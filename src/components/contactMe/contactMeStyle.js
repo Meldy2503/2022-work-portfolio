@@ -1,14 +1,22 @@
 import styled from "styled-components";
-import bg1 from "../../assests/computer5.jpg";
+import bg1 from "../../assests/img001.jpg";
 export const Container = styled.section`
   overflow: hidden;
   position: relative;
   width: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
       to right,
       rgba(30, 67, 86, 0.85),
       rgba(30, 67, 86, 0.9)
     ),
+    url(${bg1}); */
+  /* background: linear-gradient(
+      to right,
+      rgb(6, 11, 35, 0.95),
+      rgb(6, 11, 35, 0.93)
+    ),
+    url(${bg1}); */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(${bg1});
   background-position: bottom;
   background-size: cover;
@@ -67,7 +75,8 @@ export const Col1 = styled.div`
 
 export const MediaContents = styled.div`
   height: 93%;
-  background-color: #5688a3;
+  /* background-color: #5688a3; */
+  background-color: #8e793e;
   padding: 2.5rem 0 0 0;
   box-shadow: 0.3rem 0.3rem 0.4rem #333;
   display: flex;
@@ -157,7 +166,7 @@ export const Form = styled.form`
     margin-bottom: 2rem;
     padding: 1.5rem;
     font-size: 1.6rem;
-    background-color: #f3f3f3;
+    background-color: #eaeaea;
     border: none;
     color: #00102e;
     outline: none;
@@ -167,8 +176,8 @@ export const Form = styled.form`
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus,
     &:-webkit-autofill:active {
-      box-shadow: 0 0 0 30px #f3f3f3 inset !important;
-      -webkit-box-shadow: 0 0 0 30px #f3f3f3 inset !important;
+      box-shadow: 0 0 0 30px #eaeaea inset !important;
+      -webkit-box-shadow: 0 0 0 30px #eaeaea inset !important;
       -webkit-text-fill-color: #444 !important;
     }
 

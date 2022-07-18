@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import bg1 from "../../assests/computer2.jpg";
+// import bg1 from "../../assests/img001.jpg";
 
 export const Container = styled.section`
   overflow: hidden;
@@ -7,11 +8,17 @@ export const Container = styled.section`
   width: 100%;
   background: linear-gradient(
       to right,
-      rgba(30, 67, 86, 0.9),
-      rgba(30, 67, 86, 0.85)
+      rgba(0, 0, 0, 0.92),
+      rgba(0, 0, 0, 0.92)
     ),
     url(${bg1});
-  background-position: center center;
+  /* background: linear-gradient(
+      to right,
+      rgb(6, 11, 35, 0.9),
+      rgb(6, 11, 35, 0.9)
+    ),
+    url(${bg1}); */
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

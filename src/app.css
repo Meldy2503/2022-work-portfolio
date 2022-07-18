@@ -12,7 +12,10 @@ p {
   color: #f3f8fa;
   background-color: #446679cc;
   background-color: #48758d;
-  background-color: #5688a3;
+  background-color: rgb(0, 16, 46);
+  background-color: rgb(6, 11, 35);
+  background-color: rgb(5, 9, 29);
+  background-color: rgb(35, 31, 32);
 
   &::before {
     content: "";
