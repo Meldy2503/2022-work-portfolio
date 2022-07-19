@@ -109,8 +109,8 @@ export const ScrollDown = styled.div`
 
   @keyframes move {
     0% {
-      opacity: 0.1;
-      transform: translateY(-50px);
+      opacity: 0.2;
+      transform: translateY(-40px);
     }
 
     33% {
@@ -118,8 +118,8 @@ export const ScrollDown = styled.div`
       transform: translateY(-20px);
     }
     66% {
-      opacity: 0.1;
-      transform: translateY(-50px);
+      opacity: 0.2;
+      transform: translateY(-40px);
     }
 
     100% {

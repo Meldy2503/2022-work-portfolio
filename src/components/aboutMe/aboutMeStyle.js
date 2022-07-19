@@ -19,13 +19,10 @@ export const Contents = styled.div`
 export const Row = styled.section`
   background-color: #090909;
   box-shadow: 0 0.1rem 0.4rem 0.3rem #000;
-  /* display: flex; */
   margin: 5rem auto;
   position: relative;
-  /* justify-content: space-between; */
   color: #d0d0d0;
   padding: 4rem;
-  /* align-items: center; */
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     flex-direction: column;
@@ -47,7 +44,6 @@ export const Row = styled.section`
 export const Details = styled.div`
   display: flex;
   justify-content: space-between;
-  /* flex-direction: column; */
   margin-top: 2.5rem;
   font-size: 1.8rem;
 
@@ -116,7 +112,6 @@ export const TextContainer = styled.div`
   p {
     line-height: 1.6;
     font-size: 1.8rem;
-    /* color: #fff; */
   }
 `;
 
@@ -156,9 +151,7 @@ export const Interests = styled.div`
 
     span {
       display: flex;
-      // flex-direction: column;
       align-items: center;
-      // justify-content: center;
       margin-bottom: 1rem;
       margin-right: 1rem;
       color: #ad974f;

@@ -26,7 +26,7 @@ export const Button = styled.a`
   &:hover {
     box-shadow: ${({ bxs }) =>
       bxs || "0 8rem 0 0 #eaeaea inset, 0 -8rem 0 0 #eaeaea inset"};
-    color: ${({ coh }) => coh || "#444"};
+    color: ${({ coh }) => coh || "#090909"};
     border: ${({ borh }) => borh || "none"};
   }
 `;

@@ -149,12 +149,8 @@ export const Link = styled.a`
 `;
 export const MenuIcon = styled.div`
   display: none;
-  /* padding: 0;
-  height: 2rem; */
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     display: block;
-    /* background-color: #ad974f; */
-    /* border: 0.2rem dotted #ad974f; */
   }
 `;

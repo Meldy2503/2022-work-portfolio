@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import bg1 from "../../assests/img002.jpg";
 
 export const Container = styled.section`
   width: 100%;
@@ -52,9 +51,7 @@ export const Card = styled.div`
     span {
       font-size: 5rem;
       background-color: #ad974f;
-      /* display: inline-flex; */
       width: fit-content;
-      /* border-radius: 50%; */
       padding: 0.5rem 2.5rem;
       color: #090909;
       position: absolute;
@@ -64,15 +61,11 @@ export const Card = styled.div`
       margin: 0 auto;
       border-radius: 1rem;
       box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem #090909;
-
-      /* &:hover {
-        color: black;
-      } */
     }
 
     h4 {
       margin: 1.5rem 0 0.7rem 0;
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
 
     p {

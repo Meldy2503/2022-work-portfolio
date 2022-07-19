@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import bg1 from "../../assests/computer2.jpg";
 import bg1 from "../../assests/img003.jpg";
 
 export const Container = styled.section`
@@ -9,7 +8,7 @@ export const Container = styled.section`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(${bg1});
 
-  background-position: top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
