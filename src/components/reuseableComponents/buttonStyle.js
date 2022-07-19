@@ -48,7 +48,6 @@ export const ButtonB = styled.button`
   transition: ease-out 0.8s;
 
   &:hover {
-    box-shadow: 0 8rem 0 0 rgba(30, 67, 86, 0.8) inset,
-      0 -8rem 0 0 rgba(30, 67, 86, 0.8) inset;
+    box-shadow: 0 8rem 0 0 #ad974f inset, 0 -8rem 0 0 #ad974f inset;
   }
 `;

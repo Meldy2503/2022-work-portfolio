@@ -12,7 +12,7 @@ export const Contents = styled.div`
   width: 100%;
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.96),
+      rgba(0, 0, 0, 0.94),
       rgba(0, 0, 0, 0.75)
     ),
     url(${bg1});

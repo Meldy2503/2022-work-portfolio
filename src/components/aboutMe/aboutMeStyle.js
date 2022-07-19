@@ -23,7 +23,7 @@ export const Row = styled.section`
   margin: 5rem auto;
   position: relative;
   /* justify-content: space-between; */
-  color: #eaeaea;
+  color: #d0d0d0;
   padding: 4rem;
   /* align-items: center; */
 
@@ -74,28 +74,30 @@ export const ImageContainer = styled.section`
   div {
     position: relative;
     width: 35rem;
-    height: 35rem;
+    height: 34rem;
     margin: 0 auto;
-    background-color: #8e793e;
+    border: 0.6rem solid #ad974f;
+    background-color: #090909;
 
     @media (max-width: 500px) {
       height: 28rem;
+      border: none;
     }
 
     img {
       max-width: 100%;
       width: 35rem;
-      height: 35rem;
+      height: 34rem;
       position: absolute;
-      bottom: 2.5rem;
-      left: 2.5rem;
-      /* filter: saturate(0) contrast(100%) brightness(100%); */
+      bottom: 2.2rem;
+      left: 2.2rem;
+      background-color: #8e793e;
 
       @media (max-width: 500px) {
         bottom: 0;
         left: 0;
-        border: 2rem solid #8e793e;
-        height: 30rem;
+        border: 1rem solid #8e793e;
+        height: 28rem;
       }
     }
   }
@@ -136,14 +138,15 @@ export const Cv = styled.div`
 export const Interests = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 3rem 0 0 0;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     width: 100%;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
   }
   @media (max-width: 500px) {
     margin: 1rem auto;
-    padding: 0rem 1rem;
+    padding: 1.5rem 1rem;
   }
 
   div {

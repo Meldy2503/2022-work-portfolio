@@ -1,24 +1,15 @@
 import styled from "styled-components";
-import bg1 from "../../assests/computer2.jpg";
-// import bg1 from "../../assests/img001.jpg";
+// import bg1 from "../../assests/computer2.jpg";
+import bg1 from "../../assests/img003.jpg";
 
 export const Container = styled.section`
   overflow: hidden;
   position: relative;
   width: 100%;
-  background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.92),
-      rgba(0, 0, 0, 0.92)
-    ),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(${bg1});
-  /* background: linear-gradient(
-      to right,
-      rgb(6, 11, 35, 0.9),
-      rgb(6, 11, 35, 0.9)
-    ),
-    url(${bg1}); */
-  background-position: bottom;
+
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -26,7 +17,7 @@ export const Container = styled.section`
 export const Contents = styled.div`
   max-width: 120rem;
   width: 90%;
-  margin: 5rem auto;
+  margin: 10rem auto;
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     width: 95%;
@@ -50,7 +41,7 @@ export const Tools = styled.div`
   margin-bottom: 5rem;
 
   h3 {
-    color: #eee;
+    color: #eaeaea;
     font-size: 2.5rem;
     font-weight: 500;
     padding-bottom: 0.9rem;
@@ -63,9 +54,9 @@ export const Tools = styled.div`
 
     &::before {
       content: "";
-      height: 0.3rem;
+      height: 0.35rem;
       width: 100%;
-      background-color: #eee;
+      background-color: #ad974f;
       position: absolute;
       bottom: 0;
       border-radius: 0.5rem;
@@ -90,7 +81,7 @@ export const IconsContainer = styled.div`
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
-    border: 0.2rem solid #fff;
+    border: 0.2rem solid #8e793e;
     border-radius: 2rem;
     padding: 1rem;
     width: 12rem;
@@ -102,12 +93,12 @@ export const IconsContainer = styled.div`
     height: 7rem;
     width: 8rem;
     padding-bottom: 1rem;
-    border-bottom: 0.2rem solid #fff;
-    filter: brightness(92%) contrast(150%) saturate(2);
+    border-bottom: 0.2rem solid #8e793e;
+    filter: brightness(100%) contrast(140%) saturate(1);
   }
 
   figcaption {
     margin-top: 0.5rem;
-    color: #fff;
+    color: #eaeaea;
   }
 `;

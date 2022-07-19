@@ -18,9 +18,9 @@ const PopUp = () => {
             width="80%"
             mgt="3rem"
             mgst="3rem"
-            bgc="#5688a3"
+            bgc="#ad974f"
             bor="none"
-            bxs="inset 30rem 0 0 0 rgba(30, 67, 86, 0.9)"
+            bxs="inset 30rem 0 0 0 #8e793e"
             coh="#fff"
           >
             OK

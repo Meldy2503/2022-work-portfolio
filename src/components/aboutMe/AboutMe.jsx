@@ -1,7 +1,7 @@
 import React from "react";
 import { SubHeading } from "../reuseableComponents/headingStyle";
 import { FaDownload } from "react-icons/fa";
-import avatar from "../../assests/tech1.jpg";
+import avatar from "../../assests/about1.png";
 import { Button } from "../reuseableComponents/buttonStyle";
 import Services from "../services/Services";
 import { AboutData } from "./aboutMeData";
@@ -53,7 +53,7 @@ const AboutMe = () => {
                   bgc="#8e793e"
                   bor="none"
                   bxs="inset 30rem 0 0 0 #ad974f"
-                  coh="#fff"
+                  coh="#eaeaea"
                   target="_blank"
                 >
                   View CV <FaDownload className="icon" />
