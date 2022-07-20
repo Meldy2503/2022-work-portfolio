@@ -25,6 +25,7 @@ export const Row = styled.section`
   padding: 4rem;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2.5rem;
@@ -37,7 +38,7 @@ export const Row = styled.section`
   h3 {
     font-size: 2rem;
     margin: 2rem 0 0.5rem 0;
-    color: #ad974f;
+    color: #e0a42b;
   }
 `;
 
@@ -56,6 +57,7 @@ export const ImageContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 40%;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     width: 100%;
@@ -72,7 +74,7 @@ export const ImageContainer = styled.section`
     width: 35rem;
     height: 34rem;
     margin: 0 auto;
-    border: 0.6rem solid #ad974f;
+    border: 0.6rem solid #e0a42b;
     background-color: #090909;
 
     @media (max-width: 500px) {
@@ -87,12 +89,25 @@ export const ImageContainer = styled.section`
       position: absolute;
       bottom: 2.2rem;
       left: 2.2rem;
-      background-color: #8e793e;
+      background: linear-gradient(
+        to right,
+        #462523 0%,
+        #8a6e2f 5%,
+        #9f7928 10%,
+        #e0a42b 22%,
+        #f6e27a 45%,
+        #f5e284 50%,
+        #f6e27a 55%,
+        #e0a42b 78%,
+        #9f7928 90%,
+        #8a6e2f 95%,
+        #462523 100%
+      );
 
       @media (max-width: 500px) {
         bottom: 0;
         left: 0;
-        border: 1rem solid #8e793e;
+        border: none;
         height: 28rem;
       }
     }
@@ -151,19 +166,21 @@ export const Interests = styled.div`
 
     span {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
       margin-bottom: 1rem;
       margin-right: 1rem;
-      color: #ad974f;
+      color: #e0a42b;
       background-color: #1c1c1c;
-      padding: 1.5rem 3rem;
+      padding: 1.5rem 3.5rem;
       font-size: 2.5rem;
     }
 
     p {
       font-size: 1.7rem;
-      margin-left: 1rem;
-      color: #eaeaea;
+      margin-top: 1rem;
+      color: #d0d0d0;
     }
   }
 `;

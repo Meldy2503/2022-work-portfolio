@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
+  background-color: rgb(0, 0, 0, 0.9);
   width: 100%;
   overflow: hidden;
-  background-color: #090909;
   color: #d0d0d0;
 `;
 export const Contents = styled.div`
@@ -25,23 +25,37 @@ export const CardContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  width: 31.5%;
-  padding: 6rem 4rem;
+  width: 32%;
+  padding: 6rem 2rem;
   margin: 0 auto 6rem auto;
-  border: 0.2rem dotted #8e793e;
+  border: 0.3rem dotted #333;
   position: relative;
   border-top-right-radius: 5rem;
 
   &:hover {
     color: #000;
-    background-color: #ad974f;
+    border: none;
+    background: linear-gradient(
+      to right,
+      #462523 0%,
+      #8a6e2f 5%,
+      #9f7928 10%,
+      #e0a42b 22%,
+      #f6e27a 45%,
+      #f5e284 50%,
+      #f6e27a 55%,
+      #e0a42b 78%,
+      #9f7928 90%,
+      #8a6e2f 95%,
+      #462523 100%
+    );
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
-    width: 45%;
+    width: 47%;
   }
   @media (max-width: 500px) {
-    width: 90%;
+    width: 92%;
   }
 
   & > div {
@@ -50,7 +64,20 @@ export const Card = styled.div`
 
     span {
       font-size: 5rem;
-      background-color: #ad974f;
+      background: linear-gradient(
+        to right,
+        #462523 0%,
+        #8a6e2f 5%,
+        #9f7928 10%,
+        #e0a42b 22%,
+        #f6e27a 45%,
+        #f5e284 50%,
+        #f6e27a 55%,
+        #e0a42b 78%,
+        #9f7928 90%,
+        #8a6e2f 95%,
+        #462523 100%
+      );
       width: fit-content;
       padding: 0.5rem 2.5rem;
       color: #090909;
@@ -65,7 +92,7 @@ export const Card = styled.div`
 
     h4 {
       margin: 1.5rem 0 0.7rem 0;
-      font-size: 2.2rem;
+      font-size: 2.3rem;
     }
 
     p {

@@ -7,16 +7,27 @@ export const Button = styled.a`
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
-  border: none;
   cursor: pointer;
   margin-top: ${({ mgt }) => mgt || "4rem"};
   font-family: "Montserrat", sans-serif;
   transition: all 0.7s;
   width: ${({ width }) => width || "fit-content"};
-  color: ${({ co }) => co || "#eaeaea"};
-  background-color: ${({ bgc }) => bgc || "transparent"};
+  color: #090909;
   margin-right: ${({ mgr }) => mgr || "0"};
-  border: ${({ bor }) => bor || "none"};
+  background: linear-gradient(
+    to right,
+    #462523 0%,
+    #8a6e2f 5%,
+    #9f7928 10%,
+    #e0a42b 22%,
+    #f6e27a 45%,
+    #f5e284 50%,
+    #f6e27a 55%,
+    #e0a42b 78%,
+    #9f7928 90%,
+    #8a6e2f 95%,
+    #462523 100%
+  );
 
   @media (max-width: 450px) {
     margin-right: ${({ mgsr }) => mgsr || "0"};
@@ -24,10 +35,19 @@ export const Button = styled.a`
   }
 
   &:hover {
-    box-shadow: ${({ bxs }) =>
-      bxs || "0 8rem 0 0 #eaeaea inset, 0 -8rem 0 0 #eaeaea inset"};
-    color: ${({ coh }) => coh || "#090909"};
-    border: ${({ borh }) => borh || "none"};
+    background: linear-gradient(
+      to right,
+      #f6e27a 0%,
+      #e0a42b 10%,
+      #9f7928 22%,
+      #8a6e2f 45%,
+      #755e27 50%,
+      #8a6e2f 55%,
+      #9f7928 78%,
+      #e0a42b 90%,
+      #f6e27a 100%
+    );
+    color: #d0d0d0;
   }
 `;
 
@@ -38,8 +58,21 @@ export const ButtonB = styled.button`
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
-  background-color: #8e793e;
+  color: #090909;
+  background: linear-gradient(
+    to right,
+    #462523 0%,
+    #8a6e2f 5%,
+    #9f7928 10%,
+    #e0a42b 22%,
+    #f6e27a 45%,
+    #f5e284 50%,
+    #f6e27a 55%,
+    #e0a42b 78%,
+    #9f7928 90%,
+    #8a6e2f 95%,
+    #462523 100%
+  );
   cursor: pointer;
   margin-top: 2rem;
   border: none;
@@ -48,6 +81,18 @@ export const ButtonB = styled.button`
   transition: ease-out 0.8s;
 
   &:hover {
-    box-shadow: 0 8rem 0 0 #ad974f inset, 0 -8rem 0 0 #ad974f inset;
+    background: linear-gradient(
+      to right,
+      #f6e27a 0%,
+      #e0a42b 10%,
+      #9f7928 22%,
+      #8a6e2f 45%,
+      #755e27 50%,
+      #8a6e2f 55%,
+      #9f7928 78%,
+      #e0a42b 90%,
+      #f6e27a 100%
+    );
+    color: #d0d0d0;
   }
 `;

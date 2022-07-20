@@ -6,8 +6,8 @@ export const Container = styled.section`
   width: 100%;
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.82),
-      rgba(0, 0, 0, 0.82)
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
     ),
     url(${bg1});
   background-position: bottom;
@@ -31,7 +31,7 @@ export const Row = styled.div`
   justify-content: space-between;
   margin: 6rem 0 0 10rem;
   width: 90%;
-  background-color: #090909;
+  background-color: #1c1c1c;
   position: relative;
   padding: 2rem;
 
@@ -67,12 +67,25 @@ export const Col1 = styled.div`
 
 export const MediaContents = styled.div`
   height: 93%;
-  background-color: #8e793e;
+  background: linear-gradient(
+    to right,
+    #462523 0%,
+    #8a6e2f 5%,
+    #9f7928 10%,
+    #e0a42b 22%,
+    #f6e27a 45%,
+    #f5e284 50%,
+    #f6e27a 55%,
+    #e0a42b 78%,
+    #9f7928 90%,
+    #8a6e2f 95%,
+    #462523 100%
+  );
   padding: 2.5rem 0 0 0;
   box-shadow: 0.3rem 0.3rem 0.4rem #000;
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: #000;
 
   h3 {
     font-size: 2.5rem;
@@ -100,7 +113,7 @@ export const Media = styled.div`
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.4;
-    color: #eaeaea;
+    color: #000;
     letter-spacing: 0.1rem;
     padding-bottom: 0.7rem;
     text-align: center;
@@ -108,7 +121,7 @@ export const Media = styled.div`
 
   .icons {
     font-size: 3rem;
-    color: #eaeaea;
+    color: #000;
   }
 `;
 
@@ -132,7 +145,7 @@ export const Col2 = styled.div`
   }
 
   h3 {
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding: 0 2rem;
     font-size: 2.5rem;
     color: #eaeaea;
@@ -157,8 +170,8 @@ export const Form = styled.form`
     margin-bottom: 2rem;
     padding: 1.5rem;
     font-size: 1.6rem;
-    border: 0.2rem solid #8e793e;
-    background-color: #090909;
+    border: none;
+    background-color: rgb(0, 0, 0, 0.4);
     color: #eaeaea;
     outline: none;
     user-select: none;
@@ -167,8 +180,8 @@ export const Form = styled.form`
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus,
     &:-webkit-autofill:active {
-      box-shadow: 0 0 0 30px #090909 inset !important;
-      -webkit-box-shadow: 0 0 0 30px #090909 inset !important;
+      box-shadow: 0 0 0 30px rgb(0, 0, 0, 0.924) inset !important;
+      -webkit-box-shadow: 0 0 0 30px rgb(0, 0, 0, 0.924) inset !important;
       -webkit-text-fill-color: #eaeaea !important;
     }
 

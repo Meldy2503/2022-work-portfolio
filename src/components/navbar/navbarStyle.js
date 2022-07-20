@@ -8,14 +8,13 @@ export const Header = styled.header`
   left: 0;
   z-index: 5000;
   height: 7rem;
-
   box-shadow: 0.1rem 0.2rem 0.5rem #090909;
-  background-color: #fff;
+  background-color: #000;
+  color: #000;
 
   ${(props) => props.navbar} {
     background-color: transparent;
     border-bottom: 0.2rem solid rgba(241, 241, 241, 0.2);
-    color: #fff;
   }
 `;
 
@@ -39,15 +38,15 @@ export const NavContainer = styled.nav`
 export const Logo = styled.div`
   height: 4rem;
   width: 5rem;
-  border: 0.1rem solid #ad974f;
+  border: 0.1rem solid #e0a42b;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0.6rem 0.6rem 0 #8e793e;
+  box-shadow: 0.6rem 0.6rem 0 #e0a42b;
 
   a {
     font-size: 2.5rem;
-    color: #ad974f;
+    color: #e0a42b;
     font-weight: 700;
   }
 `;
@@ -65,8 +64,6 @@ export const LinkContainer = styled.ul`
     display: block;
     z-index: 5000;
     height: 100vh;
-
-    color: blue;
   }
 
   ${(props) => props.isMenuOpen} {
@@ -87,7 +84,7 @@ export const LinkLists = styled.li`
   }
 `;
 export const Link = styled.a`
-  color: #ad974f;
+  color: #d0d0d0;
   position: relative;
   display: block;
   text-transform: uppercase;
@@ -99,7 +96,7 @@ export const Link = styled.a`
     top: -0.5rem;
     right: 0;
     height: 0.29rem;
-    background-color: #8e793e;
+    background-color: #e0a42b;
     width: 70%;
     border-radius: 3rem;
     transform-origin: right;
@@ -116,7 +113,7 @@ export const Link = styled.a`
     bottom: -0.7rem;
     display: block;
     height: 0.29rem;
-    background-color: #8e793e;
+    background-color: #e0a42b;
     width: 70%;
     border-radius: 3rem;
     transform: scale(0, 1);
@@ -131,7 +128,7 @@ export const Link = styled.a`
     padding: 2rem 0rem 1rem 0rem;
     border-bottom: 0.1rem solid rgba(241, 241, 241, 0.2);
     text-align: center;
-    color: #ad974f;
+    color: #eaeaea;
 
     &::after {
       height: 0;
@@ -143,7 +140,7 @@ export const Link = styled.a`
     }
 
     &:hover {
-      color: #eaeaea;
+      color: #e0a42b;
     }
   }
 `;

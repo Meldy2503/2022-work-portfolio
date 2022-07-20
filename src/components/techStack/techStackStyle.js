@@ -5,7 +5,7 @@ export const Container = styled.section`
   overflow: hidden;
   position: relative;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.75)),
     url(${bg1});
 
   background-position: center;
@@ -55,7 +55,7 @@ export const Tools = styled.div`
       content: "";
       height: 0.35rem;
       width: 100%;
-      background-color: #ad974f;
+      background-color: #e0a42b;
       position: absolute;
       bottom: 0;
       border-radius: 0.5rem;
@@ -80,7 +80,7 @@ export const IconsContainer = styled.div`
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
-    border: 0.2rem solid #8e793e;
+    border: 0.1rem solid #d0d0d0;
     border-radius: 2rem;
     padding: 1rem;
     width: 12rem;
@@ -92,7 +92,7 @@ export const IconsContainer = styled.div`
     height: 7rem;
     width: 8rem;
     padding-bottom: 1rem;
-    border-bottom: 0.2rem solid #8e793e;
+    border-bottom: 0.15rem solid #d0d0d0;
     filter: brightness(100%) contrast(140%) saturate(1);
   }
 

@@ -17,7 +17,8 @@ export const SubHeading = styled.h2`
     content: "";
     height: 0.5rem;
     width: ${({ width }) => width || "60%"};
-    background-color: #ad974f;
+    background-color: #e0a42b;
+    opacity: 0.8;
     position: absolute;
     bottom: 0;
     border-radius: 0.5rem;

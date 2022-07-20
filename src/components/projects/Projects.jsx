@@ -6,10 +6,8 @@ import {
   Container,
   Contents,
   Row,
-  Column,
   Card,
-  FrontText,
-  BackText,
+  Figure,
   ButtonG,
   ButtonW,
 } from "./projectStyle";
@@ -18,45 +16,47 @@ const Projects = () => {
   return (
     <Container id="projects">
       <Contents>
-        <SubHeading data-aos="fade-up">Projects</SubHeading>
+        {/* <SubHeading data-aos="fade-up">Projects</SubHeading> */}
+        <SubHeading>Projects</SubHeading>
         <Row>
-          <Column>
-            {ProjectData.map((project) => (
-              <Card key={project.id} data-aos="flip-right">
-                <div className="card_side card_side--front">
-                  <FrontText>
-                    <figure>
-                      <img src={project.img} alt="project capture" />
-                      <figcaption>
-                        <h3>{project.name}</h3>
-                      </figcaption>
-                    </figure>
-                  </FrontText>
-                </div>
-                <div className="card_side card_side--back">
-                  <BackText>
-                    <p>{project.comment}</p>
-                    <div>
-                      <ButtonW
-                        href={project.web}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        website
-                      </ButtonW>
-                      <ButtonG
-                        href={project.git}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        github
-                      </ButtonG>
+          {ProjectData.map((project) => (
+            <Card key={project.id} data-aos="flip-right">
+              <ButtonW href={project.web} target="_blank" rel="noreferrer">
+                live
+              </ButtonW>
+              <ButtonG href={project.git} target="_blank" rel="noreferrer">
+                code
+              </ButtonG>
+              <Figure>
+                <img src={project.img} alt="project capture" />
+                <h2>{project.name}</h2>
+                <p>{project.comment}</p>
+                {/* {ProjectData.tech.map((list, index) => (
+                    <div key={list.index}>
+                      <span></span>
+                      <p>{list[index]}</p>
                     </div>
-                  </BackText>
-                </div>
-              </Card>
-            ))}
-          </Column>
+                  ))} */}
+                <figcaption>
+                  <h3>{project.name}</h3>
+                  {/* <ButtonW
+                      href={project.web}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      website
+                    </ButtonW>
+                    <ButtonG
+                      href={project.git}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      github
+                    </ButtonG> */}
+                </figcaption>
+              </Figure>
+            </Card>
+          ))}
         </Row>
       </Contents>
     </Container>

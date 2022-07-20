@@ -24,16 +24,6 @@ body {
    
   }
 
-@media only screen and (max-width: 96em) {
-  html {
-    font-size: 60%;
-  }
-}
-@media only screen and (max-width: 75em) {
-  html {
-    font-size: 58%;
-  }
-}
 
 a {
   text-decoration: none;
@@ -42,7 +32,5 @@ a {
 ul {
   list-style-type: none;
 }
-
-
 
 `;

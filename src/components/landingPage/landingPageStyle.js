@@ -10,11 +10,7 @@ export const Container = styled.section`
 export const Contents = styled.div`
   height: 100%;
   width: 100%;
-  background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.94),
-      rgba(0, 0, 0, 0.75)
-    ),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.7)),
     url(${bg1});
   background-position: bottom;
   background-size: cover;
@@ -40,14 +36,14 @@ export const Col = styled.div`
   }
 
   span {
-    color: #ad974f;
+    color: #e0a42b;
     font-weight: bold;
   }
 
   h5 {
     font-weight: 500;
     font-size: 1.8rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: #d0d0d0;
   }
 
   h1 {
@@ -70,7 +66,7 @@ export const Col = styled.div`
     font-size: 1.8rem;
     font-family: "Raleway", sans-serif;
     width: 65%;
-    color: rgba(255, 255, 255, 0.8);
+    color: #d0d0d0;
     margin-top: 2rem;
     line-height: 1.45;
     letter-spacing: 0.1rem;

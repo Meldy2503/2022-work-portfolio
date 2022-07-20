@@ -47,15 +47,7 @@ const AboutMe = () => {
               </Edu>
 
               <Cv data-aos="fade-up">
-                <Button
-                  href={myCv}
-                  mgt="0"
-                  bgc="#8e793e"
-                  bor="none"
-                  bxs="inset 30rem 0 0 0 #ad974f"
-                  coh="#eaeaea"
-                  target="_blank"
-                >
+                <Button href={myCv} mgt="0" bor="none" target="_blank">
                   View CV <FaDownload className="icon" />
                 </Button>
               </Cv>

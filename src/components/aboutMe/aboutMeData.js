@@ -6,28 +6,28 @@ import { SiMaterialdesignicons } from "react-icons/si";
 export const AboutData = [
   {
     id: 1,
-    icon: <FaMusic />,
-    text: "Music",
+    icon: <SiMaterialdesignicons />,
+    text: "Art",
   },
   {
     id: 2,
-    icon: <MdDesignServices />,
-    text: "Travel",
-  },
-  {
-    id: 3,
     icon: <GiPrayer />,
     text: "Yoga",
   },
   {
+    id: 3,
+    icon: <FaMusic />,
+    text: "Music",
+  },
+  {
     id: 4,
-    icon: <FaBookReader />,
-    text: "Reading",
+    icon: <MdDesignServices />,
+    text: "Travel",
   },
   {
     id: 5,
-    icon: <SiMaterialdesignicons />,
-    text: "Art",
+    icon: <FaBookReader />,
+    text: "Reading",
   },
   {
     id: 6,
