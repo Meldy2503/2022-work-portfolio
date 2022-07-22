@@ -29,24 +29,24 @@ const LandingPage = () => {
             <TypedText>
               <p>
                 I'm proficient in&nbsp;<span>{"<"}&nbsp;</span>
-                <TypewriterComponent
-                  options={{
-                    cursor: " />",
-                    strings: [
-                      "HTML",
-                      "CSS",
-                      "jS",
-                      "React",
-                      "SC",
-                      "Tailwind",
-                      "MUI",
-                      "SASS",
-                    ],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                ></TypewriterComponent>
               </p>
+              <TypewriterComponent
+                options={{
+                  cursor: " />",
+                  strings: [
+                    "HTML",
+                    "CSS",
+                    "jS",
+                    "React",
+                    "SC",
+                    "Tailwind",
+                    "MUI",
+                    "SASS",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              ></TypewriterComponent>
             </TypedText>
             <Btn>
               <Button href="#projects" mgr="2rem" mgsr="0" mgst="4rem">

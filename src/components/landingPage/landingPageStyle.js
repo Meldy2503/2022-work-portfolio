@@ -83,8 +83,12 @@ export const Col = styled.div`
 `;
 
 export const TypedText = styled.span`
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+
   p {
-    display: flex;
+    margin-top: 0;
   }
 `;
 
