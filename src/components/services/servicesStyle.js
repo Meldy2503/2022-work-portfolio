@@ -28,7 +28,7 @@ export const Card = styled.div`
   width: 32%;
   padding: 6rem 2rem;
   margin: 0 auto 6rem auto;
-  border: 0.3rem dotted #333;
+  border: 0.3rem dotted #474747;
   position: relative;
   border-top-right-radius: 5rem;
 
@@ -51,10 +51,10 @@ export const Card = styled.div`
     );
   }
 
-  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+  @media (max-width: ${({ theme }) => theme.media.tablet}) {
     width: 47%;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     width: 92%;
   }
 

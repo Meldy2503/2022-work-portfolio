@@ -17,8 +17,8 @@ export const Contents = styled.div`
   }
 `;
 export const Row = styled.section`
-  background-color: #090909;
-  box-shadow: 0 0.1rem 0.4rem 0.3rem #000;
+  background-color: rgb(0, 0, 0, 0.9);
+  box-shadow: 0 0.1rem 0.3rem 0.4rem #000;
   margin: 5rem auto;
   position: relative;
   color: #d0d0d0;

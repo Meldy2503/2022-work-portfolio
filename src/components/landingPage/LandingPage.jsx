@@ -49,12 +49,7 @@ const LandingPage = () => {
               </p>
             </TypedText>
             <Btn>
-              <Button
-                href="#projects"
-                mgr="2rem"
-                mgsr="0"
-                mgst="4rem"
-              >
+              <Button href="#projects" mgr="2rem" mgsr="0" mgst="4rem">
                 View Projects
               </Button>
               <Button href="#contact" pad="1.8rem 4.8rem">

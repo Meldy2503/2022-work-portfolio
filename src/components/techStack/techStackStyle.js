@@ -80,11 +80,15 @@ export const IconsContainer = styled.div`
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
-    border: 0.1rem solid #d0d0d0;
+    border: 0.2rem solid #d0d0d0;
     border-radius: 2rem;
     padding: 1rem;
     width: 12rem;
     margin-right: 1rem;
+
+    &:hover {
+      border: 0.2rem solid #e0a42b;
+    }
   }
 
   img {
@@ -92,8 +96,12 @@ export const IconsContainer = styled.div`
     height: 7rem;
     width: 8rem;
     padding-bottom: 1rem;
-    border-bottom: 0.15rem solid #d0d0d0;
+    border-bottom: 0.2rem solid #d0d0d0;
     filter: brightness(100%) contrast(140%) saturate(1);
+
+    &:hover {
+      border-bottom: 0.2rem solid #e0a42b;
+    }
   }
 
   figcaption {
