@@ -1,6 +1,5 @@
 import React from "react";
 import { ProjectData } from "./projectData";
-// import { GrStatusGood } from "react-icons/gr";
 import { SubHeading } from "../reuseableComponents/headingStyle";
 
 import {
@@ -12,7 +11,6 @@ import {
   Col2,
   Figure,
   Techs,
-  Figcaption,
   Tick,
   Live,
   Code,
@@ -25,12 +23,11 @@ const Projects = () => {
   return (
     <Container id="projects">
       <Contents>
-        {/* <SubHeading data-aos="fade-up">Projects</SubHeading> */}
-        <SubHeading>Projects</SubHeading>
+        <SubHeading data-aos="fade-up">Projects</SubHeading>
         <CardWrapper>
           {ProjectData.map((project) => (
             <Row key={project.id} flexd={project.id % 2 === 0 && "row-reverse"}>
-              <Col1>
+              <Col1 data-aos="fade-right">
                 <Figure>
                   <img src={project.img} alt="project capture" />
                   <Overlay>
@@ -52,31 +49,29 @@ const Projects = () => {
                         code
                       </ButtonG>
                     </span>
-                  </Overlay>
-
-                  <Figcaption>
                     <p>0{project.id}</p>
-                    {/* <h3>{project.name}</h3> */}
-                  </Figcaption>
+                  </Overlay>
                 </Figure>
               </Col1>
-              <Col2>
+              <Col2 data-aos="fade-left">
                 <div>
                   <h2>{project.name}</h2>
                   <p>{project.about}</p>
                   <article>
-                    <h3>Challenges The Project Solved</h3>
+                    <h3>Challenges This Project Solved</h3>
                     <p>{project.challenges}</p>
                   </article>
                 </div>
                 <Techs>
                   <h3>Tech Stack</h3>
-                  {project.tech.map((list, index) => (
-                    <div key={index}>
-                      <Tick />
-                      <p>{list}</p>
-                    </div>
-                  ))}
+                  <div>
+                    {project.tech.map((list, index) => (
+                      <span key={index}>
+                        <Tick />
+                        <p>{list}</p>
+                      </span>
+                    ))}
+                  </div>
                 </Techs>
               </Col2>
             </Row>

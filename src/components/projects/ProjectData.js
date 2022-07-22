@@ -9,9 +9,9 @@ export const ProjectData = [
     git: "https://github.com/Meldy2503/nail-boutique",
     name: "The Nail Boutique",
     about:
-      "Nail Boutique is a beauty brand which offers nail and skin care services to the public. This website was built to solve booking challenges which increased productivity and helped implement effective market strategies.",
+      "Nail Boutique is a beauty brand which offers nail, hair and skin care services to the public.",
     challenges:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem provident rerum tempore, ea eaque excepturi.",
+      " This website was built to bridge booking challenges which helped implement effective market strategies and increased productivity.",
     tech: ["React", "Context-API", "HTML", "JavaScript", "Styled-Co", "MUI"],
   },
   {
@@ -21,9 +21,9 @@ export const ProjectData = [
     git: "https://github.com/Meldy2503/Windec",
     name: "Windec",
     about:
-      "Windec is an advertising company which provides digital services to small and large scale businesses. This website was built to effectively improve online services",
+      "Windec is an advertising company which provides digital services to small and large scale businesses. ",
     challenges:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem provident rerum tempore, ea eaque excepturi.",
+      "This website was built to improve online services which effectively increased productivity",
     tech: ["HTML", "JavaScript", "React", "Styled - Co", "MUI"],
   },
   {
@@ -35,7 +35,7 @@ export const ProjectData = [
     about:
       " A CRUD app designed to store, edit and delete employee's details. I utilised JS DOM manipulation to come up with this application",
     challenges:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem provident rerum tempore, ea eaque excepturi.",
+      " It helped enter, edit and save employee's details for improved accessibility and easy communication",
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
   },
   {

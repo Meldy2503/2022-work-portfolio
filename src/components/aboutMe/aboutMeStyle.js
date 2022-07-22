@@ -32,7 +32,7 @@ export const Row = styled.section`
   }
 
   @media (max-width: 500px) {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   h3 {

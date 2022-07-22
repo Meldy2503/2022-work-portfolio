@@ -10,7 +10,7 @@ export const Container = styled.section`
 export const Contents = styled.div`
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
     url(${bg1});
   background-position: bottom;
   background-size: cover;
