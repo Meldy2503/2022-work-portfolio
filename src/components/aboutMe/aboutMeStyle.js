@@ -172,7 +172,7 @@ export const Interests = styled.div`
     p {
       font-size: 1.6rem;
       margin-top: 1rem;
-      color: #d0d0d0;
+      color: #bdbaba;
     }
   }
 `;

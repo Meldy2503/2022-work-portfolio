@@ -83,7 +83,7 @@ export const TypedText = styled.span`
   p {
     margin-top: 0;
     letter-spacing: 0.1rem;
-    color: #d0d0d0;
+    color: #bdbaba;
     font-family: "Raleway", sans-serif;
   }
 `;

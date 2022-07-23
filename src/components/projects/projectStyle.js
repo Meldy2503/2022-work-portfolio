@@ -59,7 +59,6 @@ export const Col2 = styled(Col1)`
   p {
     margin: 0.6rem 0 2rem;
     line-height: 1.55;
-    color: #bdbaba;
   }
 
   h2 {
@@ -129,7 +128,7 @@ export const Figure = styled.figure`
 export const ButtonW = styled.a`
   display: flex;
   align-items: center;
-  color: #d0d0d0;
+  color: #bdbaba;
 `;
 export const ButtonG = styled(ButtonW)``;
 
@@ -168,7 +167,7 @@ export const Overlay = styled.div`
     right: 0;
     font-size: 10rem;
     font-weight: 500;
-    opacity: 0.7;
+    opacity: 0.5;
   }
 `;
 

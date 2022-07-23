@@ -39,7 +39,7 @@ export const Tools = styled.div`
   margin-bottom: 5rem;
 
   h3 {
-    color: #d0d0d0;
+    color: #bdbaba;
     font-size: 2rem;
     font-weight: 500;
     padding-bottom: 0.9rem;
@@ -75,7 +75,7 @@ export const IconsContainer = styled.div`
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
-    border: 0.15rem solid #d0d0d0;
+    border: 0.15rem solid #bdbaba;
     border-radius: 2rem;
     padding: 1rem;
     width: 12rem;
