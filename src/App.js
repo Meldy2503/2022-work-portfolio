@@ -7,6 +7,10 @@ import "aos/dist/aos.css";
 
 function App() {
   const theme = {
+    color: {
+      primary: "#d19928",
+    },
+
     media: {
       smobile: "420px",
       mobile: "768px",

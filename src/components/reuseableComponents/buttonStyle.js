@@ -19,11 +19,11 @@ export const Button = styled.a`
     #462523 0%,
     #8a6e2f 5%,
     #9f7928 10%,
-    #e0a42b 22%,
-    #f6e27a 45%,
-    #f5e284 50%,
-    #f6e27a 55%,
-    #e0a42b 78%,
+    #d19928 22%,
+    #c9b862 45%,
+    #c9b862 50%,
+    #c9b862 55%,
+    #d19928 78%,
     #9f7928 90%,
     #8a6e2f 95%,
     #462523 100%
@@ -38,16 +38,15 @@ export const Button = styled.a`
     background: linear-gradient(
       to right,
       #f6e27a 0%,
-      #e0a42b 10%,
+      #d19928 10%,
       #9f7928 22%,
       #8a6e2f 45%,
       #755e27 50%,
       #8a6e2f 55%,
       #9f7928 78%,
-      #e0a42b 90%,
+      #d19928 90%,
       #f6e27a 100%
     );
-    /* color: #d0d0d0; */
   }
 `;
 
@@ -64,11 +63,11 @@ export const ButtonB = styled.button`
     #462523 0%,
     #8a6e2f 5%,
     #9f7928 10%,
-    #e0a42b 22%,
-    #f6e27a 45%,
-    #f5e284 50%,
-    #f6e27a 55%,
-    #e0a42b 78%,
+    #d19928 22%,
+    #c9b862 45%,
+    #c9b862 50%,
+    #c9b862 55%,
+    #d19928 78%,
     #9f7928 90%,
     #8a6e2f 95%,
     #462523 100%
@@ -84,15 +83,14 @@ export const ButtonB = styled.button`
     background: linear-gradient(
       to right,
       #f6e27a 0%,
-      #e0a42b 10%,
+      #d19928 10%,
       #9f7928 22%,
       #8a6e2f 45%,
       #755e27 50%,
       #8a6e2f 55%,
       #9f7928 78%,
-      #e0a42b 90%,
+      #d19928 90%,
       #f6e27a 100%
     );
-    /* color: #d0d0d0; */
   }
 `;

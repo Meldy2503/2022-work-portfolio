@@ -38,15 +38,15 @@ export const NavContainer = styled.nav`
 export const Logo = styled.div`
   height: 4rem;
   width: 5rem;
-  border: 0.1rem solid #e0a42b;
+  border: 0.1rem solid ${({ theme }) => theme.color.primary};
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0.6rem 0.6rem 0 #e0a42b;
+  box-shadow: 0.6rem 0.6rem 0 ${({ theme }) => theme.color.primary};
 
   a {
     font-size: 2.5rem;
-    color: #e0a42b;
+    color: ${({ theme }) => theme.color.primary};
     font-weight: 700;
   }
 `;
@@ -96,7 +96,7 @@ export const Link = styled.a`
     top: -0.5rem;
     right: 0;
     height: 0.29rem;
-    background-color: #e0a42b;
+    background-color: ${({ theme }) => theme.color.primary};
     width: 70%;
     border-radius: 3rem;
     transform-origin: right;
@@ -113,7 +113,7 @@ export const Link = styled.a`
     bottom: -0.7rem;
     display: block;
     height: 0.29rem;
-    background-color: #e0a42b;
+    background-color: ${({ theme }) => theme.color.primary};
     width: 70%;
     border-radius: 3rem;
     transform: scale(0, 1);
@@ -140,7 +140,7 @@ export const Link = styled.a`
     }
 
     &:hover {
-      color: #e0a42b;
+      color: ${({ theme }) => theme.color.primary};
     }
   }
 `;

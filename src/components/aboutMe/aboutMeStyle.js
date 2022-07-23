@@ -37,7 +37,7 @@ export const Row = styled.section`
   h3 {
     font-size: 2rem;
     margin: 2rem 0 0.5rem 0;
-    color: #e0a42b;
+    color: ${({ theme }) => theme.color.primary};
   }
 `;
 
@@ -72,7 +72,7 @@ export const ImageContainer = styled.section`
     width: 35rem;
     height: 34rem;
     margin: 0 auto;
-    border: 0.6rem solid #e0a42b;
+    border: 0.6rem solid ${({ theme }) => theme.color.primary};
     background-color: #090909;
 
     @media (max-width: 500px) {
@@ -92,11 +92,11 @@ export const ImageContainer = styled.section`
         #462523 0%,
         #8a6e2f 5%,
         #9f7928 10%,
-        #e0a42b 22%,
-        #f6e27a 45%,
-        #f5e284 50%,
-        #f6e27a 55%,
-        #e0a42b 78%,
+        #d19928 22%,
+        #c9b862 45%,
+        #c9b862 50%,
+        #c9b862 55%,
+        #d19928 78%,
         #9f7928 90%,
         #8a6e2f 95%,
         #462523 100%
@@ -123,10 +123,11 @@ export const TextContainer = styled.div`
   }
 
   p {
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 2.9rem;
-    color: #d0d0d0;
+    color: #bdbaba;
     opacity: 0.9;
+    font-size: 1.7rem;
   }
 `;
 
@@ -162,7 +163,7 @@ export const Interests = styled.div`
       align-items: center;
       margin-bottom: 1rem;
       margin-right: 1rem;
-      color: #e0a42b;
+      color: ${({ theme }) => theme.color.primary};
       background-color: #1c1c1c;
       padding: 1.5rem 3rem;
       font-size: 2.3rem;

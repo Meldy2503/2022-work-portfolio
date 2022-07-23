@@ -21,7 +21,7 @@ export const CardContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 8rem;
-  color: #d0d0d0;
+  color: #bdbaba;
 `;
 
 export const Card = styled.div`
@@ -40,11 +40,11 @@ export const Card = styled.div`
       #462523 0%,
       #8a6e2f 5%,
       #9f7928 10%,
-      #e0a42b 22%,
-      #f6e27a 45%,
-      #f5e284 50%,
-      #f6e27a 55%,
-      #e0a42b 78%,
+      #d19928 22%,
+      #c9b862 45%,
+      #c9b862 50%,
+      #c9b862 55%,
+      #d19928 78%,
       #9f7928 90%,
       #8a6e2f 95%,
       #462523 100%
@@ -68,11 +68,11 @@ export const Card = styled.div`
         #462523 0%,
         #8a6e2f 5%,
         #9f7928 10%,
-        #e0a42b 22%,
-        #f6e27a 45%,
-        #f5e284 50%,
-        #f6e27a 55%,
-        #e0a42b 78%,
+        #d19928 22%,
+        #c9b862 45%,
+        #c9b862 50%,
+        #c9b862 55%,
+        #d19928 78%,
         #9f7928 90%,
         #8a6e2f 95%,
         #462523 100%

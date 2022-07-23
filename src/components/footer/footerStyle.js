@@ -16,6 +16,6 @@ export const Container = styled.footer`
   }
 
   span {
-    color: #e0a42b;
+    color: ${({ theme }) => theme.color.primary};
   }
 `;

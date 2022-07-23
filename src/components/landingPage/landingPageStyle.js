@@ -32,7 +32,7 @@ export const Col = styled.div`
   }
 
   span {
-    color: #e0a42b;
+    color: ${({ theme }) => theme.color.primary};
     font-weight: bold;
   }
 

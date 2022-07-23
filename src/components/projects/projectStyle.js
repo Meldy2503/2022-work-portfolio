@@ -59,6 +59,7 @@ export const Col2 = styled(Col1)`
   p {
     margin: 0.6rem 0 2rem;
     line-height: 1.55;
+    color: #bdbaba;
   }
 
   h2 {
@@ -94,8 +95,8 @@ export const Figure = styled.figure`
       rgb(70, 37, 35),
       rgb(138, 110, 47),
       rgb(159, 121, 40),
-      rgb(224, 164, 43),
-      rgb(246, 226, 122)
+      rgb(224, 164, 43, 0.8),
+      rgb(246, 226, 122, 0.8)
     );
     transform: scaleY(1);
     z-index: 1;
@@ -110,8 +111,8 @@ export const Figure = styled.figure`
       rgb(70, 37, 35),
       rgb(138, 110, 47),
       rgb(159, 121, 40),
-      rgb(224, 164, 43),
-      rgb(246, 226, 122)
+      rgb(224, 164, 43, 0.8),
+      rgb(246, 226, 122, 0.8)
     );
   }
 
@@ -197,7 +198,7 @@ export const Techs = styled.div`
   }
 `;
 export const Tick = styled(IoIosCheckmarkCircle)`
-  color: #e0a42b;
+  color: ${({ theme }) => theme.color.primary};
   font-size: 1.8rem;
   margin-right: 0.6rem;
 `;
@@ -205,10 +206,10 @@ export const Live = styled(HiDesktopComputer)`
   color: #e90a0a;
   margin-right: 0.6rem;
   font-size: 2.7rem;
-  opacity: 0.7;
+  opacity: 0.6;
 `;
 export const Code = styled(FaCode)`
-  color: #e0a42b;
+  color: ${({ theme }) => theme.color.primary};
   margin-right: 0.6rem;
   font-size: 2.7rem;
 `;

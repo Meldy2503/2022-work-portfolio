@@ -50,7 +50,7 @@ export const Tools = styled.div`
       content: "";
       height: 0.35rem;
       width: 100%;
-      background-color: #e0a42b;
+      background-color: ${({ theme }) => theme.color.primary};
       position: absolute;
       bottom: 0;
       border-radius: 0.5rem;
@@ -82,7 +82,7 @@ export const IconsContainer = styled.div`
     margin-right: 1rem;
 
     &:hover {
-      border: 0.15rem solid #e0a42b;
+      border: 0.15rem solid ${({ theme }) => theme.color.primary};
     }
   }
 
@@ -91,15 +91,16 @@ export const IconsContainer = styled.div`
     height: 7rem;
     width: 8rem;
     padding-bottom: 1rem;
-    border-bottom: 0.15rem solid #d0d0d0;
+    border-bottom: 0.15rem solid #bdbaba;
     filter: brightness(100%) contrast(140%) saturate(1);
 
     &:hover {
-      border-bottom: 0.2rem solid #e0a42b;
+      border-bottom: 0.2rem solid ${({ theme }) => theme.color.primary};
     }
   }
 
   figcaption {
     margin-top: 0.5rem;
+    color: #bdbaba;
   }
 `;
