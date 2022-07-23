@@ -62,7 +62,7 @@ export const Col = styled.div`
     }
   }
 
-  & > p {
+  div > p {
     font-size: 1.8rem;
     font-family: "Raleway", sans-serif;
     width: 65%;
@@ -86,10 +86,13 @@ export const TypedText = styled.span`
   display: flex;
   align-items: center;
   margin-top: 2rem;
+  font-size: 1.8rem;
 
   p {
     margin-top: 0;
+    letter-spacing: 0.1rem;
     color: #d0d0d0;
+    font-family: "Raleway", sans-serif;
   }
 `;
 
