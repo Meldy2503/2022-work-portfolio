@@ -33,22 +33,9 @@ export const Card = styled.div`
   border-top-right-radius: 5rem;
 
   &:hover {
-    color: #000;
-    border: none;
-    background: linear-gradient(
-      to right,
-      #462523 0%,
-      #8a6e2f 5%,
-      #9f7928 10%,
-      #d19928 22%,
-      #c9b862 45%,
-      #c9b862 50%,
-      #c9b862 55%,
-      #d19928 78%,
-      #9f7928 90%,
-      #8a6e2f 95%,
-      #462523 100%
-    );
+    color: ${({ theme }) => theme.color.primary};
+    border: 0.3rem dotted ${({ theme }) => theme.color.primary};
+    transform: scale(0.9);
   }
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
@@ -68,11 +55,11 @@ export const Card = styled.div`
         #462523 0%,
         #8a6e2f 5%,
         #9f7928 10%,
-        #d19928 22%,
-        #c9b862 45%,
-        #c9b862 50%,
-        #c9b862 55%,
-        #d19928 78%,
+        #b68421 22%,
+        #b18121 45%,
+        #b18121 50%,
+        #b18121 55%,
+        #b68421 78%,
         #9f7928 90%,
         #8a6e2f 95%,
         #462523 100%

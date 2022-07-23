@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 function App() {
   const theme = {
     color: {
-      primary: "#b68421",
+      primary: "#be8b23",
     },
 
     media: {

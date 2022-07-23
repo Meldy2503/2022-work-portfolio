@@ -100,7 +100,7 @@ export const Figure = styled.figure`
     transform: scaleY(1);
     z-index: 1;
     transform-origin: bottom;
-    opacity: 0.6;
+    opacity: 0.5;
   }
 
   &:hover::before {
