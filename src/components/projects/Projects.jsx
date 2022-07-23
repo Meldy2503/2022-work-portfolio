@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectData } from "./projectData";
+import { ProjectData } from "./ProjectData";
 import { SubHeading } from "../reuseableComponents/headingStyle";
 
 import {
