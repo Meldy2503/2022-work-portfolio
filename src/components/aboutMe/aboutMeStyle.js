@@ -72,7 +72,6 @@ export const ImageContainer = styled.section`
     width: 35rem;
     height: 34rem;
     margin: 0 auto;
-    /* border: 0.6rem solid ${({ theme }) => theme.color.primary}; */
     border: 0.6rem solid #1c1c1c;
     background-color: #090909;
 
@@ -90,18 +89,21 @@ export const ImageContainer = styled.section`
       left: 2.2rem;
       background: linear-gradient(
         to right,
-        #333 0%,
+        #474747 0%,
         #777 5%,
         #999 10%,
-        #d0d0d0 22%,
-        #eee 45%,
-        #f3f3f3 50%,
-        #eee 55%,
-        #d0d0d0 78%,
+        #bdbaba 22%,
+        #c4c4c4 45%,
+        #d0d0d0 50%,
+        #c4c4c4 55%,
+        #bdbaba 78%,
         #999 90%,
         #777 95%,
-        #333 100%
+        #474747 100%
       );
+
+      opacity: 0.8;
+
       /* background: linear-gradient(
         to right,
         #462523 0%,
