@@ -1,6 +1,3 @@
-// import nailBoutique from "../../assests/nail-B.png";
-// import windec from "../../assests/windec.PNG";
-
 export const ProjectData = [
   {
     id: 1,
