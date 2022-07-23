@@ -207,7 +207,7 @@ export const Live = styled(HiDesktopComputer)`
   font-size: 3rem;
 `;
 export const Code = styled(FaCode)`
-  color: #e90a0a;
+  color: #e0a42b;
   margin-right: 0.6rem;
   font-size: 3rem;
 `;

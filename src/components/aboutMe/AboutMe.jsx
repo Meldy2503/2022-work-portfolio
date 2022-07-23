@@ -14,7 +14,6 @@ import {
   ImageContainer,
   TextContainer,
   Interests,
-  Edu,
   Cv,
 } from "./aboutMeStyle";
 
@@ -35,16 +34,15 @@ const AboutMe = () => {
                 I'm a success driven and determined frontend developer who loves
                 creating maintainable, scalable and responsive web designs using
                 HTML, CSS, Js, React and other technologies for developing user
-                friendly interfaces. I'm a lifelong learner, a team player and I
-                have excellent communication skills in English.
+                friendly interfaces. I have a good understanding of relational
+                databases as well as solid computer software foundations such as
+                DOM manipulations and complex alogrithms.
               </p>
-              <Edu data-aos="fade-up">
-                <h3>EDUCATION</h3>
-                <p>
-                  I'm a graduate of Electrical Engineering (B.Eng) from Nnamdi
-                  Azikiwe University, Awka, Anambra State, Nigeria.
-                </p>
-              </Edu>
+              <p>
+                I'm a team player, a fast and lifelong learner always willing to
+                learn more technologies to become a better developer and I have
+                excellent communication skills in English.
+              </p>
 
               <Cv data-aos="fade-up">
                 <Button href={myCv} mgt="0" bor="none" target="_blank">

@@ -127,15 +127,7 @@ export const TextContainer = styled.div`
   p {
     line-height: 1.6;
     font-size: 1.8rem;
-  }
-`;
-
-export const Edu = styled.div`
-  margin-bottom: 2.9rem;
-
-  @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    width: 100%;
-    margin: 3rem auto;
+    margin-bottom: 2.9rem;
   }
 `;
 

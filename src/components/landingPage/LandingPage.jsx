@@ -28,7 +28,7 @@ const LandingPage = () => {
             </p>
             <TypedText>
               <p>
-                I'm proficient in&nbsp;<span>{"<"}&nbsp;</span>
+                I'm proficient in&nbsp;<span>{"<"}</span>&nbsp;
               </p>
               <TypewriterComponent
                 options={{

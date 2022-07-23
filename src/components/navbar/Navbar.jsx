@@ -20,7 +20,6 @@ const Navbar = () => {
 
   const changeNavBgColorOnScroll = () => {
     window.scrollY >= 7 ? setNavbar(true) : setNavbar(false);
-    console.log(window.scrollY);
   };
 
   window.addEventListener("scroll", changeNavBgColorOnScroll);
