@@ -33,8 +33,7 @@ export const Card = styled.div`
   border-top-right-radius: 5rem;
 
   &:hover {
-    color: ${({ theme }) => theme.color.primary};
-    border: 0.3rem dotted ${({ theme }) => theme.color.primary};
+    border: 0.2rem dotted #c7b663;
     transform: scale(0.9);
   }
 
@@ -55,11 +54,11 @@ export const Card = styled.div`
         #462523 0%,
         #8a6e2f 5%,
         #9f7928 10%,
-        #b68421 22%,
-        #b18121 45%,
-        #b18121 50%,
-        #b18121 55%,
-        #b68421 78%,
+        #c79834 22%,
+        #c7b663 45%,
+        #cebe6e 50%,
+        #c7b663 55%,
+        #c79834 78%,
         #9f7928 90%,
         #8a6e2f 95%,
         #462523 100%

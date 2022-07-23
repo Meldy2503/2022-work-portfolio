@@ -72,7 +72,8 @@ export const ImageContainer = styled.section`
     width: 35rem;
     height: 34rem;
     margin: 0 auto;
-    border: 0.6rem solid ${({ theme }) => theme.color.primary};
+    /* border: 0.6rem solid ${({ theme }) => theme.color.primary}; */
+    border: 0.6rem solid #1c1c1c;
     background-color: #090909;
 
     @media (max-width: 500px) {
@@ -89,19 +90,32 @@ export const ImageContainer = styled.section`
       left: 2.2rem;
       background: linear-gradient(
         to right,
+        #333 0%,
+        #777 5%,
+        #999 10%,
+        #d0d0d0 22%,
+        #eee 45%,
+        #f3f3f3 50%,
+        #eee 55%,
+        #d0d0d0 78%,
+        #999 90%,
+        #777 95%,
+        #333 100%
+      );
+      /* background: linear-gradient(
+        to right,
         #462523 0%,
         #8a6e2f 5%,
         #9f7928 10%,
-        #b68421 22%,
-        #b18121 45%,
-        #b18121 50%,
-        #b18121 55%,
-        #b68421 78%,
+        #c79834 22%,
+        #c7b663 45%,
+        #cebe6e 50%,
+        #c7b663 55%,
+        #c79834 78%,
         #9f7928 90%,
         #8a6e2f 95%,
         #462523 100%
-      );
-
+      ); */
       @media (max-width: 500px) {
         bottom: 0;
         left: 0;

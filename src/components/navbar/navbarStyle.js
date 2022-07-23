@@ -38,15 +38,15 @@ export const NavContainer = styled.nav`
 export const Logo = styled.div`
   height: 4rem;
   width: 5rem;
-  border: 0.1rem solid ${({ theme }) => theme.color.primary};
+  border: 0.1rem solid #d0d0d0;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0.6rem 0.6rem 0 ${({ theme }) => theme.color.primary};
+  box-shadow: 0.6rem 0.6rem 0 #bdbaba;
 
   a {
     font-size: 2.5rem;
-    color: ${({ theme }) => theme.color.primary};
+    color: #bdbaba;
     font-weight: 700;
   }
 `;
