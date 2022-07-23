@@ -96,8 +96,9 @@ export const Card = styled.div`
     }
 
     p {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-weight: 400;
+      line-height: 1.5;
     }
   }
 `;

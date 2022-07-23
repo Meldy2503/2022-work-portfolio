@@ -111,7 +111,7 @@ export const Media = styled.div`
   p,
   a {
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.4;
     color: #000;
     letter-spacing: 0.1rem;
