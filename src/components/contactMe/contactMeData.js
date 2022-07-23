@@ -1,4 +1,4 @@
-import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiOutlineGithub } from "react-icons/ai";
 import { SiReplit, SiCodewars } from "react-icons/si";
 import { FiFigma } from "react-icons/fi";
 import { FaCodepen, FaStackOverflow } from "react-icons/fa";
