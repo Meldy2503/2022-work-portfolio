@@ -31,8 +31,7 @@ export const Row = styled.div`
   justify-content: space-between;
   padding: 3rem 3rem 6rem;
   background-color: rgb(0, 0, 0, 0.9);
-  margin-bottom: 3rem;
-  color: #d0d0d0;
+  margin-bottom: 4rem;
   width: 100%;
   align-items: center;
   flex-direction: ${({ flexd }) => flexd || "row"};
@@ -55,14 +54,16 @@ export const Col1 = styled.div`
   }
 `;
 export const Col2 = styled(Col1)`
+  opacity: 0.9;
+
   p {
     margin: 0.6rem 0 2rem;
-    font-size: 1.8rem;
     line-height: 1.55;
   }
 
   h2 {
     margin-bottom: 1rem;
+    font-size: 2.3rem;
   }
 
   h3 {
@@ -70,7 +71,7 @@ export const Col2 = styled(Col1)`
   }
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    margin-top: 6rem;
+    margin-top: 8rem;
   }
 `;
 export const Figure = styled.figure`
@@ -115,20 +116,19 @@ export const Figure = styled.figure`
   }
 
   img {
-    height: 38rem;
-    width: 100%;
+    height: 35rem;
+    max-width: 100%;
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
-      height: 27rem;
+      height: 25rem;
     }
   }
 `;
 
 export const ButtonW = styled.a`
-  font-size: 2rem;
   display: flex;
   align-items: center;
-  color: #eaeaea;
+  color: #d0d0d0;
 `;
 export const ButtonG = styled(ButtonW)``;
 
@@ -163,9 +163,9 @@ export const Overlay = styled.div`
 
   p {
     position: absolute;
-    top: -4rem;
+    top: 0rem;
     right: 0;
-    font-size: 12rem;
+    font-size: 10rem;
     font-weight: 500;
     opacity: 0.7;
   }
@@ -204,10 +204,11 @@ export const Tick = styled(IoIosCheckmarkCircle)`
 export const Live = styled(HiDesktopComputer)`
   color: #e90a0a;
   margin-right: 0.6rem;
-  font-size: 3rem;
+  font-size: 2.7rem;
+  opacity: 0.7;
 `;
 export const Code = styled(FaCode)`
   color: #e0a42b;
   margin-right: 0.6rem;
-  font-size: 3rem;
+  font-size: 2.7rem;
 `;

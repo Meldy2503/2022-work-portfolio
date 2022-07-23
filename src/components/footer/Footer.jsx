@@ -6,7 +6,7 @@ const Footer = () => {
     <Container>
       <p>&copy; 2022. All Rights Reserved</p>
       <p>
-        Designed and Built by <span>Okafor Emelder</span>
+        Designed & Built by <span>Okafor Emelder</span>
       </p>
     </Container>
   );

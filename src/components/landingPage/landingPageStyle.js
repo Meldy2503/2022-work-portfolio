@@ -31,10 +31,6 @@ export const Col = styled.div`
     width: 95%;
   }
 
-  div {
-    color: #fff;
-  }
-
   span {
     color: #e0a42b;
     font-weight: bold;
@@ -42,12 +38,11 @@ export const Col = styled.div`
 
   h5 {
     font-weight: 500;
-    font-size: 1.8rem;
-    color: #d0d0d0;
+    font-size: 1.7rem;
   }
 
   h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     line-height: 1.07;
     margin: 2rem 0 0 0;
     font-family: "Noto Sans", sans-serif;
@@ -55,18 +50,16 @@ export const Col = styled.div`
     letter-spacing: 0.2rem;
 
     @media (max-width: ${({ theme }) => theme.media.tablet}) {
-      font-size: 5rem;
+      font-size: 4rem;
     }
     @media (max-width: 500px) {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 
   div > p {
-    font-size: 1.8rem;
     font-family: "Raleway", sans-serif;
     width: 65%;
-    color: #d0d0d0;
     margin-top: 2rem;
     line-height: 1.45;
     letter-spacing: 0.1rem;
@@ -74,7 +67,6 @@ export const Col = styled.div`
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
       width: 70%;
-      font-size: 1.6rem;
     }
     @media (max-width: 500px) {
       width: 90%;
@@ -86,7 +78,7 @@ export const TypedText = styled.span`
   display: flex;
   align-items: center;
   margin-top: 2rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 
   p {
     margin-top: 0;

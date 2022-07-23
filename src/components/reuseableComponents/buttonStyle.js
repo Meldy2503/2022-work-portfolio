@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.a`
-  padding: ${({ pad }) => pad || "1.8rem 4rem"};
+  padding: ${({ pad }) => pad || "1.5rem 3.5rem"};
   font-size: 1.5rem;
   font-weight: 700;
   display: inline-block;
@@ -47,7 +47,7 @@ export const Button = styled.a`
       #e0a42b 90%,
       #f6e27a 100%
     );
-    color: #d0d0d0;
+    /* color: #d0d0d0; */
   }
 `;
 
@@ -93,6 +93,6 @@ export const ButtonB = styled.button`
       #e0a42b 90%,
       #f6e27a 100%
     );
-    color: #d0d0d0;
+    /* color: #d0d0d0; */
   }
 `;

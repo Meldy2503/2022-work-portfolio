@@ -88,7 +88,7 @@ export const MediaContents = styled.div`
   color: #000;
 
   h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 3rem;
   }
@@ -110,7 +110,7 @@ export const Media = styled.div`
 
   p,
   a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.4;
     color: #000;
@@ -120,7 +120,7 @@ export const Media = styled.div`
   }
 
   .icons {
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: #000;
   }
 `;
@@ -147,8 +147,12 @@ export const Col2 = styled.div`
   h3 {
     margin-top: 2rem;
     padding: 0 2rem;
-    font-size: 2.5rem;
-    color: #eaeaea;
+    font-size: 2rem;
+    color: #d0d0d0;
+
+    @media (max-width: ${({ theme }) => theme.media.mobile}) {
+      margin-top: 0;
+    }
   }
 `;
 export const Form = styled.form`
@@ -172,7 +176,7 @@ export const Form = styled.form`
     font-size: 1.6rem;
     border: none;
     background-color: rgb(0, 0, 0, 0.4);
-    color: #eaeaea;
+    color: #d0d0d0;
     outline: none;
     user-select: none;
 
@@ -182,11 +186,11 @@ export const Form = styled.form`
     &:-webkit-autofill:active {
       box-shadow: 0 0 0 30px rgb(0, 0, 0, 0.924) inset !important;
       -webkit-box-shadow: 0 0 0 30px rgb(0, 0, 0, 0.924) inset !important;
-      -webkit-text-fill-color: #eaeaea !important;
+      -webkit-text-fill-color: #d0d0d0 !important;
     }
 
     &::placeholder {
-      color: #eaeaea;
+      color: #d0d0d0;
     }
 
     &:focus {

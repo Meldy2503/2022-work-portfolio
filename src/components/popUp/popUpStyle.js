@@ -54,7 +54,7 @@ export const PopMessage = styled.div`
       margin-top: 9rem;
       font-weight: 700;
       line-height: 1.5;
-      color: #fff;
+      color: #eaeaea;
       text-transform: uppercase;
     }
   }

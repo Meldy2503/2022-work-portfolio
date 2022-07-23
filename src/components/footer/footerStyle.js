@@ -5,12 +5,11 @@ export const Container = styled.footer`
   overflow: hidden;
   background: #000;
   font-weight: 500;
-  padding: 1rem;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #eaeaea;
 
   p {
     line-height: 1.7;

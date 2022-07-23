@@ -128,7 +128,7 @@ export const Link = styled.a`
     padding: 2rem 0rem 1rem 0rem;
     border-bottom: 0.1rem solid rgba(241, 241, 241, 0.2);
     text-align: center;
-    color: #eaeaea;
+    color: #d0d0d0;
 
     &::after {
       height: 0;

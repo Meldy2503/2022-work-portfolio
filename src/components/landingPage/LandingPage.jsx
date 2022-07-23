@@ -18,7 +18,7 @@ const LandingPage = () => {
         <Col>
           <div data-aos="zoom-in">
             <h5>
-              &#128075; HELLO THERE, MY NAME IS&nbsp;<span>EMELDER</span>
+              &#128075; HELLO THERE, I'M&nbsp;<span>EMELDER</span>
             </h5>
             <h1>Frontend Developer</h1>
             <p>
@@ -52,7 +52,7 @@ const LandingPage = () => {
               <Button href="#projects" mgr="2rem" mgsr="0" mgst="4rem">
                 View Projects
               </Button>
-              <Button href="#contact" pad="1.8rem 4.8rem">
+              <Button href="#contact" pad="1.5rem 4.3rem">
                 Get in Touch
               </Button>
             </Btn>

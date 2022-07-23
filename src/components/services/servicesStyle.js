@@ -4,7 +4,6 @@ export const Container = styled.section`
   background-color: rgb(0, 0, 0, 0.9);
   width: 100%;
   overflow: hidden;
-  color: #d0d0d0;
 `;
 export const Contents = styled.div`
   width: 90%;
@@ -22,6 +21,7 @@ export const CardContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 8rem;
+  color: #d0d0d0;
 `;
 
 export const Card = styled.div`
@@ -60,7 +60,6 @@ export const Card = styled.div`
 
   & > div {
     text-align: center;
-    font-size: 2rem;
 
     span {
       font-size: 5rem;
@@ -92,13 +91,13 @@ export const Card = styled.div`
 
     h4 {
       margin: 1.5rem 0 0.7rem 0;
-      font-size: 2.3rem;
+      font-size: 2rem;
     }
 
     p {
-      font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.5;
+      opacity: 0.9;
     }
   }
 `;

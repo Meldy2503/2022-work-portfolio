@@ -21,7 +21,6 @@ export const Row = styled.section`
   box-shadow: 0 0.1rem 0.3rem 0.4rem #000;
   margin: 5rem auto;
   position: relative;
-  color: #d0d0d0;
   padding: 4rem;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
@@ -46,7 +45,6 @@ export const Details = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 2.5rem;
-  font-size: 1.8rem;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     flex-direction: column;
@@ -126,8 +124,9 @@ export const TextContainer = styled.div`
 
   p {
     line-height: 1.6;
-    font-size: 1.8rem;
     margin-bottom: 2.9rem;
+    color: #d0d0d0;
+    opacity: 0.9;
   }
 `;
 
@@ -165,12 +164,12 @@ export const Interests = styled.div`
       margin-right: 1rem;
       color: #e0a42b;
       background-color: #1c1c1c;
-      padding: 1.5rem 3.5rem;
-      font-size: 2.5rem;
+      padding: 1.5rem 3rem;
+      font-size: 2.3rem;
     }
 
     p {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       margin-top: 1rem;
       color: #d0d0d0;
     }
