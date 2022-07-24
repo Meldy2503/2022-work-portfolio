@@ -28,6 +28,7 @@ export const Button = styled.a`
     #8a6e2f 95%,
     #462523 100%
   );
+  opacity: 0.9;
 
   @media (max-width: 450px) {
     margin-right: ${({ mgsr }) => mgsr || "0"};
@@ -35,6 +36,7 @@ export const Button = styled.a`
   }
 
   &:hover {
+    opacity: 1;
     background: linear-gradient(
       to right,
       #474747 0%,
@@ -74,6 +76,7 @@ export const ButtonB = styled.button`
     #8a6e2f 95%,
     #462523 100%
   );
+  opacity: 0.9;
   cursor: pointer;
   margin-top: 2rem;
   border: none;
@@ -96,5 +99,6 @@ export const ButtonB = styled.button`
       #777 95%,
       #474747 100%
     );
+    opacity: 1;
   }
 `;

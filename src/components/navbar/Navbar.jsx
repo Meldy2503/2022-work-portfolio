@@ -52,7 +52,7 @@ const Navbar = () => {
             <Hamburger
               rounded
               color="#bdbaba"
-              size={30}
+              size={25}
               toggled={isMenuOpen}
               toggle={setIsMenuOpen}
             />

@@ -36,8 +36,8 @@ export const NavContainer = styled.nav`
   }
 `;
 export const Logo = styled.div`
-  height: 4rem;
-  width: 5rem;
+  height: 3.5rem;
+  width: 4rem;
   border: 0.1rem solid #d0d0d0;
   display: flex;
   justify-content: center;

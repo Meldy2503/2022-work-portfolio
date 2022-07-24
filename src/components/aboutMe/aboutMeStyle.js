@@ -72,9 +72,11 @@ export const ImageContainer = styled.section`
     width: 35rem;
     height: 34rem;
     margin: 0 auto;
-    border: 0.6rem solid #1c1c1c;
+    border-left: 0.6rem solid ${({ theme }) => theme.color.primary};
+    border-bottom: 0.6rem solid ${({ theme }) => theme.color.primary};
+    border-top: 0.6rem solid #000;
+    border-right: 0.6rem solid #000;
     background-color: #090909;
-
     @media (max-width: 500px) {
       height: 28rem;
       border: none;
@@ -89,23 +91,6 @@ export const ImageContainer = styled.section`
       left: 2.2rem;
       background: linear-gradient(
         to right,
-        #474747 0%,
-        #777 5%,
-        #999 10%,
-        #bdbaba 22%,
-        #c4c4c4 45%,
-        #d0d0d0 50%,
-        #c4c4c4 55%,
-        #bdbaba 78%,
-        #999 90%,
-        #777 95%,
-        #474747 100%
-      );
-
-      opacity: 0.8;
-
-      /* background: linear-gradient(
-        to right,
         #462523 0%,
         #8a6e2f 5%,
         #9f7928 10%,
@@ -117,7 +102,8 @@ export const ImageContainer = styled.section`
         #9f7928 90%,
         #8a6e2f 95%,
         #462523 100%
-      ); */
+      );
+      opacity: 0.9;
       @media (max-width: 500px) {
         bottom: 0;
         left: 0;
@@ -141,7 +127,7 @@ export const TextContainer = styled.div`
   p {
     line-height: 1.7;
     margin-bottom: 2.9rem;
-    color: #bdbaba;
+    color: #999;
     opacity: 0.9;
     font-size: 1.7rem;
   }

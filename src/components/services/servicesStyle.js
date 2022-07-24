@@ -21,12 +21,12 @@ export const CardContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 8rem;
-  color: #bdbaba;
+  color: #999;
 `;
 
 export const Card = styled.div`
   width: 32%;
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   margin: 0 auto 6rem auto;
   border: 0.3rem dotted #474747;
   position: relative;
@@ -63,8 +63,9 @@ export const Card = styled.div`
         #8a6e2f 95%,
         #462523 100%
       );
+      opacity: 0.95;
       width: fit-content;
-      padding: 0.5rem 2.5rem;
+      padding: 0.5rem 2rem;
       color: #090909;
       position: absolute;
       top: -3rem;
@@ -76,14 +77,13 @@ export const Card = styled.div`
     }
 
     h4 {
-      margin: 1.5rem 0 0.7rem 0;
+      margin: 2.5rem 0 0.7rem 0;
       font-size: 2rem;
     }
 
     p {
       font-weight: 400;
       line-height: 1.5;
-      opacity: 0.9;
     }
   }
 `;

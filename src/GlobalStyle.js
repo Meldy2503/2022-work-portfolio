@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 body {
     font-size: 1.6rem;
     background-color: #090909;
-    color: #bdbaba;
+    color: #999;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; 
     }
     

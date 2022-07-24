@@ -81,7 +81,7 @@ export const MediaContents = styled.div`
     #8a6e2f 95%,
     #462523 100%
   );
-  opacity: 0.8;
+  opacity: 0.9;
   padding: 2.5rem 0 0 0;
   box-shadow: 0.3rem 0.3rem 0.4rem #000;
   display: flex;

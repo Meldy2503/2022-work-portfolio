@@ -63,11 +63,11 @@ export const Col2 = styled(Col1)`
 
   h2 {
     margin-bottom: 1rem;
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
@@ -116,12 +116,7 @@ export const Figure = styled.figure`
   }
 
   img {
-    height: 35rem;
     max-width: 100%;
-
-    @media (max-width: ${({ theme }) => theme.media.mobile}) {
-      height: 25rem;
-    }
   }
 `;
 
