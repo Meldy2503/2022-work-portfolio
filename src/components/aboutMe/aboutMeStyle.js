@@ -126,7 +126,7 @@ export const TextContainer = styled.div`
   p {
     line-height: 1.7;
     margin-bottom: 2.9rem;
-    color: #999;
+    color: #bdbaba;
     opacity: 0.9;
     font-size: 1.7rem;
   }

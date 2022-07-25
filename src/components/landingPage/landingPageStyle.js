@@ -5,7 +5,7 @@ export const Container = styled.section`
   width: 100%;
   height: 100vh;
   position: relative;
-  color: #bdbaba;
+  color: #eaeaea;
 `;
 
 export const Contents = styled.div`
@@ -39,11 +39,11 @@ export const Col = styled.div`
 
   h5 {
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
     line-height: 1.07;
     margin: 2rem 0 0 0;
     font-family: "Noto Sans", sans-serif;
@@ -51,10 +51,10 @@ export const Col = styled.div`
     letter-spacing: 0.2rem;
 
     @media (max-width: ${({ theme }) => theme.media.tablet}) {
-      font-size: 4rem;
+      font-size: 4.5rem;
     }
     @media (max-width: 500px) {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
   }
 
@@ -62,9 +62,11 @@ export const Col = styled.div`
     font-family: "Raleway", sans-serif;
     width: 65%;
     margin-top: 2rem;
-    line-height: 1.45;
+    line-height: 1.5;
     letter-spacing: 0.1rem;
     font-weight: 500;
+    font-size: 1.8rem;
+    color: #d0d0d0;
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
       width: 70%;
@@ -79,12 +81,12 @@ export const TypedText = styled.span`
   display: flex;
   align-items: center;
   margin-top: 2rem;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 
   p {
     margin-top: 0;
     letter-spacing: 0.1rem;
-    color: #bdbaba;
+    color: #d0d0d0;
     font-family: "Raleway", sans-serif;
   }
 `;

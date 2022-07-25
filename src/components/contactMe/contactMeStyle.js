@@ -89,7 +89,7 @@ export const MediaContents = styled.div`
   color: #000;
 
   h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
     margin-bottom: 3rem;
   }
@@ -148,7 +148,7 @@ export const Col2 = styled.div`
   h3 {
     margin-top: 2rem;
     padding: 0 2rem;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: #d0d0d0;
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {

@@ -21,7 +21,7 @@ export const CardContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 8rem;
-  color: #999;
+  color: #bdbaba;
 `;
 
 export const Card = styled.div`

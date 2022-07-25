@@ -46,7 +46,7 @@ export const Logo = styled.div`
 
   a {
     font-size: 2.5rem;
-    color: #bdbaba;
+    color: #d0d0d0;
     font-weight: 700;
   }
 `;

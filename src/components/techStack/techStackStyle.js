@@ -39,8 +39,8 @@ export const Tools = styled.div`
   margin-bottom: 5rem;
 
   h3 {
-    color: #bdbaba;
-    font-size: 2rem;
+    color: #d0d0d0;
+    font-size: 2.3rem;
     font-weight: 500;
     padding-bottom: 0.9rem;
     position: relative;

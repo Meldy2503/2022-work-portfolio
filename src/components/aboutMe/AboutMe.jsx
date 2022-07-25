@@ -5,7 +5,7 @@ import avatar from "../../assests/about1.png";
 import { Button } from "../reuseableComponents/buttonStyle";
 import Services from "../services/Services";
 import { AboutData } from "./aboutMeData";
-import myCv from "../../assests/EmelderOkafor-CV.pdf";
+import myCv from "../../assests/Emelder-Okafor-CV.pdf";
 import {
   Container,
   Contents,
