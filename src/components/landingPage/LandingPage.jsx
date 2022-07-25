@@ -49,7 +49,7 @@ const LandingPage = () => {
               ></TypewriterComponent>
             </TypedText>
             <Btn>
-              <Button href="#projects" mgr="2rem" mgsr="0" mgst="4rem">
+              <Button href="#projects" mgr="2.5rem" mgsr="0" mgst="4rem">
                 View Projects
               </Button>
               <Button href="#contact" pad="1.5rem 4.3rem">
@@ -58,7 +58,7 @@ const LandingPage = () => {
             </Btn>
           </div>
         </Col>
-        <ScrollDown>
+        <ScrollDown href="#about-me">
           <span>
             <FaHandPointDown />
           </span>

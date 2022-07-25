@@ -33,7 +33,7 @@ export const Card = styled.div`
   border-top-right-radius: 5rem;
 
   &:hover {
-    border: 0.2rem dotted #c7b663;
+    border: 0.3rem dotted #c7b663;
     transform: scale(0.9);
   }
 

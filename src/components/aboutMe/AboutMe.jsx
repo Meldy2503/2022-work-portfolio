@@ -33,10 +33,10 @@ const AboutMe = () => {
               <p data-aos="fade-up">
                 I'm a success driven and determined frontend developer who loves
                 creating maintainable, scalable and responsive web designs using
-                HTML, CSS, Js, React and other technologies for developing user
-                friendly interfaces. I have a good understanding of relational
-                databases as well as solid computer software foundations such as
-                DOM manipulations and complex alogrithms.
+                HTML, CSS, JS(ES6), React and other technologies for developing
+                user friendly interfaces. I have a good understanding of
+                relational databases as well as solid computer software
+                foundations such as DOM manipulations and complex alogrithms.
               </p>
               <p>
                 I'm a team player, a fast and lifelong learner always willing to

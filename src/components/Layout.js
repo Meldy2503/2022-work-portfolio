@@ -7,7 +7,6 @@ import Projects from "./projects/Projects";
 import ContactMe from "./contactMe/ContactMe";
 import Footer from "./footer/Footer";
 
-
 const Layout = () => {
   return (
     <>

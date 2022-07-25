@@ -18,7 +18,6 @@ export const Contents = styled.div`
 `;
 export const Row = styled.section`
   background-color: rgb(0, 0, 0, 0.9);
-  box-shadow: 0 0.1rem 0.3rem 0.4rem #000;
   margin: 5rem auto;
   position: relative;
   padding: 4rem;
@@ -167,13 +166,14 @@ export const Interests = styled.div`
       margin-right: 1rem;
       color: ${({ theme }) => theme.color.primary};
       background-color: #1c1c1c;
-      padding: 1.5rem 3rem;
+      padding: 1rem 2rem;
       font-size: 2.3rem;
+      border-radius: 0.6rem;
     }
 
     p {
       font-size: 1.6rem;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       color: #bdbaba;
     }
   }

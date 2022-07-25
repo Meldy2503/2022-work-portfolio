@@ -96,7 +96,7 @@ export const Btn = styled.span`
     flex-direction: column;
   }
 `;
-export const ScrollDown = styled.div`
+export const ScrollDown = styled.a`
   position: absolute;
   bottom: 0;
   left: 0;

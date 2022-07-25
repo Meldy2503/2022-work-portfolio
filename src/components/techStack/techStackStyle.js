@@ -88,19 +88,19 @@ export const IconsContainer = styled.div`
 
   img {
     max-width: 100%;
-    height: 7rem;
-    width: 8rem;
-    padding-bottom: 1rem;
-    border-bottom: 0.15rem solid #bdbaba;
+    height: 6rem;
+    width: 7rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 0.15rem solid #999;
     filter: brightness(100%) contrast(140%) saturate(1);
 
     &:hover {
-      border-bottom: 0.2rem solid ${({ theme }) => theme.color.primary};
+      border-bottom: 0.15rem solid ${({ theme }) => theme.color.primary};
     }
   }
 
   figcaption {
     margin-top: 0.5rem;
-    color: #bdbaba;
+    color: #d0d0d0;
   }
 `;

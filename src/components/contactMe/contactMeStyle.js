@@ -36,13 +36,13 @@ export const Row = styled.div`
   padding: 2rem;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    margin: 6rem 0 0 8rem;
+    margin: 6rem 0 0 7rem;
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     flex-direction: column;
     margin: 13rem auto 0 auto;
     padding: 0 0 2rem 0;
-    width: 95%;
+    width: 100%;
   }
 `;
 export const Col1 = styled.div`

@@ -64,6 +64,30 @@ export const LinkContainer = styled.ul`
     display: block;
     z-index: 5000;
     height: 100vh;
+    animation: slidein 0.8s linear;
+
+    @keyframes slidein {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      25% {
+        transform: scale(0.25);
+        opacity: 0.25;
+      }
+      50% {
+        transform: scale(0.5);
+        opacity: 0.5;
+      }
+      75% {
+        transform: scale(0.75);
+        opacity: 0.75;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
   }
 
   ${(props) => props.isMenuOpen} {
@@ -82,68 +106,79 @@ export const LinkLists = styled.li`
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     padding-left: 0;
   }
-`;
-export const Link = styled.a`
-  color: #d0d0d0;
-  position: relative;
-  display: block;
-  text-transform: uppercase;
-  font-weight: 500;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -0.5rem;
-    right: 0;
-    height: 0.29rem;
-    background-color: ${({ theme }) => theme.color.primary};
-    width: 70%;
-    border-radius: 3rem;
-    transform-origin: right;
-    transform: scale(0, 1);
-    transition: transform ease-in 290ms;
-  }
-  &:hover::before {
-    transform: scale(1, 1);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -0.7rem;
-    display: block;
-    height: 0.29rem;
-    background-color: ${({ theme }) => theme.color.primary};
-    width: 70%;
-    border-radius: 3rem;
-    transform: scale(0, 1);
-    transition: transform ease-out 290ms;
-    transform-origin: left;
-  }
-  &:hover::after {
-    transform: scale(1, 1);
-  }
-
-  @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    padding: 2rem 0rem 1rem 0rem;
-    border-bottom: 0.1rem solid rgba(241, 241, 241, 0.2);
-    text-align: center;
+  .link {
     color: #d0d0d0;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    @media (max-width: ${({ theme }) => theme.media.tablet}) {
+      padding: 2rem 0rem 1rem 0rem;
+      border-bottom: 0.1rem solid rgba(241, 241, 241, 0.2);
+      text-align: center;
+      color: #d0d0d0;
+    }
+  }
+
+  .activeLink,
+  .link:hover {
+    color: #d0d0d0;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -0.5rem;
+      right: 0;
+      height: 0.29rem;
+      background-color: ${({ theme }) => theme.color.primary};
+      width: 70%;
+      border-radius: 3rem;
+      transform-origin: right;
+      transform: scale(0, 1);
+      transition: transform ease-in 290ms;
+      transform: scale(1, 1);
+    }
 
     &::after {
-      height: 0;
-      width: 0;
-    }
-    &::before {
-      height: 0;
-      width: 0;
+      content: "";
+      position: absolute;
+      bottom: -0.7rem;
+      display: block;
+      height: 0.29rem;
+      background-color: ${({ theme }) => theme.color.primary};
+      width: 70%;
+      border-radius: 3rem;
+      transform: scale(0, 1);
+      transition: transform ease-out 290ms;
+      transform-origin: left;
+      transform: scale(1, 1);
     }
 
-    &:hover {
+    @media (max-width: ${({ theme }) => theme.media.tablet}) {
+      padding: 2rem 0rem 1rem 0rem;
+      border-bottom: 0.1rem solid rgba(241, 241, 241, 0.2);
+      text-align: center;
       color: ${({ theme }) => theme.color.primary};
+
+      &::after {
+        content: "";
+        height: 0;
+        width: 0;
+      }
+      &::before {
+        content: "";
+        height: 0;
+        width: 0;
+      }
     }
   }
 `;
+
 export const MenuIcon = styled.div`
   display: none;
 

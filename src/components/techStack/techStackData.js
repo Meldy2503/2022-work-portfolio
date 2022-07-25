@@ -21,13 +21,13 @@ export const FrameworkData = [
     id: 3,
     src: styledComponent,
     alt: "styledComponentIcon",
-    caption: "Styled-C",
+    caption: "Styled-Comp.",
   },
   {
     id: 4,
     src: tailwindCss,
     alt: "tailwindCssIcon",
-    caption: "Tailwind",
+    caption: "TailwindCSS",
   },
   {
     id: 5,

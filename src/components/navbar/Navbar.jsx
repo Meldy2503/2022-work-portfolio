@@ -1,13 +1,13 @@
 import React from "react";
 import { Sling as Hamburger } from "hamburger-react";
 import { ClickAwayListener } from "@material-ui/core";
+import { NavHashLink as NavLink } from "react-router-hash-link";
 import {
   Header,
   NavContainer,
   Logo,
   LinkContainer,
   LinkLists,
-  Link,
   MenuIcon,
 } from "./navbarStyle";
 
@@ -29,23 +29,58 @@ const Navbar = () => {
       <Header navbar={navbar}>
         <NavContainer>
           <Logo>
-            <a href="#landing-page">EO</a>
+            <NavLink to="#landing-page">EO</NavLink>
           </Logo>
           <LinkContainer isMenuOpen={isMenuOpen}>
             <LinkLists onClick={closeMenuLink}>
-              <Link href="#landing-page">Home</Link>
+              <NavLink
+                activeClassName="activeLink"
+                className="link"
+                to="/#landing-page"
+                smooth
+              >
+                Home
+              </NavLink>
             </LinkLists>
             <LinkLists onClick={closeMenuLink}>
-              <Link href="#about-me">About Me</Link>
+              <NavLink
+                activeClassName="activeLink"
+                className="link"
+                to="/#about-me"
+                smooth
+              >
+                About Me
+              </NavLink>
             </LinkLists>
             <LinkLists onClick={closeMenuLink}>
-              <Link href="#skills">Tech Stack</Link>
+              <NavLink
+                activeClassName="activeLink"
+                className="link"
+                to="/#skills"
+                smooth
+              >
+                Tech Stack
+              </NavLink>
             </LinkLists>
             <LinkLists onClick={closeMenuLink}>
-              <Link href="#projects">Projects</Link>
+              <NavLink
+                activeClassName="activeLink"
+                className="link"
+                to="/#projects"
+                smooth
+              >
+                Projects
+              </NavLink>
             </LinkLists>
             <LinkLists onClick={closeMenuLink}>
-              <Link href="#contact">Contact Me</Link>
+              <NavLink
+                activeClassName="activeLink"
+                className="link"
+                to="/#contact"
+                smooth
+              >
+                Contact Me
+              </NavLink>
             </LinkLists>
           </LinkContainer>
           <MenuIcon onClick={handleMenuIcon}>
