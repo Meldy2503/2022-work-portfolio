@@ -21,7 +21,7 @@ export const FrameworkData = [
     id: 3,
     src: styledComponent,
     alt: "styledComponentIcon",
-    caption: "Styled-Comp.",
+    caption: "Styled-Com",
   },
   {
     id: 4,

@@ -89,7 +89,7 @@ export const MediaContents = styled.div`
   color: #000;
 
   h3 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     text-align: center;
     margin-bottom: 3rem;
   }

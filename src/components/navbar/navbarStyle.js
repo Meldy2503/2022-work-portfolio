@@ -64,24 +64,24 @@ export const LinkContainer = styled.ul`
     display: block;
     z-index: 5000;
     height: 100vh;
-    animation: slidein 0.8s linear;
+    animation: slidein 0.6s linear;
 
     @keyframes slidein {
       0% {
         transform: scale(0);
-        opacity: 0;
+        opacity: 0.25;
       }
       25% {
         transform: scale(0.25);
-        opacity: 0.25;
+        opacity: 0.45;
       }
       50% {
         transform: scale(0.5);
-        opacity: 0.5;
+        opacity: 0.65;
       }
       75% {
-        transform: scale(0.75);
-        opacity: 0.75;
+        transform: scale(0.8);
+        opacity: 0.85;
       }
       100% {
         transform: scale(1);

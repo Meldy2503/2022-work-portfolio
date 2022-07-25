@@ -40,7 +40,7 @@ export const Tools = styled.div`
 
   h3 {
     color: #d0d0d0;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 500;
     padding-bottom: 0.9rem;
     position: relative;
