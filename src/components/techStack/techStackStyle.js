@@ -40,11 +40,15 @@ export const Tools = styled.div`
 
   h3 {
     color: #d0d0d0;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 500;
     padding-bottom: 0.9rem;
     position: relative;
     margin-bottom: 2rem;
+
+    @media (max-width: 320px) {
+      font-size: 2rem;
+    }
 
     &::before {
       content: "";
