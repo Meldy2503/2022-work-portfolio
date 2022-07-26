@@ -9,7 +9,7 @@ export const ProjectData = [
       "Nail Boutique is a beauty brand which offers nail, hair and skin care services to the public.",
     challenges:
       " This website was built to bridge booking challenges which helped implement effective market strategies and increased productivity.",
-    tech: ["React", "Context-API", "HTML", "JavaScript", "Styled-Co", "MUI"],
+    tech: ["React", "Context-API", "HTML", "JavaScript", "Styled-Comp.", "MUI"],
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const ProjectData = [
       "Windec is an advertising company which provides digital services to small and large scale businesses. ",
     challenges:
       "This website was built to improve online services which increased efficiency and productivity.",
-    tech: ["HTML", "JavaScript", "React", "Styled - Co", "MUI"],
+    tech: ["HTML", "JavaScript", "React", "Styled - Comp.", "MUI"],
   },
   {
     id: 3,
@@ -56,6 +56,6 @@ export const ProjectData = [
       "I built a simple portfolio that showcases but not limited to my experiences, education, projects, community work, profile and technical stack.",
     challenges:
       "Designing and building my portfolio gave me the opportunity to show my soft skills for better opportunities.",
-    tech: ["HTML", "JavaScript", "React", "Styled - Co", "MUI"],
+    tech: ["HTML", "JavaScript", "React", "Styled - Comp", "MUI"],
   },
 ];

@@ -95,7 +95,7 @@ export const IconsContainer = styled.div`
     height: 6rem;
     width: 7rem;
     padding-bottom: 0.7rem;
-    border-bottom: 0.15rem solid #999;
+    border-bottom: 0.15rem solid #bdbaba;
     filter: brightness(100%) contrast(140%) saturate(1);
 
     &:hover {
