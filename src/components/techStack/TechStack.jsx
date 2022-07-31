@@ -15,7 +15,7 @@ const TechStack = () => {
   return (
     <Container id="skills">
       <Contents>
-        <SubHeading color="#fff" data-aos="fade-up">
+        <SubHeading color="#75222d" data-aos="fade-up">
           Tech Stack
         </SubHeading>
         <Row>

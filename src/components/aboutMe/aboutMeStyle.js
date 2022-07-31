@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
   overflow: hidden;
-  background-color: #1c1c1c;
+  background-color: #1a1a1a;
   color: black;
 `;
 export const Contents = styled.div`
@@ -17,7 +17,7 @@ export const Contents = styled.div`
   }
 `;
 export const Row = styled.section`
-  background-color: rgb(0, 0, 0, 0.9);
+  background-color: rgb(0, 0, 0);
   margin: 5rem auto;
   position: relative;
   padding: 4rem;
@@ -36,7 +36,7 @@ export const Row = styled.section`
   h3 {
     font-size: 2rem;
     margin: 2rem 0 0.5rem 0;
-    color: ${({ theme }) => theme.color.primary};
+    color: #fff;
   }
 `;
 
@@ -71,10 +71,7 @@ export const ImageContainer = styled.section`
     width: 35rem;
     height: 34rem;
     margin: 0 auto;
-    border-left: 0.6rem solid ${({ theme }) => theme.color.primary};
-    border-bottom: 0.6rem solid ${({ theme }) => theme.color.primary};
-    border-top: 0.6rem solid #000;
-    border-right: 0.6rem solid #000;
+    border: 0.6rem solid #1a1a1a;
     background-color: #090909;
     @media (max-width: 500px) {
       height: 28rem;
@@ -90,19 +87,19 @@ export const ImageContainer = styled.section`
       left: 2.2rem;
       background: linear-gradient(
         to right,
-        #462523 0%,
-        #8a6e2f 5%,
-        #9f7928 10%,
-        #c79834 22%,
-        #c7b663 45%,
-        #cebe6e 50%,
-        #c7b663 55%,
-        #c79834 78%,
-        #9f7928 90%,
-        #8a6e2f 95%,
-        #462523 100%
+        #474747 0%,
+        #999 5%,
+        #bdbaba 10%,
+        #d0d0d0 22%,
+        #eaeaea 45%,
+        #eaeaea 50%,
+        #eaeaea 55%,
+        #d0d0d0 78%,
+        #bdbaba 90%,
+        #999 95%,
+        #474747 100%
       );
-      opacity: 0.9;
+
       @media (max-width: 500px) {
         bottom: 0;
         left: 0;
@@ -126,7 +123,7 @@ export const TextContainer = styled.div`
   p {
     line-height: 1.7;
     margin-bottom: 2.9rem;
-    color: #bdbaba;
+    color: #999;
     opacity: 0.9;
     font-size: 1.7rem;
   }
@@ -165,16 +162,16 @@ export const Interests = styled.div`
       margin-bottom: 1rem;
       margin-right: 1rem;
       color: ${({ theme }) => theme.color.primary};
-      background-color: #1c1c1c;
+      background-color: rgb(255, 255, 255, 0.007);
       padding: 1rem 2rem;
-      font-size: 2.3rem;
+      font-size: 2.5rem;
       border-radius: 0.6rem;
     }
 
     p {
       font-size: 1.6rem;
       margin-top: 0.5rem;
-      color: #bdbaba;
+      color: #999;
     }
   }
 `;

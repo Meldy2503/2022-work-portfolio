@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background-color: rgb(0, 0, 0, 0.9);
+  background-color: rgb(0, 0, 0);
   width: 100%;
   overflow: hidden;
 `;
@@ -21,21 +21,16 @@ export const CardContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 8rem;
-  color: #bdbaba;
+  color: #999;
 `;
 
 export const Card = styled.div`
   width: 32%;
   padding: 4rem 2rem;
-  margin: 0 auto 6rem auto;
-  border: 0.3rem dotted #474747;
+  margin: 0 auto 8rem auto;
   position: relative;
   border-top-right-radius: 5rem;
-
-  &:hover {
-    border: 0.3rem dotted #c7b663;
-    transform: scale(0.9);
-  }
+  background-color: rgb(255, 255, 255, 0.008);
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     width: 47%;
@@ -48,37 +43,27 @@ export const Card = styled.div`
     text-align: center;
 
     span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 5rem;
-      background: linear-gradient(
-        to right,
-        #462523 0%,
-        #8a6e2f 5%,
-        #9f7928 10%,
-        #c79834 22%,
-        #c7b663 45%,
-        #cebe6e 50%,
-        #c7b663 55%,
-        #c79834 78%,
-        #9f7928 90%,
-        #8a6e2f 95%,
-        #462523 100%
-      );
-      opacity: 0.95;
+      color: ${({ theme }) => theme.color.primary};
+      background-color: #000;
       width: fit-content;
-      padding: 0.5rem 2rem;
-      color: #090909;
+      padding: 2rem;
       position: absolute;
-      top: -3rem;
+      top: -3.5rem;
       left: 0;
       right: 0;
       margin: 0 auto;
-      border-radius: 1rem;
-      box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem #090909;
+      border-radius: 50%;
+      border: 0.15rem solid #d0d0d0;
     }
 
     h4 {
-      margin: 2.5rem 0 0.7rem 0;
-      font-size: 2rem;
+      margin: 4rem 0 0.7rem 0;
+      font-size: 2.1rem;
+      color: #fff;
     }
 
     p {

@@ -38,15 +38,15 @@ export const NavContainer = styled.nav`
 export const Logo = styled.div`
   height: 3.5rem;
   width: 4rem;
-  border: 0.1rem solid #d0d0d0;
+  border: 0.1rem solid #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0.6rem 0.6rem 0 #bdbaba;
+  box-shadow: 0.6rem 0.6rem 0 #d0d0d0;
 
   a {
     font-size: 2.5rem;
-    color: #d0d0d0;
+    color: #fff;
     font-weight: 700;
   }
 `;
@@ -108,7 +108,7 @@ export const LinkLists = styled.li`
   }
 
   .link {
-    color: #d0d0d0;
+    color: #fff;
     display: block;
     text-transform: uppercase;
     font-weight: 500;
@@ -117,13 +117,13 @@ export const LinkLists = styled.li`
       padding: 2rem 0rem 1rem 0rem;
       border-bottom: 0.1rem solid rgba(241, 241, 241, 0.2);
       text-align: center;
-      color: #d0d0d0;
+      color: #fff;
     }
   }
 
   .activeLink,
   .link:hover {
-    color: #d0d0d0;
+    color: #fff;
     position: relative;
     display: block;
     text-transform: uppercase;
@@ -132,9 +132,9 @@ export const LinkLists = styled.li`
     &::before {
       content: "";
       position: absolute;
-      top: -0.5rem;
+      top: -0.7rem;
       right: 0;
-      height: 0.29rem;
+      height: 0.25rem;
       background-color: ${({ theme }) => theme.color.primary};
       width: 70%;
       border-radius: 3rem;
@@ -149,7 +149,7 @@ export const LinkLists = styled.li`
       position: absolute;
       bottom: -0.7rem;
       display: block;
-      height: 0.29rem;
+      height: 0.27rem;
       background-color: ${({ theme }) => theme.color.primary};
       width: 70%;
       border-radius: 3rem;

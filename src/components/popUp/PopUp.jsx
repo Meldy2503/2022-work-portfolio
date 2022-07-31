@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../reuseableComponents/buttonStyle";
+import { ButtonC } from "../reuseableComponents/buttonStyle";
 import { PopMessage, Container } from "./popUpStyle";
 import thumbsUp from "../../assests/thumbs-up.png";
 
@@ -13,18 +13,9 @@ const PopUp = () => {
             Thanks for reaching out ! <br /> I will get back to you as soon as
             possible
           </p>
-          <Button
-            href="/"
-            width="80%"
-            mgt="3rem"
-            mgst="3rem"
-            bgc="#ad974f"
-            bor="none"
-            bxs="inset 30rem 0 0 0 #8e793e"
-            coh="#fff"
-          >
+          <ButtonC href="/" width="70%" mgt="3rem" mgst="3rem">
             OK
-          </Button>
+          </ButtonC>
         </div>
       </PopMessage>
     </Container>

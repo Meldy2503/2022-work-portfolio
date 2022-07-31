@@ -6,7 +6,7 @@ import { FaCode } from "react-icons/fa";
 export const Container = styled.section`
   width: 100%;
   overflow: hidden;
-  background-color: #1c1c1c;
+  background-color: #1a1a1a;
   position: relative;
 `;
 
@@ -30,7 +30,7 @@ export const Row = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 3rem 3rem 6rem;
-  background-color: rgb(0, 0, 0, 0.9);
+  background-color: rgb(0, 0, 0);
   margin-bottom: 4rem;
   width: 100%;
   align-items: center;
@@ -64,10 +64,12 @@ export const Col2 = styled(Col1)`
   h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
+    color: #fff;
   }
 
   h3 {
     font-size: 1.8rem;
+    color: #fff;
   }
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
@@ -89,30 +91,17 @@ export const Figure = styled.figure`
     bottom: 0;
     left: 0;
     transition: transform 0.6s ease-in-out;
-    background: linear-gradient(
-      to top,
-      rgb(70, 37, 35),
-      rgb(138, 110, 47),
-      rgb(159, 121, 40),
-      rgb(224, 164, 43, 0.8),
-      rgb(246, 226, 122, 0.8)
-    );
+    background: #c79834;
     transform: scaleY(1);
     z-index: 1;
     transform-origin: bottom;
-    opacity: 0.5;
+    opacity: 0.4;
   }
 
   &:hover::before {
     transform: scaleY(0);
-    background: linear-gradient(
-      to top,
-      rgb(70, 37, 35),
-      rgb(138, 110, 47),
-      rgb(159, 121, 40),
-      rgb(224, 164, 43, 0.8),
-      rgb(246, 226, 122, 0.8)
-    );
+    background: #c79834;
+    opacity: 0.4;
   }
 
   img {
@@ -123,7 +112,7 @@ export const Figure = styled.figure`
 export const ButtonW = styled.a`
   display: flex;
   align-items: center;
-  color: #bdbaba;
+  color: #999;
 `;
 export const ButtonG = styled(ButtonW)``;
 
@@ -183,7 +172,7 @@ export const Techs = styled.div`
       padding: 0.7rem 1rem;
       margin: 0 1rem 1rem 0;
       align-items: center;
-      background-color: #1c1c1c;
+      background-color: #1a1a1a;
     }
 
     p {
@@ -192,7 +181,7 @@ export const Techs = styled.div`
   }
 `;
 export const Tick = styled(IoIosCheckmarkCircle)`
-  color: ${({ theme }) => theme.color.primary};
+  color: #d0d0d0;
   font-size: 1.8rem;
   margin-right: 0.6rem;
 `;

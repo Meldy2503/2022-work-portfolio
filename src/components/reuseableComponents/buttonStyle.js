@@ -12,23 +12,22 @@ export const Button = styled.a`
   font-family: "Montserrat", sans-serif;
   transition: all 0.7s;
   width: ${({ width }) => width || "fit-content"};
-  color: #090909;
   margin-right: ${({ mgr }) => mgr || "0"};
   background: linear-gradient(
     to right,
-    #462523 0%,
-    #8a6e2f 5%,
-    #9f7928 10%,
-    #c79834 22%,
-    #c7b663 45%,
-    #cebe6e 50%,
-    #c7b663 55%,
-    #c79834 78%,
-    #9f7928 90%,
-    #8a6e2f 95%,
-    #462523 100%
+    #474747 0%,
+    #999 5%,
+    #bdbaba 10%,
+    #d0d0d0 22%,
+    #eaeaea 45%,
+    #eaeaea 50%,
+    #eaeaea 55%,
+    #d0d0d0 78%,
+    #bdbaba 90%,
+    #999 95%,
+    #474747 100%
   );
-  opacity: 0.9;
+  color: #9b7628;
 
   @media (max-width: 450px) {
     margin-right: ${({ mgsr }) => mgsr || "0"};
@@ -36,20 +35,20 @@ export const Button = styled.a`
   }
 
   &:hover {
-    opacity: 1;
+    color: #000;
     background: linear-gradient(
       to right,
-      #474747 0%,
-      #777 5%,
-      #999 10%,
-      #bdbaba 22%,
-      #c4c4c4 45%,
-      #d0d0d0 50%,
-      #c4c4c4 55%,
-      #bdbaba 78%,
-      #999 90%,
-      #777 95%,
-      #474747 100%
+      rgb(70, 37, 35) 0%,
+      rgb(138, 110, 47) 5%,
+      rgb(159, 121, 40) 10%,
+      rgb(199, 152, 52) 22%,
+      rgb(199, 182, 99) 45%,
+      rgb(206, 190, 110) 50%,
+      rgb(199, 182, 99) 55%,
+      rgb(199, 152, 52) 78%,
+      rgb(159, 121, 40) 90%,
+      rgb(138, 110, 47) 95%,
+      rgb(70, 37, 35) 100%
     );
   }
 `;
@@ -61,22 +60,21 @@ export const ButtonB = styled.button`
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
-  color: #090909;
+  color: #000;
   background: linear-gradient(
     to right,
-    #462523 0%,
-    #8a6e2f 5%,
-    #9f7928 10%,
-    #c79834 22%,
-    #c7b663 45%,
-    #cebe6e 50%,
-    #c7b663 55%,
-    #c79834 78%,
-    #9f7928 90%,
-    #8a6e2f 95%,
-    #462523 100%
+    rgb(70, 37, 35) 0%,
+    rgb(138, 110, 47) 5%,
+    rgb(159, 121, 40) 10%,
+    rgb(199, 152, 52) 22%,
+    rgb(199, 182, 99) 45%,
+    rgb(206, 190, 110) 50%,
+    rgb(199, 182, 99) 55%,
+    rgb(199, 152, 52) 78%,
+    rgb(159, 121, 40) 90%,
+    rgb(138, 110, 47) 95%,
+    rgb(70, 37, 35) 100%
   );
-  opacity: 0.9;
   cursor: pointer;
   margin-top: 2rem;
   border: none;
@@ -88,17 +86,56 @@ export const ButtonB = styled.button`
     background: linear-gradient(
       to right,
       #474747 0%,
-      #777 5%,
-      #999 10%,
-      #bdbaba 22%,
-      #c4c4c4 45%,
-      #d0d0d0 50%,
-      #c4c4c4 55%,
-      #bdbaba 78%,
-      #999 90%,
-      #777 95%,
+      #999 5%,
+      #bdbaba 10%,
+      #d0d0d0 22%,
+      #eaeaea 45%,
+      #eaeaea 50%,
+      #eaeaea 55%,
+      #d0d0d0 78%,
+      #bdbaba 90%,
+      #999 95%,
       #474747 100%
     );
-    opacity: 1;
+    color: #9b7628;
   }
 `;
+
+export const ButtonC = styled(Button)`
+ 
+  color: #000;
+  background: linear-gradient(
+    to right,
+    rgb(70, 37, 35) 0%,
+    rgb(138, 110, 47) 5%,
+    rgb(159, 121, 40) 10%,
+    rgb(199, 152, 52) 22%,
+    rgb(199, 182, 99) 45%,
+    rgb(206, 190, 110) 50%,
+    rgb(199, 182, 99) 55%,
+    rgb(199, 152, 52) 78%,
+    rgb(159, 121, 40) 90%,
+    rgb(138, 110, 47) 95%,
+    rgb(70, 37, 35) 100%
+  );
+
+  &:hover {
+    background: linear-gradient(
+      to right,
+      #474747 0%,
+      #999 5%,
+      #bdbaba 10%,
+      #d0d0d0 22%,
+      #eaeaea 45%,
+      #eaeaea 50%,
+      #eaeaea 55%,
+      #d0d0d0 78%,
+      #bdbaba 90%,
+      #999 95%,
+      #474747 100%
+    );
+    color: #9b7628;
+  }
+`;
+
+

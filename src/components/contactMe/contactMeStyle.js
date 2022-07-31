@@ -1,16 +1,12 @@
 import styled from "styled-components";
-import bg1 from "../../assests/img001.jpg";
+import bg1 from "../../assests/img003.jpg";
 export const Container = styled.section`
   overflow: hidden;
   position: relative;
   width: 100%;
-  background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.75)
-    ),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.6)),
     url(${bg1});
-  background-position: bottom;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -31,7 +27,7 @@ export const Row = styled.div`
   justify-content: space-between;
   margin: 6rem 0 0 10rem;
   width: 90%;
-  background-color: #1c1c1c;
+  background-color: #1a1a1a;
   position: relative;
   padding: 2rem;
 
@@ -67,29 +63,33 @@ export const Col1 = styled.div`
 
 export const MediaContents = styled.div`
   height: 93%;
-  background: linear-gradient(
-    to right,
-    #462523 0%,
-    #8a6e2f 5%,
-    #9f7928 10%,
-    #c79834 22%,
-    #c7b663 45%,
-    #cebe6e 50%,
-    #c7b663 55%,
-    #c79834 78%,
-    #9f7928 90%,
-    #8a6e2f 95%,
-    #462523 100%
-  );
-  opacity: 0.9;
   padding: 2.5rem 0 0 0;
   box-shadow: 0.3rem 0.3rem 0.4rem #000;
   display: flex;
   flex-direction: column;
   color: #000;
+  background: linear-gradient(
+    to right,
+    rgb(70, 37, 35) 0%,
+    rgb(138, 110, 47) 5%,
+    rgb(159, 121, 40) 10%,
+    rgb(199, 152, 52) 22%,
+    rgb(199, 182, 99) 45%,
+    rgb(206, 190, 110) 50%,
+    rgb(199, 182, 99) 55%,
+    rgb(199, 152, 52) 78%,
+    rgb(159, 121, 40) 90%,
+    rgb(138, 110, 47) 95%,
+    rgb(70, 37, 35) 100%
+  );
+
+  @media (max-width: ${({ theme }) => theme.media.tablet}) {
+    background: #090909;
+    color: #c79834;
+  }
 
   h3 {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     text-align: center;
     margin-bottom: 3rem;
   }
@@ -118,11 +118,19 @@ export const Media = styled.div`
     letter-spacing: 0.1rem;
     padding-bottom: 0.7rem;
     text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.media.tablet}) {
+      color: #c79834;
+    }
   }
 
   .icons {
     font-size: 2.7rem;
     color: #000;
+
+    @media (max-width: ${({ theme }) => theme.media.tablet}) {
+      color: #c79834;
+    }
   }
 `;
 
@@ -149,7 +157,7 @@ export const Col2 = styled.div`
     margin-top: 2rem;
     padding: 0 2rem;
     font-size: 2.3rem;
-    color: #d0d0d0;
+    color: #fff;
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
       margin-top: 0;
@@ -176,7 +184,7 @@ export const Form = styled.form`
     padding: 1.5rem;
     font-size: 1.6rem;
     border: none;
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: #090909;
     color: #d0d0d0;
     outline: none;
     user-select: none;
@@ -185,8 +193,8 @@ export const Form = styled.form`
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus,
     &:-webkit-autofill:active {
-      box-shadow: 0 0 0 30px rgb(0, 0, 0, 0.924) inset !important;
-      -webkit-box-shadow: 0 0 0 30px rgb(0, 0, 0, 0.924) inset !important;
+      box-shadow: 0 0 0 30px #090909 inset !important;
+      -webkit-box-shadow: 0 0 0 30px #090909 inset !important;
       -webkit-text-fill-color: #d0d0d0 !important;
     }
 

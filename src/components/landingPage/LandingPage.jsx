@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../reuseableComponents/buttonStyle";
 import { FaHandPointDown } from "react-icons/fa";
 import TypewriterComponent from "typewriter-effect";
 import {
@@ -7,6 +6,8 @@ import {
   Contents,
   Col,
   Btn,
+  Button,
+  ButtonC,
   ScrollDown,
   TypedText,
 } from "./landingPageStyle";
@@ -49,12 +50,8 @@ const LandingPage = () => {
               ></TypewriterComponent>
             </TypedText>
             <Btn>
-              <Button href="#projects" mgr="2.5rem" mgsr="0" mgst="4rem">
-                View Projects
-              </Button>
-              <Button href="#contact" pad="1.5rem 4.3rem">
-                Get in Touch
-              </Button>
+              <Button href="#projects">View Projects</Button>
+              <ButtonC href="#contact">Get in Touch</ButtonC>
             </Btn>
           </div>
         </Col>

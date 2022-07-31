@@ -6,7 +6,7 @@ export const SubHeading = styled.h2`
   display: inline-block;
   margin-bottom: 1.5rem;
   padding-bottom: 1.3rem;
-  color: #d0d0d0;
+  color: #fff;
   font-family: "Noto Sans", sans-serif;
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {

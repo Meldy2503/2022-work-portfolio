@@ -5,7 +5,7 @@ export const Container = styled.section`
   overflow: hidden;
   position: relative;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.75)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)),
     url(${bg1});
   background-position: center;
   background-size: cover;
@@ -39,7 +39,7 @@ export const Tools = styled.div`
   margin-bottom: 5rem;
 
   h3 {
-    color: #d0d0d0;
+    color: #fff;
     font-size: 2.2rem;
     font-weight: 500;
     padding-bottom: 0.9rem;
@@ -79,7 +79,7 @@ export const IconsContainer = styled.div`
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
-    border: 0.15rem solid #bdbaba;
+    border: 0.15rem solid #999;
     border-radius: 2rem;
     padding: 1rem;
     width: 12rem;
@@ -95,7 +95,7 @@ export const IconsContainer = styled.div`
     height: 6rem;
     width: 7rem;
     padding-bottom: 0.7rem;
-    border-bottom: 0.15rem solid #bdbaba;
+    border-bottom: 0.15rem solid #999;
     filter: brightness(100%) contrast(140%) saturate(1);
 
     &:hover {

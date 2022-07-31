@@ -11,7 +11,7 @@ export const Container = styled.section`
 export const Contents = styled.div`
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
     url(${bg1});
   background-position: bottom;
   background-size: cover;
@@ -40,6 +40,11 @@ export const Col = styled.div`
   h5 {
     font-weight: 500;
     font-size: 1.8rem;
+    color: #bdbaba;
+  }
+
+  h5 > span {
+    color: #fff;
   }
 
   h1 {
@@ -66,7 +71,7 @@ export const Col = styled.div`
     letter-spacing: 0.1rem;
     font-weight: 500;
     font-size: 1.8rem;
-    color: #d0d0d0;
+    color: #bdbaba;
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
       width: 70%;
@@ -93,9 +98,47 @@ export const TypedText = styled.span`
 
 export const Btn = styled.span`
   display: flex;
+  margin-top: 4rem;
 
   @media (max-width: 450px) {
     flex-direction: column;
+    margin-top: 3rem;
+  }
+`;
+export const Button = styled.a`
+  padding: 1.7rem 3.7rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 0.2rem solid #fff;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.7s;
+  color: #fff;
+
+  &:hover {
+    box-shadow: -23rem 0 0 0 inset #c79834;
+    border: 0.2rem solid #c79834;
+  }
+`;
+
+export const ButtonC = styled(Button)`
+  color: ${({ theme }) => theme.color.primary};
+  border: 0.2rem solid ${({ theme }) => theme.color.primary};
+  margin-left: 2.5rem;
+  padding: 1.7rem 4.5rem;
+
+  @media (max-width: 450px) {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  &:hover {
+    box-shadow: -23rem 0 0 0 inset #fff;
+    border: 0.2rem solid #fff;
+    color: #000;
   }
 `;
 export const ScrollDown = styled.a`
