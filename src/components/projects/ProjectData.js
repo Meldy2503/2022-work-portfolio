@@ -7,9 +7,9 @@ export const ProjectData = [
     name: "The Nail Boutique",
     about:
       "Nail Boutique is a beauty brand which offers nail, hair and skin care services to the public.",
-    challenges:
-      " This website was built to bridge booking challenges which helped implement effective market strategies and increased productivity.",
-    tech: ["React", "Context-API", "HTML", "JavaScript", "Styled-Comp.", "MUI"],
+    features:
+      " This website was built to bridge booking challenges and increase productivity. I utilised React/Context API to pass data to children components and it includes features like location selection, service types, appointment scheduling and reservations.",
+    tech: ["React", "HTML", "JavaScript", "Styled-Comp.", "MUI"],
   },
   {
     id: 2,
@@ -18,9 +18,9 @@ export const ProjectData = [
     git: "https://github.com/Meldy2503/Windec",
     name: "Windec",
     about:
-      "Windec is an advertising company which provides digital services to small and large scale businesses. ",
-    challenges:
-      "This website was built to improve online services which increased efficiency and productivity.",
+      "Windec is a front for an advertising and web development company which renders digital services to small and large scale businesses. ",
+    features:
+      "This is a multipage and responsive website interconnected using react-router and built with frontend libraries for an improved and user friendly interface",
     tech: ["HTML", "JavaScript", "React", "Styled - Comp.", "MUI"],
   },
   {
@@ -30,9 +30,9 @@ export const ProjectData = [
     git: "https://github.com/Meldy2503/crud-app",
     name: "Oceanica App",
     about:
-      " A CRUD app designed to store, edit and delete employee's details. I utilised JS DOM manipulation to come up with this application.",
-    challenges:
-      " It helped enter, edit and save employee's details for improved accessibility and easy communication.",
+      " An open source CRUD app designed to store, edit and delete employee's details for improved accessibility.",
+    features:
+      " I utilised JS DOM manipulation to come up with this application and a user can comfortably save, edit and retrieve data even after the browser window is closed because data entered is stored in the local storage.",
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
   },
   {
@@ -42,20 +42,20 @@ export const ProjectData = [
     git: "https://github.com/Meldy2503/quiz-app",
     name: "A Quiz App",
     about: "An in-house web application designed for learning purposes.",
-    challenges:
-      " It's an open source educational app that makes learning easy, flexible, fun and comfortable.",
+    features:
+      "Five random questions are displayed to the user and the total score of the user is returned after all questions have been answered. It aims to make learning interesting, conducive and fun.",
     tech: ["HTML", "JavaScript", "React", "CSS"],
   },
   {
     id: 5,
-    img: require("../../assests/portfolio.jpg"),
-    web: "",
-    git: "https://github.com/Meldy2503/2022-work-portfolio",
-    name: "Portfolio",
+    img: require("../../assests/crypto.png"),
+    web: "https://coinic-crypto.netlify.app/",
+    git: "https://github.com/Meldy2503/crypto-app",
+    name: "Crypto App",
     about:
-      "I built a simple portfolio that showcases but not limited to my experiences, education, projects, community work, profile and technical stack.",
-    challenges:
-      "Designing and building my portfolio gave me the opportunity to show my soft skills for better opportunities.",
-    tech: ["HTML", "JavaScript", "React", "Styled - Comp", "MUI"],
+      "An open source crypto app that displays updated information about crypto currencies",
+    features:
+      "I utilized API integration in this project to fetch data and update the crypto information. I also incoporated Context API and some React librarires for an improved user experience ",
+    tech: ["HTML", "JavaScript", "React", "CSS"],
   },
 ];

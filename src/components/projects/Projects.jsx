@@ -58,8 +58,8 @@ const Projects = () => {
                   <h2>{project.name}</h2>
                   <p>{project.about}</p>
                   <article>
-                    <h3>Challenges This Project Solved</h3>
-                    <p>{project.challenges}</p>
+                    <h3>Features of this Project</h3>
+                    <p>{project.features}</p>
                   </article>
                 </div>
                 <Techs>
