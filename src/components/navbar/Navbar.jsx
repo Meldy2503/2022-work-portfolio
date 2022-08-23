@@ -1,6 +1,7 @@
 import React from "react";
 import { Sling as Hamburger } from "hamburger-react";
 import { ClickAwayListener } from "@material-ui/core";
+import { Link } from "react-scroll";
 import { NavHashLink as NavLink } from "react-router-hash-link";
 import {
   Header,
@@ -19,7 +20,7 @@ const Navbar = () => {
   const handleClickAway = () => setIsMenuOpen(false);
 
   const changeNavBgColorOnScroll = () => {
-    window.scrollY >= 7 ? setNavbar(true) : setNavbar(false);
+    window.scrollY >= 5 ? setNavbar(true) : setNavbar(false);
   };
 
   window.addEventListener("scroll", changeNavBgColorOnScroll);
@@ -33,54 +34,68 @@ const Navbar = () => {
           </Logo>
           <LinkContainer isMenuOpen={isMenuOpen}>
             <LinkLists onClick={closeMenuLink}>
-              <NavLink
-                activeClassName="activeLink"
+              <Link
                 className="link"
-                to="/#landing-page"
-                smooth
+                to="landing-page"
+                smooth={true}
+                duration={100}
+                activeClass="activeLink"
+                spy={true}
               >
                 Home
-              </NavLink>
+              </Link>
             </LinkLists>
             <LinkLists onClick={closeMenuLink}>
-              <NavLink
+              <Link
+                to="about-me"
                 activeClassName="activeLink"
                 className="link"
-                to="/#about-me"
-                smooth
+                smooth={true}
+                duration={100}
+                activeClass="activeLink"
+                spy={true}
               >
                 About Me
-              </NavLink>
+              </Link>
             </LinkLists>
             <LinkLists onClick={closeMenuLink}>
-              <NavLink
+              <Link
+                to="skills"
                 activeClassName="activeLink"
                 className="link"
-                to="/#skills"
-                smooth
+                smooth={true}
+                duration={100}
+                activeClass="activeLink"
+                spy={true}
               >
                 Tech Stack
-              </NavLink>
+              </Link>
             </LinkLists>
             <LinkLists onClick={closeMenuLink}>
-              <NavLink
+              <Link
+                to="projects"
                 activeClassName="activeLink"
                 className="link"
-                to="/#projects"
-                smooth
+                smooth={true}
+                duration={100}
+                activeClass="activeLink"
+                spy={true}
               >
                 Projects
-              </NavLink>
+              </Link>
             </LinkLists>
             <LinkLists onClick={closeMenuLink}>
-              <NavLink
+              <Link
+                to="contact"
                 activeClassName="activeLink"
                 className="link"
-                to="/#contact"
-                smooth
+                smooth={true}
+                duration={100}
+                activeClass="activeLink"
+                spy={true}
               >
                 Contact Me
-              </NavLink>
+              </Link>
             </LinkLists>
           </LinkContainer>
           <MenuIcon onClick={handleMenuIcon}>

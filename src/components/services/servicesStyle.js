@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background-color: rgb(0, 0, 0);
+  background-color: #090909;
   width: 100%;
   overflow: hidden;
 `;
@@ -21,7 +21,7 @@ export const CardContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 8rem;
-  color: #999;
+  color: #eaeaea;
 `;
 
 export const Card = styled.div`
@@ -30,7 +30,7 @@ export const Card = styled.div`
   margin: 0 auto 8rem auto;
   position: relative;
   border-top-right-radius: 5rem;
-  background-color: rgb(255, 255, 255, 0.008);
+  background-color: rgb(255, 255, 255, 0.07);
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     width: 47%;
@@ -48,7 +48,7 @@ export const Card = styled.div`
       justify-content: center;
       font-size: 5rem;
       color: ${({ theme }) => theme.color.primary};
-      background-color: #000;
+      background-color: #090909;
       width: fit-content;
       padding: 2rem;
       position: absolute;
@@ -57,7 +57,7 @@ export const Card = styled.div`
       right: 0;
       margin: 0 auto;
       border-radius: 50%;
-      border: 0.15rem solid #d0d0d0;
+      border: 0.15rem solid #333;
     }
 
     h4 {

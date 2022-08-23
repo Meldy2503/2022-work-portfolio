@@ -1,12 +1,13 @@
 import styled from "styled-components";
-import bg1 from "../../assests/img003.jpg";
+import bg1 from "../../assests/bg3.jpg";
+
 export const Container = styled.section`
   overflow: hidden;
   position: relative;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85)),
     url(${bg1});
-  background-position: top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,7 +28,7 @@ export const Row = styled.div`
   justify-content: space-between;
   margin: 6rem 0 0 10rem;
   width: 90%;
-  background-color: #1a1a1a;
+  background-color: #222222;
   position: relative;
   padding: 2rem;
 
@@ -85,7 +86,7 @@ export const MediaContents = styled.div`
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     background: #090909;
-    color: #c79834;
+    color: #eaeaea;
   }
 
   h3 {
@@ -120,7 +121,7 @@ export const Media = styled.div`
     text-align: center;
 
     @media (max-width: ${({ theme }) => theme.media.tablet}) {
-      color: #c79834;
+      color: #eaeaea;
     }
   }
 
@@ -129,7 +130,7 @@ export const Media = styled.div`
     color: #000;
 
     @media (max-width: ${({ theme }) => theme.media.tablet}) {
-      color: #c79834;
+      color: #eaeaea;
     }
   }
 `;

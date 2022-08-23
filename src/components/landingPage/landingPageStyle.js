@@ -1,19 +1,20 @@
 import styled from "styled-components";
-import bg1 from "../../assests/img002.jpg";
+import bg1 from "../../assests/bg1.jpg";
 
 export const Container = styled.section`
   width: 100%;
   height: 100vh;
   position: relative;
   color: #eaeaea;
+  text-align: center;
 `;
 
 export const Contents = styled.div`
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.35)),
     url(${bg1});
-  background-position: bottom;
+  background-position: 0rem 7rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,6 +28,7 @@ export const Col = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  align-items: center;
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     width: 95%;
@@ -40,7 +42,7 @@ export const Col = styled.div`
   h5 {
     font-weight: 500;
     font-size: 1.8rem;
-    color: #bdbaba;
+    color: #d0d0d0;
   }
 
   h5 > span {
@@ -66,12 +68,11 @@ export const Col = styled.div`
   div > p {
     font-family: "Raleway", sans-serif;
     width: 65%;
-    margin-top: 2rem;
+    margin: 1rem auto 0 auto;
     line-height: 1.5;
     letter-spacing: 0.1rem;
     font-weight: 500;
-    font-size: 1.8rem;
-    color: #bdbaba;
+    color: #eaeaea;
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
       width: 70%;
@@ -83,9 +84,11 @@ export const Col = styled.div`
 `;
 
 export const TypedText = styled.span`
+  text-align: center;
   display: flex;
   align-items: center;
-  margin-top: 2rem;
+  justify-content: center;
+  margin: 1rem auto 0 auto;
   font-size: 1.8rem;
 
   p {
@@ -98,11 +101,13 @@ export const TypedText = styled.span`
 
 export const Btn = styled.span`
   display: flex;
-  margin-top: 4rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 
-  @media (max-width: 450px) {
+  @media (max-width: 500px) {
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 `;
 export const Button = styled.a`
@@ -117,6 +122,12 @@ export const Button = styled.a`
   font-family: "Montserrat", sans-serif;
   transition: all 0.7s;
   color: #fff;
+  margin-left: 2.5rem;
+
+  @media (max-width: 500px) {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
 
   &:hover {
     box-shadow: -23rem 0 0 0 inset #c79834;
@@ -127,13 +138,7 @@ export const Button = styled.a`
 export const ButtonC = styled(Button)`
   color: ${({ theme }) => theme.color.primary};
   border: 0.2rem solid ${({ theme }) => theme.color.primary};
-  margin-left: 2.5rem;
   padding: 1.7rem 4.5rem;
-
-  @media (max-width: 450px) {
-    margin-left: 0;
-    margin-top: 2rem;
-  }
 
   &:hover {
     box-shadow: -23rem 0 0 0 inset #fff;

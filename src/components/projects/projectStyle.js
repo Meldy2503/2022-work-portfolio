@@ -6,7 +6,7 @@ import { FaCode } from "react-icons/fa";
 export const Container = styled.section`
   width: 100%;
   overflow: hidden;
-  background-color: #1a1a1a;
+  background: linear-gradient(to right, #343337, #222222);
   position: relative;
 `;
 
@@ -30,7 +30,7 @@ export const Row = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 3rem 3rem 6rem;
-  background-color: rgb(0, 0, 0);
+  background-color: #090909;
   margin-bottom: 4rem;
   width: 100%;
   align-items: center;
@@ -91,17 +91,17 @@ export const Figure = styled.figure`
     bottom: 0;
     left: 0;
     transition: transform 0.6s ease-in-out;
-    background: #c79834;
+    background: #343337;
     transform: scaleY(1);
     z-index: 1;
     transform-origin: bottom;
-    opacity: 0.4;
+    opacity: 0.6;
   }
 
   &:hover::before {
     transform: scaleY(0);
-    background: #c79834;
-    opacity: 0.4;
+    background: #222222;
+    opacity: 0.6;
   }
 
   img {
@@ -112,7 +112,7 @@ export const Figure = styled.figure`
 export const ButtonW = styled.a`
   display: flex;
   align-items: center;
-  color: #999;
+  color: #eaeaea;
 `;
 export const ButtonG = styled(ButtonW)``;
 
@@ -181,7 +181,7 @@ export const Techs = styled.div`
   }
 `;
 export const Tick = styled(IoIosCheckmarkCircle)`
-  color: #d0d0d0;
+  color: #c79834;
   font-size: 1.8rem;
   margin-right: 0.6rem;
 `;
@@ -192,7 +192,7 @@ export const Live = styled(HiDesktopComputer)`
   opacity: 0.6;
 `;
 export const Code = styled(FaCode)`
-  color: ${({ theme }) => theme.color.primary};
+  color: #d0d0d0;
   margin-right: 0.6rem;
   font-size: 2.7rem;
 `;

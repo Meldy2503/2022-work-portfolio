@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import bg1 from "../../assests/img003.jpg";
+import bg1 from "../../assests/bg2.jpg";
 
 export const Container = styled.section`
   overflow: hidden;
   position: relative;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7)),
     url(${bg1});
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -72,15 +72,14 @@ export const IconsContainer = styled.div`
   flex-wrap: wrap;
 
   figure {
-    width: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
-    border: 0.15rem solid #999;
-    border-radius: 2rem;
+    border: 0.15rem solid #eaeaea;
+    border-radius: 1rem;
     padding: 1rem;
     width: 12rem;
     margin-right: 1rem;
@@ -92,10 +91,10 @@ export const IconsContainer = styled.div`
 
   img {
     max-width: 100%;
-    height: 6rem;
+    height: 5rem;
     width: 7rem;
     padding-bottom: 0.7rem;
-    border-bottom: 0.15rem solid #999;
+    border-bottom: 0.15rem solid #eaeaea;
     filter: brightness(100%) contrast(140%) saturate(1);
 
     &:hover {
@@ -105,6 +104,6 @@ export const IconsContainer = styled.div`
 
   figcaption {
     margin-top: 0.5rem;
-    color: #d0d0d0;
+    color: #fff;
   }
 `;

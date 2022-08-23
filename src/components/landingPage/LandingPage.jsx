@@ -21,10 +21,10 @@ const LandingPage = () => {
             <h5>
               &#128075; HELLO THERE, I'M&nbsp;<span>EMELDER</span>
             </h5>
-            <h1>Frontend Developer</h1>
+            <h1>A FRONTEND DEVELOPER</h1>
             <p>
-              A creative developer devoted to crafting beautiful, user friendly
-              and interactive frontend applications focused on simplicity and
+              A creative developer devoted to crafting user friendly and
+              interactive frontend applications focused on simplicity and
               purpose.
             </p>
             <TypedText>
@@ -50,8 +50,8 @@ const LandingPage = () => {
               ></TypewriterComponent>
             </TypedText>
             <Btn>
-              <Button href="#projects">View Projects</Button>
               <ButtonC href="#contact">Get in Touch</ButtonC>
+              <Button href="#projects">View Projects</Button>
             </Btn>
           </div>
         </Col>

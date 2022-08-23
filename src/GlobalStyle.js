@@ -11,8 +11,8 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
     font-size: 1.6rem;
-    background-color: #000;
-    color: #999;
+    background: linear-gradient(to right, #343337, #222222);
+    color: #eaeaea;
     font-family: 'Poppins', sans-serif;
     }
     

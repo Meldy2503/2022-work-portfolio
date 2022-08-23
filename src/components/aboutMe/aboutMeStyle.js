@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
   overflow: hidden;
-  background-color: #1a1a1a;
+  background: linear-gradient(to right, #343337, #222222);
   color: black;
 `;
 export const Contents = styled.div`
@@ -17,7 +17,7 @@ export const Contents = styled.div`
   }
 `;
 export const Row = styled.section`
-  background-color: rgb(0, 0, 0);
+  background-color: #090909;
   margin: 5rem auto;
   position: relative;
   padding: 4rem;
@@ -26,16 +26,16 @@ export const Row = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2.5rem;
+    padding: 4rem 2.5rem;
   }
 
   @media (max-width: 500px) {
-    padding: 1rem;
+    padding: 4rem 1rem;
   }
 
   h3 {
     font-size: 2rem;
-    margin: 2rem 0 0.5rem 0;
+    margin: 1rem 0 0 0;
     color: #fff;
   }
 `;
@@ -43,6 +43,7 @@ export const Row = styled.section`
 export const Details = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 2.5rem;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
@@ -58,21 +59,18 @@ export const ImageContainer = styled.section`
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     width: 100%;
-    padding: 4rem;
+    padding: 0rem 0 3rem 0;
     margin: 0 auto;
-  }
-
-  @media (max-width: 500px) {
-    padding: 4rem 0;
   }
 
   div {
     position: relative;
     width: 35rem;
-    height: 34rem;
+    height: 40rem;
     margin: 0 auto;
-    border: 0.6rem solid #1a1a1a;
+    border: 0.6rem solid #333;
     background-color: #090909;
+
     @media (max-width: 500px) {
       height: 28rem;
       border: none;
@@ -81,10 +79,11 @@ export const ImageContainer = styled.section`
     img {
       max-width: 100%;
       width: 35rem;
-      height: 34rem;
+      height: 38rem;
+      object-fit: contain;
       position: absolute;
-      bottom: 2.2rem;
-      left: 2.2rem;
+      bottom: 3rem;
+      left: 3rem;
       background: linear-gradient(
         to right,
         #474747 0%,
@@ -122,14 +121,14 @@ export const TextContainer = styled.div`
 
   p {
     line-height: 1.7;
-    margin-bottom: 2.9rem;
-    color: #999;
+    margin-bottom: 0.5rem;
+    color: #eaeaea;
     opacity: 0.9;
-    font-size: 1.7rem;
   }
 `;
 
 export const Cv = styled.div`
+  margin-top: 1rem;
   .icon {
     margin-left: 1rem;
   }
@@ -138,15 +137,12 @@ export const Cv = styled.div`
 export const Interests = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 3rem 0 0 0;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     width: 100%;
-    padding: 1rem 2rem;
   }
   @media (max-width: 500px) {
     margin: 1rem auto;
-    padding: 1.5rem 1rem;
   }
 
   div {
@@ -163,7 +159,7 @@ export const Interests = styled.div`
       margin-right: 1rem;
       color: ${({ theme }) => theme.color.primary};
       background-color: rgb(255, 255, 255, 0.007);
-      padding: 1rem 2rem;
+      padding: 1rem 1rem 0 1rem;
       font-size: 2.5rem;
       border-radius: 0.6rem;
     }
@@ -171,7 +167,7 @@ export const Interests = styled.div`
     p {
       font-size: 1.6rem;
       margin-top: 0.5rem;
-      color: #999;
+      color: #d0d0d0;
     }
   }
 `;

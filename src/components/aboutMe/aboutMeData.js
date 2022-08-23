@@ -1,4 +1,4 @@
-import { MdVolunteerActivism, MdDesignServices } from "react-icons/md";
+import { MdDesignServices } from "react-icons/md";
 import { GiPrayer } from "react-icons/gi";
 import { FaMusic, FaBookReader } from "react-icons/fa";
 import { SiMaterialdesignicons } from "react-icons/si";
@@ -28,10 +28,5 @@ export const AboutData = [
     id: 5,
     icon: <FaBookReader />,
     text: "Reading",
-  },
-  {
-    id: 6,
-    icon: <MdVolunteerActivism />,
-    text: "Volunteering",
   },
 ];

@@ -5,7 +5,7 @@ import avatar from "../../assests/about1.png";
 import { Button } from "../reuseableComponents/buttonStyle";
 import Services from "../services/Services";
 import { AboutData } from "./aboutMeData";
-import myCv from "../../assests/Emelder-Okafor-CV.pdf";
+import myCv from "../../assests/Emelder-Okafor.pdf";
 import {
   Container,
   Contents,
@@ -29,6 +29,7 @@ const AboutMe = () => {
                 <img src={avatar} alt="avatar" />
               </div>
             </ImageContainer>
+
             <TextContainer data-aos="flip-left">
               <p data-aos="fade-up">
                 I'm a success driven and determined frontend developer who loves
@@ -44,24 +45,25 @@ const AboutMe = () => {
                 excellent communication skills in English.
               </p>
 
-              <Cv data-aos="fade-up">
+              <Interests data-aos="fade-up">
+                <h3>INTERESTS</h3>
+                <div>
+                  {AboutData.map((list) => (
+                    <span key={list.id}>
+                      {list.icon}
+                      <p>{list.text}</p>
+                    </span>
+                  ))}
+                </div>
+              </Interests>
+
+              <Cv>
                 <Button href={myCv} mgt="0" bor="none" target="_blank">
-                  View CV <FaDownload className="icon" />
+                  Resume <FaDownload className="icon" />
                 </Button>
               </Cv>
             </TextContainer>
           </Details>
-          <Interests data-aos="fade-up">
-            <h3>INTERESTS</h3>
-            <div>
-              {AboutData.map((list) => (
-                <span key={list.id}>
-                  {list.icon}
-                  <p>{list.text}</p>
-                </span>
-              ))}
-            </div>
-          </Interests>
         </Row>
       </Contents>
       <Services />
