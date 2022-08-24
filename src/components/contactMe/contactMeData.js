@@ -30,27 +30,28 @@ export const MediaData = [
     icon: <AiOutlineGithub />,
     link: "https://github.com/meldy2503/",
   },
-
   {
     id: 2,
+    title: "LINKEDIN",
+    text: "Connect with me",
+    icon: <AiFillLinkedin />,
+    link: "https://www.linkedin.com/in/emelder-okafor-67b22122b",
+  },
+
+  {
+    id: 3,
     title: "REPLIT",
     text: "Code and Build Apps",
     icon: <SiReplit />,
     link: "https://replit.com/@Meldy25",
   },
   {
-    id: 3,
+    id: 4,
     title: "CODEPEN",
     text: "Reuse Code Snippets",
     icon: <FaCodepen />,
     link: "https://codepen.io/meldy25",
   },
 
-  {
-    id: 4,
-    title: "LINKEDIN",
-    text: "Coonnect with me",
-    icon: <AiFillLinkedin />,
-    link: "https://www.linkedin.com/in/emelder-okafor-67b22122b",
-  },
+ 
 ];

@@ -127,13 +127,6 @@ export const TextContainer = styled.div`
   }
 `;
 
-export const Cv = styled.div`
-  margin-top: 1rem;
-  .icon {
-    margin-left: 1rem;
-  }
-`;
-
 export const Interests = styled.div`
   display: flex;
   flex-direction: column;
@@ -168,6 +161,25 @@ export const Interests = styled.div`
       font-size: 1.6rem;
       margin-top: 0.5rem;
       color: #d0d0d0;
+    }
+  }
+`;
+
+export const Cv = styled.div`
+  display: none;
+
+  @media (max-width: ${({ theme }) => theme.media.tablet}) {
+    margin: 3rem 0;
+    display: block;
+    a {
+      padding: 1.5rem 3rem;
+      border-radius: 0.5rem;
+      background-color: ${({ theme }) => theme.color.primary};
+      color: #000;
+
+      &:hover {
+        box-shadow: -23rem 0 0 0 inset #fff;
+      }
     }
   }
 `;

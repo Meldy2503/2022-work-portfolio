@@ -107,11 +107,11 @@ export const Btn = styled.span`
 
   @media (max-width: 500px) {
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 `;
 export const Button = styled.a`
-  padding: 1.7rem 3.7rem;
+  padding: 1.7rem 3.5rem;
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
@@ -139,7 +139,7 @@ export const Button = styled.a`
 export const ButtonC = styled(Button)`
   color: ${({ theme }) => theme.color.primary};
   border: 0.2rem solid ${({ theme }) => theme.color.primary};
-  padding: 1.7rem 4.5rem;
+  padding: 1.7rem 4.3rem;
 
   &:hover {
     box-shadow: -23rem 0 0 0 inset #fff;
@@ -147,39 +147,62 @@ export const ButtonC = styled(Button)`
     color: #000;
   }
 `;
-export const ScrollDown = styled.a`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  animation: move 3s ease-in-out infinite;
-  overflow: hidden;
+export const BackToTop = styled.a`
+  position: fixed;
+  z-index: 1000;
+  bottom: 2rem;
+  right: 2rem;
 
-  @keyframes move {
-    0% {
-      opacity: 0.2;
-      transform: translateY(-40px);
-    }
+  ${(props) => props.scrollToTop} {
+    display: none;
+  }
 
-    33% {
-      opacity: 0.7;
-      transform: translateY(-20px);
-    }
-    66% {
-      opacity: 0.2;
-      transform: translateY(-40px);
-    }
+  span {
+    color: ${({ theme }) => theme.color.primary};
+    font-size: 3rem;
+  }
+`;
+export const IconsContainer = styled.div`
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 45%;
+  left: 4rem;
+  z-index: 1000;
 
-    100% {
-      opacity: 0.7;
-      transform: translateY(-20px);
+  @media (max-width: ${({ theme }) => theme.media.desktop}) {
+    left: 2rem;
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.tablet}) {
+    position: absolute;
+    top: 94%;
+    left: 2.5rem;
+    flex-direction: row;
+  }
+
+  a {
+    color: #fff;
+    margin-bottom: 1rem;
+
+    @media (max-width: ${({ theme }) => theme.media.tablet}) {
+      margin-right: 1.7rem;
     }
   }
 
   span {
-    color: #eaeaea;
-    font-size: 3rem;
-    text-align: center;
-    display: block;
+    font-size: 2rem;
+  }
+
+  div {
+    height: 35rem;
+    width: 0.15rem;
+    background-color: #fff;
+
+    @media (max-width: ${({ theme }) => theme.media.tablet}) {
+      display: none;
+    }
   }
 `;

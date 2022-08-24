@@ -70,7 +70,6 @@ export const ButtonB = styled.button`
       #999 95%,
       #474747 100%
     );
-    color: #9b7628;
   }
 `;
 
@@ -106,6 +105,5 @@ export const ButtonC = styled(Button)`
       #999 95%,
       #474747 100%
     );
-    color: #9b7628;
   }
 `;

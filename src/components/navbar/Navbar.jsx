@@ -2,7 +2,7 @@ import React from "react";
 import { Sling as Hamburger } from "hamburger-react";
 import { ClickAwayListener } from "@material-ui/core";
 import { Link } from "react-scroll";
-import { NavHashLink as NavLink } from "react-router-hash-link";
+import myCv from "../../assests/Emelder-Okafor.pdf";
 import {
   Header,
   NavContainer,
@@ -10,6 +10,7 @@ import {
   LinkContainer,
   LinkLists,
   MenuIcon,
+  Cv,
 } from "./navbarStyle";
 
 const Navbar = () => {
@@ -30,10 +31,12 @@ const Navbar = () => {
       <Header navbar={navbar}>
         <NavContainer>
           <Logo>
-            <NavLink to="#landing-page">EO</NavLink>
+            <Link to="landing-page" ooth={true} duration={100} spy={true}>
+              EO
+            </Link>
           </Logo>
           <LinkContainer isMenuOpen={isMenuOpen}>
-            <LinkLists onClick={closeMenuLink}>
+            <LinkLists>
               <Link
                 className="link"
                 to="landing-page"
@@ -41,11 +44,12 @@ const Navbar = () => {
                 duration={100}
                 activeClass="activeLink"
                 spy={true}
+                onClick={closeMenuLink}
               >
                 Home
               </Link>
             </LinkLists>
-            <LinkLists onClick={closeMenuLink}>
+            <LinkLists>
               <Link
                 to="about-me"
                 activeClassName="activeLink"
@@ -54,11 +58,12 @@ const Navbar = () => {
                 duration={100}
                 activeClass="activeLink"
                 spy={true}
+                onClick={closeMenuLink}
               >
                 About Me
               </Link>
             </LinkLists>
-            <LinkLists onClick={closeMenuLink}>
+            <LinkLists>
               <Link
                 to="skills"
                 activeClassName="activeLink"
@@ -67,11 +72,12 @@ const Navbar = () => {
                 duration={100}
                 activeClass="activeLink"
                 spy={true}
+                onClick={closeMenuLink}
               >
                 Tech Stack
               </Link>
             </LinkLists>
-            <LinkLists onClick={closeMenuLink}>
+            <LinkLists>
               <Link
                 to="projects"
                 activeClassName="activeLink"
@@ -80,11 +86,12 @@ const Navbar = () => {
                 duration={100}
                 activeClass="activeLink"
                 spy={true}
+                onClick={closeMenuLink}
               >
                 Projects
               </Link>
             </LinkLists>
-            <LinkLists onClick={closeMenuLink}>
+            <LinkLists>
               <Link
                 to="contact"
                 activeClassName="activeLink"
@@ -93,10 +100,16 @@ const Navbar = () => {
                 duration={100}
                 activeClass="activeLink"
                 spy={true}
+                onClick={closeMenuLink}
               >
                 Contact Me
               </Link>
             </LinkLists>
+            <Cv>
+              <a href={myCv} target="_blank" rel="noreferrer">
+                Resume
+              </a>
+            </Cv>
           </LinkContainer>
           <MenuIcon onClick={handleMenuIcon}>
             <Hamburger

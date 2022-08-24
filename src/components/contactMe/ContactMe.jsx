@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-// import { SubHeading } from "../reuseableComponents/headingStyle";
 import { ButtonB } from "../reuseableComponents/buttonStyle";
-// import { AiOutlineMail, AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
-// import { FaFacebook, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 import { FormInputs, MediaData } from "./contactMeData";
 import PopUp from "../popUp/PopUp";
 import { send } from "emailjs-com";
@@ -117,60 +114,6 @@ const ContactMe = () => {
                 </Media>
               ))}
             </MediaContents>
-            {/* <div>
-                  <span className="icons">
-                    <AiOutlineMail />
-                  </span>
-                  <a
-                    href="mailto:emelder.charles25@gmail.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    emelder.charles25
-                    <br />
-                    @gmail.com
-                  </a>
-                </div>
-              </Media>
-              <Connect>
-                <a
-                  href="https://github.com/meldy2503/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="icons">
-                    <AiOutlineGithub />
-                  </span>
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/in/emelder-okafor-67b22122b"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="icons">
-                    <AiFillLinkedin />
-                  </span>
-                </a>
-                <a
-                  href="https://www.facebook.com/emelder-charles"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="icons">
-                    <FaFacebook />
-                  </span>
-                </a>
-                <a
-                  href="https://www.twitter.com/EmelderOkafor"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="icons last">
-                    <FaTwitter />
-                  </span>
-                </a>
-              </Connect> */}
           </Col2>
         </Row>
       </Contents>

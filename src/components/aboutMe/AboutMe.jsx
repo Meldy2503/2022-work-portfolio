@@ -1,11 +1,10 @@
 import React from "react";
 import { SubHeading } from "../reuseableComponents/headingStyle";
-import { FaDownload } from "react-icons/fa";
+import myCv from "../../assests/Emelder-Okafor.pdf";
 import avatar from "../../assests/about1.png";
-import { Button } from "../reuseableComponents/buttonStyle";
 import Services from "../services/Services";
 import { AboutData } from "./aboutMeData";
-import myCv from "../../assests/Emelder-Okafor.pdf";
+
 import {
   Container,
   Contents,
@@ -38,8 +37,7 @@ const AboutMe = () => {
                 user friendly interfaces. I have a good understanding of
                 relational databases as well as solid computer software
                 foundations such as DOM manipulations and complex alogrithms.
-              </p>
-              <p>
+                <br />
                 I'm a team player, a fast and lifelong learner always willing to
                 learn more technologies to become a better developer and I have
                 excellent communication skills in English.
@@ -56,11 +54,10 @@ const AboutMe = () => {
                   ))}
                 </div>
               </Interests>
-
               <Cv>
-                <Button href={myCv} mgt="0" bor="none" target="_blank">
-                  Resume <FaDownload className="icon" />
-                </Button>
+                <a href={myCv} target="_blank" rel="noreferrer">
+                  Resume
+                </a>
               </Cv>
             </TextContainer>
           </Details>

@@ -101,7 +101,7 @@ export const LinkContainer = styled.ul`
   }
 `;
 export const LinkLists = styled.li`
-  padding-left: 4rem;
+  padding-left: 3rem;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     padding-left: 0;
@@ -114,7 +114,7 @@ export const LinkLists = styled.li`
     font-weight: 500;
 
     @media (max-width: ${({ theme }) => theme.media.tablet}) {
-      padding: 2rem 0rem 1rem 0rem;
+      padding: 4rem 0rem 1rem 0rem;
       border-bottom: 0.1rem solid rgba(241, 241, 241, 0.2);
       text-align: center;
       color: #fff;
@@ -129,48 +129,27 @@ export const LinkLists = styled.li`
     text-transform: uppercase;
     font-weight: 500;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: -0.7rem;
-      right: 0;
-      height: 0.25rem;
-      background-color: ${({ theme }) => theme.color.primary};
-      width: 70%;
-      border-radius: 3rem;
-      transform-origin: right;
-      transform: scale(0, 1);
-      transition: transform ease-in 290ms;
-      transform: scale(1, 1);
-    }
-
     &::after {
       content: "";
       position: absolute;
-      bottom: -0.7rem;
+      bottom: -0.2rem;
       display: block;
-      height: 0.27rem;
-      background-color: ${({ theme }) => theme.color.primary};
-      width: 70%;
+      height: 0.2rem;
+      background-color: #fff;
+      width: 100%;
       border-radius: 3rem;
-      transform: scale(0, 1);
-      transition: transform ease-out 290ms;
-      transform-origin: left;
       transform: scale(1, 1);
+      transform-origin: center;
+      transition: transform 0.5s linear;
     }
 
     @media (max-width: ${({ theme }) => theme.media.tablet}) {
-      padding: 2rem 0rem 1rem 0rem;
+      padding: 4rem 0rem 1rem 0rem;
       border-bottom: 0.1rem solid rgba(241, 241, 241, 0.2);
       text-align: center;
       color: ${({ theme }) => theme.color.primary};
 
       &::after {
-        content: "";
-        height: 0;
-        width: 0;
-      }
-      &::before {
         content: "";
         height: 0;
         width: 0;
@@ -184,5 +163,24 @@ export const MenuIcon = styled.div`
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     display: block;
+  }
+`;
+
+export const Cv = styled.div`
+  margin-left: 2.3rem;
+  a {
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: 0.2rem solid ${({ theme }) => theme.color.primary};
+    border-radius: 0.5rem;
+
+    &:hover {
+      color: #000;
+      background-color: ${({ theme }) => theme.color.primary};
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.tablet}) {
+    display: none;
   }
 `;

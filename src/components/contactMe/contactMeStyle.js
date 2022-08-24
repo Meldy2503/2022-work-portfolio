@@ -29,20 +29,6 @@ export const Row = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-  /* margin: 6rem 0 0 10rem; */
-  /* width: 50%; */
-
-  /* position: relative; */
-  /* padding: 2rem; */
-
-  @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    /* margin: 6rem 0 0 7rem; */
-  }
-  @media (max-width: ${({ theme }) => theme.media.mobile}) {
-    /* margin: 13rem auto 0 auto; */
-    /* padding: 0 0 2rem 0; */
-    /* width: 100%; */
-  }
 `;
 export const Col2 = styled.div`
   margin-top: 8rem;
@@ -69,7 +55,7 @@ export const MediaContents = styled.div`
   margin: 4rem auto 0 auto;
 `;
 export const Media = styled.div`
-  border: 0.15rem solid ${({ theme }) => theme.color.primary};
+  border: 0.1rem solid ${({ theme }) => theme.color.primary};
   border-radius: 1rem;
   width: 32%;
   color: #fff;
@@ -83,11 +69,12 @@ export const Media = styled.div`
   }
 
   a {
-    padding: 0.7rem 1rem;
-    display: flex;
+    padding: 1rem;
     color: #fff;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    align-self: center;
   }
 
   &:hover a:hover {
@@ -97,13 +84,19 @@ export const Media = styled.div`
   }
 
   div {
+    h3 {
+      font-size: 1.7rem;
+    }
     p {
       font-size: 1.4rem;
     }
   }
 
   .icons {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    align-self: center;
   }
 `;
 

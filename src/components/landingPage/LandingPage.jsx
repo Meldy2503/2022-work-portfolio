@@ -1,5 +1,8 @@
 import React from "react";
-import { FaHandPointDown } from "react-icons/fa";
+import { BsArrowUpCircleFill } from "react-icons/bs";
+import { AiOutlineMail, AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
+import { FaFacebook, FaTwitter } from "react-icons/fa";
+
 import TypewriterComponent from "typewriter-effect";
 import {
   Container,
@@ -8,11 +11,19 @@ import {
   Btn,
   Button,
   ButtonC,
-  ScrollDown,
+  BackToTop,
   TypedText,
+  IconsContainer,
 } from "./landingPageStyle";
 
 const LandingPage = () => {
+  const [scrollToTop, setScrollToTop] = React.useState(false);
+
+  const handleScrollToTop = () => {
+    window.scrollY > 300 ? setScrollToTop(true) : setScrollToTop(false);
+  };
+  window.addEventListener("scroll", handleScrollToTop);
+
   return (
     <Container id="landing-page">
       <Contents>
@@ -55,12 +66,61 @@ const LandingPage = () => {
             </Btn>
           </div>
         </Col>
-        <ScrollDown href="#about-me">
-          <span>
-            <FaHandPointDown />
-          </span>
-        </ScrollDown>
       </Contents>
+      <BackToTop href="#landing-page" scrollToTop={scrollToTop}>
+        <span>
+          <BsArrowUpCircleFill />
+        </span>
+      </BackToTop>
+      <IconsContainer>
+        <a
+          href="https://www.linkedin.com/in/emelder-okafor-67b22122b"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="icons">
+            <AiFillLinkedin />
+          </span>
+        </a>
+        <a
+          href="https://github.com/meldy2503/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="icons">
+            <AiOutlineGithub />
+          </span>
+        </a>
+        <a
+          href="mailto:emelder.charles25@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="icons last">
+            <AiOutlineMail />
+          </span>
+        </a>
+        <a
+          href="https://www.facebook.com/emelder-charles"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="icons">
+            <FaFacebook />
+          </span>
+        </a>
+        <a
+          href="https://www.twitter.com/EmelderOkafor"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="icons last">
+            <FaTwitter />
+          </span>
+        </a>
+
+        <div></div>
+      </IconsContainer>
     </Container>
   );
 };
