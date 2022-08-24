@@ -1,7 +1,7 @@
 import { AiOutlineGithub } from "react-icons/ai";
-import { SiReplit, SiCodewars } from "react-icons/si";
-import { FiFigma } from "react-icons/fi";
-import { FaCodepen, FaStackOverflow } from "react-icons/fa";
+import { SiReplit } from "react-icons/si";
+import { AiFillLinkedin } from "react-icons/ai";
+import { FaCodepen } from "react-icons/fa";
 
 export const FormInputs = [
   {
@@ -28,35 +28,29 @@ export const MediaData = [
     title: "GITHUB",
     text: "Code Repositories",
     icon: <AiOutlineGithub />,
+    link: "https://github.com/meldy2503/",
   },
+
   {
     id: 2,
-    title: "STACK OVERFLOW",
-    text: "Code Repositories",
-    icon: <FaStackOverflow />,
+    title: "REPLIT",
+    text: "Code and Build Apps",
+    icon: <SiReplit />,
+    link: "https://replit.com/@Meldy25",
   },
   {
     id: 3,
-    title: "FIGMA",
-    text: "Code Repositories",
-    icon: <FiFigma />,
+    title: "CODEPEN",
+    text: "Reuse Code Snippets",
+    icon: <FaCodepen />,
+    link: "https://codepen.io/meldy25",
   },
+
   {
     id: 4,
-    title: "CODEWARS",
-    text: "Code Repositories",
-    icon: <SiCodewars />,
-  },
-  {
-    id: 5,
-    title: "REPLIT",
-    text: "Code Repositories",
-    icon: <SiReplit />,
-  },
-  {
-    id: 6,
-    title: "CODEPEN",
-    text: "Code Repositories",
-    icon: <FaCodepen />,
+    title: "LINKEDIN",
+    text: "Coonnect with me",
+    icon: <AiFillLinkedin />,
+    link: "https://www.linkedin.com/in/emelder-okafor-67b22122b",
   },
 ];

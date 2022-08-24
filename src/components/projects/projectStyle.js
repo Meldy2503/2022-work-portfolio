@@ -181,7 +181,7 @@ export const Techs = styled.div`
   }
 `;
 export const Tick = styled(IoIosCheckmarkCircle)`
-  color: #c79834;
+  color: #ffc75f;
   font-size: 1.8rem;
   margin-right: 0.6rem;
 `;

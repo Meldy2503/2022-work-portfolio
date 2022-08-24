@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { SubHeading } from "../reuseableComponents/headingStyle";
+// import { SubHeading } from "../reuseableComponents/headingStyle";
 import { ButtonB } from "../reuseableComponents/buttonStyle";
-import { AiOutlineMail, AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
-import { FaFacebook, FaPhoneAlt, FaTwitter } from "react-icons/fa";
-import { FormInputs } from "./contactMeData";
+// import { AiOutlineMail, AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
+// import { FaFacebook, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import { FormInputs, MediaData } from "./contactMeData";
 import PopUp from "../popUp/PopUp";
 import { send } from "emailjs-com";
 import {
@@ -11,11 +11,11 @@ import {
   Contents,
   Row,
   Col1,
+  Title,
   Col2,
   Form,
   MediaContents,
   Media,
-  Connect,
 } from "./contactMeStyle";
 
 const ContactMe = () => {
@@ -64,21 +64,60 @@ const ContactMe = () => {
   return (
     <Container id="contact">
       <Contents>
-        <SubHeading width="25%" color="#fff" data-aos="fade-up">
-          Get in Touch With Me
-        </SubHeading>
         <Row>
-          <Col1 data-aos="fade-right">
-            <MediaContents>
-              <h3>Contact Info</h3>
-              <Media>
-                <div>
-                  <span className="icons">
-                    <FaPhoneAlt />
-                  </span>
-                  <p>+2348037588098</p>
+          <Col1 data-aos="fade-left">
+            <Title>
+              <h3>Need a beautiful, fast and interactive website?</h3>
+              <h1>LET'S GET IT STARTED</h1>
+            </Title>
+            <Form onSubmit={onSubmit}>
+              {FormInputs.map((inputs) => (
+                <div key={inputs.id}>
+                  <input
+                    type={inputs.type}
+                    name={inputs.name}
+                    id={inputs.idty}
+                    onChange={handleFormData}
+                    value={formData[inputs.value]}
+                    placeholder={inputs.placeholder}
+                    required
+                  />
                 </div>
-                <div>
+              ))}
+
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                value={formData.value}
+                onChange={handleFormData}
+                rows="10"
+                placeholder="Message"
+                required
+              ></textarea>
+              <br />
+              <ButtonB type="submit" onClick={handlePopup}>
+                SEND MESSAGE
+              </ButtonB>
+            </Form>
+          </Col1>
+          <Col2 data-aos="fade-right">
+            <h2>CODE & DESIGN PRESENCE</h2>
+            <p>Platforms I code and connect with.</p>
+            <MediaContents>
+              {MediaData.map((list) => (
+                <Media>
+                  <a href={list.link} target="_blank" rel="noreferrer">
+                    <div>
+                      <h3>{list.title}</h3>
+                      <p>{list.text}</p>
+                    </div>
+                    <span className="icons">{list.icon}</span>
+                  </a>
+                </Media>
+              ))}
+            </MediaContents>
+            {/* <div>
                   <span className="icons">
                     <AiOutlineMail />
                   </span>
@@ -131,41 +170,7 @@ const ContactMe = () => {
                     <FaTwitter />
                   </span>
                 </a>
-              </Connect>
-            </MediaContents>
-          </Col1>
-          <Col2 data-aos="fade-left">
-            <h3>Send a Message</h3>
-            <Form onSubmit={onSubmit}>
-              {FormInputs.map((inputs) => (
-                <div key={inputs.id}>
-                  <input
-                    type={inputs.type}
-                    name={inputs.name}
-                    id={inputs.idty}
-                    onChange={handleFormData}
-                    value={formData[inputs.value]}
-                    placeholder={inputs.placeholder}
-                    required
-                  />
-                </div>
-              ))}
-
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                value={formData.value}
-                onChange={handleFormData}
-                rows="10"
-                placeholder="Message"
-                required
-              ></textarea>
-              <br />
-              <ButtonB type="submit" onClick={handlePopup}>
-                SEND MESSAGE
-              </ButtonB>
-            </Form>
+              </Connect> */}
           </Col2>
         </Row>
       </Contents>

@@ -5,9 +5,9 @@ export const Container = styled.section`
   overflow: hidden;
   position: relative;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7)),
-    url(${bg1});
-  background-position: top;
+  background: url(${bg1});
+  box-shadow: rgb(0 0 0 / 92%) 0px 100em 0px 0px inset;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -99,6 +99,7 @@ export const IconsContainer = styled.div`
 
     &:hover {
       border-bottom: 0.15rem solid ${({ theme }) => theme.color.primary};
+      filter: brightness(100%) contrast(110%) saturate(0);
     }
   }
 

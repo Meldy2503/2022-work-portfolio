@@ -46,7 +46,7 @@ export const Col = styled.div`
   }
 
   h5 > span {
-    color: #fff;
+    color: ${({ theme }) => theme.color.primary};
   }
 
   h1 {
@@ -130,8 +130,9 @@ export const Button = styled.a`
   }
 
   &:hover {
-    box-shadow: -23rem 0 0 0 inset #c79834;
-    border: 0.2rem solid #c79834;
+    box-shadow: -23rem 0 0 0 inset #ffc75f;
+    border: 0.2rem solid #ffc75f;
+    color: #000;
   }
 `;
 
