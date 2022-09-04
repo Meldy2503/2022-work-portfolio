@@ -187,6 +187,11 @@ export const IconsContainer = styled.div`
     color: #fff;
     margin-bottom: 1rem;
 
+    &:hover {
+      color: ${({ theme }) => theme.color.primary};
+      transform: scale(1.4);
+    }
+
     @media (max-width: ${({ theme }) => theme.media.tablet}) {
       margin-right: 1.7rem;
     }

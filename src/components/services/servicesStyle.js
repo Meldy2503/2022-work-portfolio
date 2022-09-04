@@ -31,12 +31,6 @@ export const Card = styled.div`
   position: relative;
   transition: all 0.5s;
 
-  &:hover {
-    border-top-right-radius: 5rem;
-    box-shadow: 0.1rem 0.1rem 0.5rem #343337;
-    transform: translateY(-2px) scale(1.09);
-  }
-
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     width: 47%;
   }
@@ -79,6 +73,16 @@ export const Card = styled.div`
     p {
       font-weight: 400;
       line-height: 1.5;
+    }
+  }
+
+  &:hover {
+    border-top-right-radius: 5rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem #343337;
+    transform: translateY(-2px) scale(1.09);
+
+    span {
+      transform: rotate(360deg);
     }
   }
 `;
