@@ -45,7 +45,7 @@ export const Logo = styled.div`
   box-shadow: 0.6rem 0.6rem 0 #d0d0d0;
 
   a {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #fff;
     font-weight: 700;
   }
@@ -101,7 +101,7 @@ export const LinkContainer = styled.ul`
   }
 `;
 export const LinkLists = styled.li`
-  padding-left: 3rem;
+  padding-left: 4rem;
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     padding-left: 0;
@@ -110,8 +110,8 @@ export const LinkLists = styled.li`
   .link {
     color: #fff;
     display: block;
-    text-transform: uppercase;
     font-weight: 500;
+    font-size: 1.7rem;
 
     @media (max-width: ${({ theme }) => theme.media.tablet}) {
       padding: 4rem 0rem 1rem 0rem;
@@ -126,13 +126,12 @@ export const LinkLists = styled.li`
     color: #fff;
     position: relative;
     display: block;
-    text-transform: uppercase;
     font-weight: 500;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: -0.2rem;
+      bottom: -0.4rem;
       display: block;
       height: 0.2rem;
       background-color: #fff;
@@ -170,9 +169,10 @@ export const Cv = styled.div`
   margin-left: 2.3rem;
   a {
     color: #fff;
-    padding: 0.8rem 2rem;
+    padding: 0.7rem 1.8rem;
     border: 0.2rem solid ${({ theme }) => theme.color.primary};
     border-radius: 0.5rem;
+    font-size: 1.7rem;
 
     &:hover {
       color: #000;

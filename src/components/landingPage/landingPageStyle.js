@@ -1,20 +1,23 @@
 import styled from "styled-components";
-import bg1 from "../../assests/bg1.jpg";
+import bg1 from "../../assests/bg3.jpg";
 
 export const Container = styled.section`
   width: 100%;
   height: 100vh;
   position: relative;
   color: #eaeaea;
-  text-align: center;
+
+  @media (max-width: 500px) {
+    text-align: center;
+  }
 `;
 
 export const Contents = styled.div`
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.35)),
-    url(${bg1});
-  background-position: 0rem 7rem;
+  background: url(${bg1});
+  box-shadow: rgb(0 0 0 / 90%) 0px 100em 0px 0px inset;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -41,7 +44,7 @@ export const Col = styled.div`
 
   h5 {
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: #d0d0d0;
   }
 
@@ -68,26 +71,24 @@ export const Col = styled.div`
   div > p {
     font-family: "Raleway", sans-serif;
     width: 65%;
-    margin: 1rem auto 0 auto;
+    margin-top: 1rem;
     line-height: 1.5;
     letter-spacing: 0.1rem;
-    font-weight: 500;
     color: #eaeaea;
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
       width: 70%;
     }
     @media (max-width: 500px) {
+      margin: 1rem auto 0 auto;
       width: 90%;
     }
   }
 `;
 
 export const TypedText = styled.span`
-  text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin: 1rem auto 0 auto;
   font-size: 1.8rem;
 
@@ -97,11 +98,15 @@ export const TypedText = styled.span`
     color: #d0d0d0;
     font-family: "Raleway", sans-serif;
   }
+
+  @media (max-width: 500px) {
+    text-align: center;
+    justify-content: center;
+  }
 `;
 
 export const Btn = styled.span`
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-top: 3rem;
 
@@ -111,7 +116,7 @@ export const Btn = styled.span`
   }
 `;
 export const Button = styled.a`
-  padding: 1.7rem 3.5rem;
+  padding: 1.7rem 3.2rem;
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
@@ -139,7 +144,8 @@ export const Button = styled.a`
 export const ButtonC = styled(Button)`
   color: ${({ theme }) => theme.color.primary};
   border: 0.2rem solid ${({ theme }) => theme.color.primary};
-  padding: 1.7rem 4.3rem;
+  padding: 1.7rem 4rem;
+  margin-left: 0;
 
   &:hover {
     box-shadow: -23rem 0 0 0 inset #fff;
@@ -148,18 +154,23 @@ export const ButtonC = styled(Button)`
   }
 `;
 export const BackToTop = styled.a`
-  position: fixed;
-  z-index: 1000;
-  bottom: 2rem;
-  right: 2rem;
+  display: none;
 
-  ${(props) => props.scrollToTop} {
-    display: none;
-  }
+  @media (max-width: ${({ theme }) => theme.media.tablet}) {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    bottom: 1.2rem;
+    right: 1.2rem;
 
-  span {
-    color: ${({ theme }) => theme.color.primary};
-    font-size: 3rem;
+    ${(props) => props.scrollToTop} {
+      display: none;
+    }
+
+    span {
+      color: ${({ theme }) => theme.color.primary};
+      font-size: 3rem;
+    }
   }
 `;
 export const IconsContainer = styled.div`
@@ -169,17 +180,18 @@ export const IconsContainer = styled.div`
   align-items: center;
   flex-direction: column;
   top: 45%;
-  left: 4rem;
+  right: 4rem;
   z-index: 1000;
 
   @media (max-width: ${({ theme }) => theme.media.desktop}) {
-    left: 2rem;
+    right: 1.8rem;
   }
 
   @media (max-width: ${({ theme }) => theme.media.tablet}) {
     position: absolute;
     top: 94%;
-    left: 2.5rem;
+    left: 0rem;
+    right: 0rem;
     flex-direction: row;
   }
 

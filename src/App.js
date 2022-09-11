@@ -13,7 +13,7 @@ function App() {
 
     media: {
       smobile: "420px",
-      mobile: "768px",
+      mobile: "767px",
       tablet: "960px",
       desktop: "1440px",
     },
@@ -22,6 +22,7 @@ function App() {
   useEffect(() => {
     Aos.init({
       duration: 1500,
+      once: true,
     });
   }, []);
 

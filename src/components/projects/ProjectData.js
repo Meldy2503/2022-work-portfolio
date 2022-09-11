@@ -1,6 +1,22 @@
 export const ProjectData = [
   {
     id: 1,
+    img: require("../../assests/foodie-img.PNG"),
+    web: "https://online-foodie.netlify.app/",
+    onClick: function alertPop() {
+      alert(
+        "Foodie is a private repository, you can contact me personally for details of the source code"
+      );
+    },
+    name: "Foodie",
+    about:
+      "This project is still ongoing and it's a website that will allow entrepreneurs into food sales to create and customize an online store for their business.",
+    features:
+      "This fully responsive website will contain features that will allow registered clients to effectively manage their online store, customize their online store, create food menus, take orders from customers online, accept online payments and monitor deliveries of their products(food). ",
+    tech: ["React", "HTML", "JavaScript", "Styled-Comp.", "MUI"],
+  },
+  {
+    id: 2,
     img: require("../../assests/nail-B.png"),
     web: "https://nail-boutique.netlify.app/",
     git: "https://github.com/Meldy2503/nail-boutique",
@@ -12,7 +28,7 @@ export const ProjectData = [
     tech: ["React", "HTML", "JavaScript", "Styled-Comp.", "MUI"],
   },
   {
-    id: 2,
+    id: 3,
     img: require("../../assests/windec.png"),
     web: "https://meldy2503.github.io/Windec/",
     git: "https://github.com/Meldy2503/Windec",
@@ -24,11 +40,11 @@ export const ProjectData = [
     tech: ["HTML", "JavaScript", "React", "Styled - Comp.", "MUI"],
   },
   {
-    id: 3,
+    id: 4,
     img: require("../../assests/oceanica1.png"),
     web: "https://oceanica-employees.netlify.app/",
     git: "https://github.com/Meldy2503/crud-app",
-    name: "Oceanica App",
+    name: "Oceanica",
     about:
       " An open source CRUD app designed to store, edit and delete employee's details for improved accessibility.",
     features:
@@ -36,26 +52,15 @@ export const ProjectData = [
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
   },
   {
-    id: 4,
-    img: require("../../assests/quiz-B.png"),
-    web: "https://meldy2503.github.io/quiz-app/",
-    git: "https://github.com/Meldy2503/quiz-app",
-    name: "A Quiz App",
-    about: "An in-house web application designed for learning purposes.",
-    features:
-      "Five random questions are displayed to the user and the total score of the user is returned after all questions have been answered. It aims to make learning interesting, conducive and fun.",
-    tech: ["HTML", "JavaScript", "React", "CSS"],
-  },
-  {
     id: 5,
     img: require("../../assests/crypto.png"),
     web: "https://coinic-crypto.netlify.app/",
     git: "https://github.com/Meldy2503/crypto-app",
-    name: "Crypto App",
+    name: "Coinic",
     about:
-      "An open source crypto app that displays updated information about crypto currencies",
+      "An open source crypto website that displays updated information about crypto currencies",
     features:
-      "I utilized API integration in this project to fetch data and update the crypto information. I also incoporated Context API and some React librarires for an improved user experience ",
+      "I utilized API integration in this project to fetch data and update the crypto information. I also incoporated Context API, dark and light modes and some React librarires for an improved user experience ",
     tech: ["HTML", "JavaScript", "React", "CSS"],
   },
 ];

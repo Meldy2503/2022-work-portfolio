@@ -113,6 +113,7 @@ export const ButtonW = styled.a`
   display: flex;
   align-items: center;
   color: #eaeaea;
+  cursor: pointer;
 `;
 export const ButtonG = styled(ButtonW)``;
 

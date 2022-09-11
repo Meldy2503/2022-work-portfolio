@@ -34,7 +34,7 @@ const LandingPage = () => {
             </h5>
             <h1>A FRONTEND DEVELOPER</h1>
             <p>
-              A creative developer devoted to crafting user friendly and
+              I'm a creative developer devoted to crafting user friendly and
               interactive frontend applications focused on simplicity and
               purpose.
             </p>

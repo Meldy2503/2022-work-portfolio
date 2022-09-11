@@ -44,6 +44,7 @@ const Projects = () => {
                         href={project.git}
                         target="_blank"
                         rel="noreferrer"
+                        onClick={project.onClick}
                       >
                         <Code />
                         code
