@@ -31,7 +31,7 @@ const Navbar = () => {
       <Header navbar={navbar}>
         <NavContainer>
           <Logo>
-            <Link to="landing-page" ooth={true} duration={100} spy={true}>
+            <Link to="landing-page" smooth={true} duration={100} spy={true}>
               EO
             </Link>
           </Logo>

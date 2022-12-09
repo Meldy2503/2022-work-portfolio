@@ -16,7 +16,7 @@ export const Contents = styled.div`
   height: 100%;
   width: 100%;
   background: url(${bg1});
-  box-shadow: rgb(0 0 0 / 90%) 0px 100em 0px 0px inset;
+  box-shadow: rgb(0 0 0 / 80%) 0px 100em 0px 0px inset;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

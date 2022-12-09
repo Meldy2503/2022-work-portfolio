@@ -6,7 +6,7 @@ export const Container = styled.section`
   position: relative;
   width: 100%;
   background: url(${bg1});
-  box-shadow: rgb(0 0 0 / 92%) 0px 100em 0px 0px inset;
+  box-shadow: rgb(0 0 0 / 85%) 0px 100em 0px 0px inset;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
